@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8160280440632677835}
   - component: {fileID: 8160280440632677834}
   - component: {fileID: 8160280440632677833}
+  - component: {fileID: 8160280439684174686}
   m_Layer: 0
   m_Name: SceneContext - UI
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 8160280440632677833}
+  - {fileID: 8160280439684174686}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -78,6 +80,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LogicObjectsParent: {fileID: 8160280440937656201}
+  playerSettings:
+    ManaIncome: 1
+    StartingMana: 3
+    MaxMana: 10
+--- !u!114 &8160280439684174686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160280440632677832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fff2d28920d466b87abd84b70fb37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LogicObjectParent: {fileID: 0}
 --- !u!1 &8160280440937656200
 GameObject:
   m_ObjectHideFlags: 0
