@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace GGJ20.Cards
+namespace GGJ20.CardRules
 {
     public class ManaDisplay : MonoBehaviour
     {

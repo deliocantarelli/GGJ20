@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Cards
+namespace GGJ20.CardRules
 {
     public class Player : MonoBehaviour
     {
