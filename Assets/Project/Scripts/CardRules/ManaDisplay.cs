@@ -13,13 +13,30 @@ namespace GGJ20.CardRules
     {
         [SerializeField]
         private Slider slider;
+        [SerializeField]
+        private Text text;
 
         [Inject]
         private Player player;
+        
 
+        [Inject]
+        private void Init()
+        {
+            player.UsableManaChanged += UpdateIndicator;
+        }
+        private void OnDestroy()
+        {
+            player.UsableManaChanged -= UpdateIndicator;
+        }
         private void LateUpdate()
         {
             slider.value = player.ManaPercent;
+        }
+
+        private void UpdateIndicator(Player player)
+        {
+            text.text = player.UsableMana.ToString();
         }
     }
 }

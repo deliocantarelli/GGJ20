@@ -16,7 +16,18 @@ namespace GGJ20.Installers
             Container.Bind<Player.Settings>().FromInstance(playerSettings).AsSingle();
 
             Container.Bind<Player>().FromNewComponentOnNewGameObject()
+                .WithGameObjectName("Player")
                 .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+
+            Container.Bind<PlayerHandController>().FromNewComponentOnNewGameObject()
+                .WithGameObjectName("Player Hand")
+                .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+
+            Container.Bind<Deck>().AsSingle();
+
+            Container.Bind<Card>().FromResolveGetter<Deck>(d => d.Draw())
+                .AsTransient()
+                .WhenInjectedInto<CardDisplay>();
         }
     }
 }
