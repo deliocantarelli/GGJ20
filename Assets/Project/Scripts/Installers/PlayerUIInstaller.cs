@@ -1,19 +1,33 @@
-using GGJ20.Cards;
+using GGJ20.CardRules;
 using UnityEngine;
 using Zenject;
 
-public class PlayerUIInstaller : MonoInstaller
+namespace GGJ20.Installers
 {
-    [SerializeField]
-    private Transform LogicObjectsParent;
-    [SerializeField]
-    private Player.Settings playerSettings;
-
-    public override void InstallBindings()
+    public class PlayerUIInstaller : MonoInstaller
     {
-        Container.Bind<Player.Settings>().FromInstance(playerSettings).AsSingle();
+        [SerializeField]
+        private Transform LogicObjectsParent;
+        [SerializeField]
+        private Player.Settings playerSettings;
 
-        Container.Bind<Player>().FromNewComponentOnNewGameObject()
-            .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+        public override void InstallBindings()
+        {
+            Container.Bind<Player.Settings>().FromInstance(playerSettings).AsSingle();
+
+            Container.Bind<Player>().FromNewComponentOnNewGameObject()
+                .WithGameObjectName("Player")
+                .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+
+            Container.Bind<PlayerHandController>().FromNewComponentOnNewGameObject()
+                .WithGameObjectName("Player Hand")
+                .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+
+            Container.Bind<Deck>().AsSingle();
+
+            Container.Bind<Card>().FromResolveGetter<Deck>(d => d.Draw())
+                .AsTransient()
+                .WhenInjectedInto<CardDisplay>();
+        }
     }
 }
