@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: e11f602508773457398a80ac0d233f3a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 43cbb2012eab446c4a130c498d17e186, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -373,6 +373,7 @@ MonoBehaviour:
   button: {fileID: 4540251057536977335}
   art: {fileID: 3548848153136181990}
   shapeArt: {fileID: 1097157801}
+  bgArt: {fileID: 7593397061784829762}
   manaCost: {fileID: 5002421742360419785}
   cg: {fileID: 8837698407999690941}
 --- !u!114 &6344311333762807756
