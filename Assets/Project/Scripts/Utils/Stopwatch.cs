@@ -10,18 +10,20 @@ namespace GGJ20.Utils
     {
         private float _startTime;
 
-        private Stopwatch() { }
+        public Stopwatch() { }
+        bool started = false;
 
-        public float ElapsedSeconds { get { return Time.time - _startTime; } }
+        public float ElapsedSeconds { get { return started? Time.time - _startTime : 0; } }
 
-        private void Start()
+        public void Restart()
         {
-            Reset();
+            started = true;
+            _startTime = Time.time;
         }
 
-        public void Reset()
+        public void ClearAndStop()
         {
-            _startTime = Time.time;
+            started = false;
         }
 
 
@@ -30,7 +32,7 @@ namespace GGJ20.Utils
         public static Stopwatch CreateAndStart()
         {
             var result = new Stopwatch();
-            result.Start();
+            result.Restart();
             return result;
         }
     }

@@ -5,6 +5,7 @@ using GGJ20.Battery;
 using UnityEngine;
 using Pathfinding;
 using GGJ20.Target;
+using GGJ20.World;
 
 namespace GGJ20.Enemy
 {
@@ -20,6 +21,7 @@ namespace GGJ20.Enemy
         private AILerp aILerp;
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         private int currentLife = 0;
+        private HitChecker hitChecker;
         public bool isAlive {get{ return currentLife <= 0; }}
 
         void Start() {
@@ -46,6 +48,7 @@ namespace GGJ20.Enemy
         void Update()
         {
             stateMachine.Update();
+            hitChecker.CheckReset();
         }
 
         public void SetMovement(bool movement) {
@@ -65,6 +68,14 @@ namespace GGJ20.Enemy
 
         void Die() {
             Destroy(gameObject);
+        }
+
+        public void TryHit(Spell.Hit hit)
+        {
+            if(hitChecker.CheckHit(hit, out int dmg))
+            {
+                Damage(dmg);
+            }
         }
     }
 }

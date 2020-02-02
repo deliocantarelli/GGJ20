@@ -50,7 +50,7 @@ namespace GGJ20.World
         private SpellElement.Pool spellElsPool;
 
         private Vector2Int epicenter;
-        private Card card;
+        public Card Card { get; private set; }
         private List<Hit> nextHits;
 
         private Stopwatch stopwatch;
@@ -61,7 +61,7 @@ namespace GGJ20.World
         {
             transform.position = grid.GridToWorld(epicenter, WorldGrid.PlaceMode.TileCenter);
             this.epicenter = epicenter;
-            this.card = card;
+            this.Card = card;
 
             stopwatch = Stopwatch.CreateAndStart();
             InitHits();
@@ -70,7 +70,7 @@ namespace GGJ20.World
 
         private void InitHits()
         {
-            nextHits = card.Spell.hits.ToList();
+            nextHits = Card.Spell.hits.ToList();
             var hitsToAdd = new List<Hit>();
             foreach (var hit in nextHits)
             {
@@ -97,7 +97,7 @@ namespace GGJ20.World
             {
                 foreach (var pos in hit.Locations)
                 {
-                    spellElsPool.Spawn(card, pos + epicenter);
+                    spellElsPool.Spawn(this, hit, pos + epicenter);
                 }
                 nextHits.Remove(hit);
             }

@@ -1,6 +1,9 @@
 ﻿using System;
 using DG.Tweening;
+using GGJ20.Battery;
 using GGJ20.CardRules;
+using GGJ20.Enemy;
+using GGJ20.Utils;
 using UnityEngine;
 using Zenject;
 
@@ -12,21 +15,43 @@ namespace GGJ20.World
         private SpriteRenderer sprite;
         [SerializeField]
         private Sprite defaultSprite;
+        [SerializeField]
+        private Collider2D col;
 
         [Inject]
         private WorldGrid grid;
         [Inject]
         Pool pool;
 
-        private void Reinitialize(Card card, Vector2Int pos)
+
+        private Stopwatch timer = new Stopwatch();
+        private Spell.Hit hit;
+        private Spell spell;
+        private float toggleTime = .2f;
+
+        private void Reinitialize(Spell spell, Spell.Hit hit, Vector2Int pos)
         {
+            this.hit = hit;
+            this.spell = spell;
+
             transform.position = grid.GridToWorld(pos, WorldGrid.PlaceMode.TileCenter);
-            sprite.sprite = card.HitElSprite != null ? card.HitElSprite : defaultSprite;
+            sprite.sprite = spell.Card.HitElSprite != null ? spell.Card.HitElSprite : defaultSprite;
 
             SetAlpha(0);
 
             sprite.DOFade(1, .5f).SetLoops(2, LoopType.Yoyo)
                 .OnComplete(OnAnimationOver);
+
+            col.enabled = true;
+            timer.Restart();
+        }
+        private void Update()
+        {
+            if(timer.ElapsedSeconds > toggleTime)
+            {
+                timer.ClearAndStop();
+                col.enabled = false;
+            }
         }
 
         private void OnAnimationOver()
@@ -40,13 +65,24 @@ namespace GGJ20.World
             c.a = alpha;
             sprite.color = c;
         }
-        
-        public class Pool : MonoMemoryPool<Card, Vector2Int, SpellElement>
+
+
+        public void TryHeal(BatteryController battery)
         {
-            protected override void Reinitialize(Card card, Vector2Int vec, SpellElement item)
+            battery.TryHeal(hit);
+        }
+
+        public void TryHit(EnemyController enemy)
+        {
+            throw new NotImplementedException();
+        }
+
+        public class Pool : MonoMemoryPool<Spell, Spell.Hit,  Vector2Int, SpellElement>
+        {
+            protected override void Reinitialize(Spell spell, Spell.Hit hit, Vector2Int vec, SpellElement item)
             {
-                base.Reinitialize(card, vec, item);
-                item.Reinitialize(card, vec);
+                base.Reinitialize(spell, hit, vec, item);
+                item.Reinitialize(spell, hit, vec);
             }
         }
     }

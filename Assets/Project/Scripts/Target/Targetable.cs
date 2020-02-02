@@ -3,43 +3,49 @@ using UnityEngine;
 
 namespace GGJ20.Target {
     public class Targetable : MonoBehaviour {
-        public delegate void OnTargetDestroyed();
-        private event OnTargetDestroyed onTargetDestroyed;
-        public delegate void OnTargetDamaged();
-        private event OnTargetDamaged onTargetDamaged;
-        private float life = 5;
+        public delegate void TargetDestroyed();
+        private event TargetDestroyed targetDestroyed;
+        public delegate void TargetHealthChanged();
+        private event TargetHealthChanged targetHealthChanged;
+
+        [SerializeField]
+        private int life = 5;
         public bool isAlive {get { return life > 0; }}
 
-        public void DealDamage(float damage) {
+        public void DealDamage(int damage) {
             if(!isAlive) {
                 return;
             }
             life -= damage;
             if(life <= 0) {
                 TriggerTargetDestroyed();
-            } else {
-                TriggerTargetDamaged();
-            }
+            } 
+            TriggerHealthChanged();
+        }
+        public void Heal(int value)
+        {
+            life += value;
+            TriggerHealthChanged();
         }
 
-        public void RegisterOnTargetDestroyed(OnTargetDestroyed callback) {
-            onTargetDestroyed += callback;
+        public void RegisterOnTargetDestroyed(TargetDestroyed callback) {
+            targetDestroyed += callback;
         }
-        public void RemoveOnTargetDestroyed(OnTargetDestroyed callback) {
-            onTargetDestroyed -= callback;
+        public void RemoveOnTargetDestroyed(TargetDestroyed callback) {
+            targetDestroyed -= callback;
         }
-        public void RegisterOnTargetDamaged(OnTargetDamaged callback) {
-            onTargetDamaged += callback;
+        public void RegisterOnTargetDamaged(TargetHealthChanged callback) {
+            targetHealthChanged += callback;
         }
-        public void RemoveOnTargetDamaged(OnTargetDamaged callback) {
-            onTargetDamaged -= callback;
+        public void RemoveOnTargetDamaged(TargetHealthChanged callback) {
+            targetHealthChanged -= callback;
         }
         private void TriggerTargetDestroyed() {
             Debug.Log("target destroyed");
-            onTargetDestroyed?.Invoke();
+            targetDestroyed?.Invoke();
         }
-        private void TriggerTargetDamaged() {
-            onTargetDamaged?.Invoke();
+        private void TriggerHealthChanged() {
+            targetHealthChanged?.Invoke();
         }
     }
 }
