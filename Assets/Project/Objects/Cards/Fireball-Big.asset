@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
   m_Name: Fireball-Big
   m_EditorClassIdentifier: 
-  Art: {fileID: -561693672059696128, guid: 7c80047081b2c594f99b201b332ed79f, type: 3}
+  Art: {fileID: 21300000, guid: 794828863e6334d6fa71f0dc575d0ad0, type: 3}
+  ShapeArt: {fileID: 21300000, guid: 356003cc407c94df49d08732f55ccb0a, type: 3}
   ManaCost: 5
   Spell:
     hits:
-    - time: 0
+    - type: 0
+      time: 0
       damage: 1
       repeats: 2
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -29,10 +32,12 @@ MonoBehaviour:
         - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
-    - time: 3
+    - type: 0
+      time: 3
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -42,4 +47,4 @@ MonoBehaviour:
         - row: 00000101010000
         - row: 00000001000000
         - row: 00000000000000
-  HitElSprite: {fileID: 0}
+  Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}

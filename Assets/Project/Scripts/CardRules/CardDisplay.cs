@@ -24,6 +24,10 @@ namespace GGJ20.CardRules
         [SerializeField]
         private Image art;
         [SerializeField]
+        private Image shapeArt;
+        [SerializeField]
+        private Image bgArt;
+        [SerializeField]
         private Text manaCost;
         [SerializeField]
         private CanvasGroup cg;
@@ -61,6 +65,8 @@ namespace GGJ20.CardRules
         private void UpdateToMatchCard()
         {
             this.art.sprite = Card.Art;
+            this.shapeArt.sprite = Card.ShapeArt;
+            this.bgArt.sprite = Card.Background;
             this.manaCost.text = Card.ManaCost.ToString();
         }
         private void OnSelected()
