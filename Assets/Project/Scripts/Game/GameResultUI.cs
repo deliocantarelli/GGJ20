@@ -18,11 +18,11 @@ public class GameResultUI : MonoBehaviour {
     /// </summary>
     void Start()
     {
-        if(GameResult.Result) {
-            winNode.SetActive(true);
-        } else {
+        //if(GameResult.Result) {
+        //    winNode.SetActive(true);
+        //} else {
             lostNode.SetActive(true);
-        }
+        //}
     }
     public void OnStartButton() {
 

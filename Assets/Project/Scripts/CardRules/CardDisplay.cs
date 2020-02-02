@@ -15,8 +15,8 @@ namespace GGJ20.CardRules
 {
     public class CardDisplay : MonoBehaviour, IBeginDragHandler, IDragHandler
     {
+        [InjectOptional]
         public Card Card { get; private set; }
-        private Player player;
         [Inject]
         private ICardDisplayListener playerHand;
 
@@ -32,24 +32,16 @@ namespace GGJ20.CardRules
         [SerializeField]
         private bool draggable;
 
-
+        private bool listenForMana;
         private bool dragging;
 
-        [Inject]
-        private void Init(Card card, Player player)
+        private void Init()
         {
-            SetCard(card);
-            this.player = player;
+            if (Card != null)
+                SetCard(Card);
 
-            player.UsableManaChanged += CheckPlayable;
             button.onClick.AddListener(OnSelected);
-            CheckPlayable(player);
         }
-        private void OnDestroy()
-        {
-            player.UsableManaChanged -= CheckPlayable;
-        }
-
 
         public void SetCard(Card card)
         {
@@ -58,10 +50,6 @@ namespace GGJ20.CardRules
         }
 
 
-        private void CheckPlayable(Player player)
-        {
-            cg.interactable = player.CanPlayCard(Card);
-        }
         private void UpdateToMatchCard()
         {
             this.art.sprite = Card.Art;

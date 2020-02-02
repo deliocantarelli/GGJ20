@@ -32,13 +32,19 @@ namespace GGJ20.Installers
 
             Container.Bind<Deck>().AsSingle();
 
+            Container.Bind<BattleSceneController>()
+                .FromNewComponentOnNewGameObject()
+                .WithGameObjectName("Scene Controller")
+                .UnderTransformGroup("Logic")
+                .AsSingle();
+
             Container.Bind<IEnumerable<Card>>()
                 .FromResolveGetter<GameStateController>(c => c.CurrentRun.CardsInDeck)
                 .WhenInjectedInto<Deck>();
 
-            Container.Bind<Card>().FromResolveGetter<Deck>(d => d.Draw())
-                .AsTransient()
-                .WhenInjectedInto<CardDisplay>();
+            //Container.Bind<Card>().FromResolveGetter<Deck>(d => d.Draw())
+            //    .AsTransient()
+            //    .WhenInjectedInto<CardDisplay>();
         }
     }
 }

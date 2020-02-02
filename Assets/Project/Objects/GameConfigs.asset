@@ -16,12 +16,12 @@ MonoBehaviour:
     starterDeck:
     - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
     - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
-    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
-    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
-    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
-    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
     - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
-    - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
+    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+    - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+    - {fileID: 11400000, guid: f8efdbb943bf59841a3e9ff8ca24f530, type: 2}
+    - {fileID: 11400000, guid: f8efdbb943bf59841a3e9ff8ca24f530, type: 2}
     - {fileID: 11400000, guid: f8efdbb943bf59841a3e9ff8ca24f530, type: 2}
     cardPool:
     - {fileID: 11400000, guid: c6b858c8ce6ffda4f9ec61a4d4106f9a, type: 2}
@@ -34,3 +34,4 @@ MonoBehaviour:
     Floors:
     - Game
     - Game 1
+    MainMenu: Menu

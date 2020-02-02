@@ -38,14 +38,15 @@ namespace GGJ20.Game
         {
             sceneLoader.LoadScene(configs.Floors[CurrentRun.Floor]);
         }
-        public void Advance()
+        internal void AdvanceAndLoad()
         {
             CurrentRun.Floor++;
-
+            GoToFloorScene();
         }
         public void GoToMenu()
         {
             sceneLoader.LoadScene(configs.MainMenu);
         }
+
     }
 }

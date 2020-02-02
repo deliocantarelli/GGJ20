@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using GGJ20.Enemy;
+using GGJ20.Game;
 using UnityEngine;
 using Zenject;
 
@@ -25,11 +26,20 @@ namespace GGJ20.Spawner {
         private float currenDelay;
         private float currentTimeToWait;
         private bool started;
+        [Inject]
+        private BattleSceneController sceneController;
 
         [Inject]
         public void Init(LevelSettings settings) {
             enemiesConfig = settings.enemies;
             currentTimeToWait = config.startSeconds;
+
+            sceneController.BattleOver += BattleOver;
+        }
+
+        private void BattleOver(GameResult gameResult)
+        {
+            enabled = false;
         }
 
         private Dictionary<EnemySettings, int> GetWave(WaveEnemy[] enemies) {

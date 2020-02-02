@@ -30,9 +30,9 @@ namespace GGJ20.Game
 
         public IEnumerable<Card> CardsInDeck { get { return deck.AsEnumerable(); } }
 
-        public IEnumerable<Card> GenerateBooster()
+        public IEnumerable<Card> GenerateBooster(int size)
         {
-            return configs.cardPool.OrderBy(c => UnityEngine.Random.value).Take(3);
+            return configs.cardPool.OrderBy(c => UnityEngine.Random.value).Take(size);
         }
 
         public void Replace(Card take, Card place)

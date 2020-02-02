@@ -10,6 +10,7 @@ using GGJ20.Utils;
 using UnityEngine.UI;
 using UnityEngine.Assertions;
 using DG.Tweening;
+using GGJ20.Game;
 
 namespace GGJ20.Battery {
     [Serializable]
@@ -45,6 +46,9 @@ namespace GGJ20.Battery {
         private BatteryConfig[] batteriesNodes;
         private BatteryConfig currentConfig;
 
+        [Inject]
+        private BattleSceneController controller;
+
         private void Start() {
             targetable = GetComponent<Targetable>();
             targetable.RegisterOnTargetDestroyed(OnTargetDestroyed);
@@ -70,8 +74,7 @@ namespace GGJ20.Battery {
         }
 
         private void OnTargetDestroyed() {
-            GameResult.Result = false;
-            SceneManager.LoadScene("Endgame");
+            controller.OnLose();
             targets.RemoveBattery(targetable);
         }
 

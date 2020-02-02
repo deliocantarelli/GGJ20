@@ -1,4 +1,5 @@
 
+using System;
 using Common.StateMachines;
 using UnityEngine;
 
@@ -18,6 +19,11 @@ namespace GGJ20.Enemy
         public void OnCollisionEnter2D(Collision2D other)
         {
             CurrentState.OnCollisionEnter2D(other);
+        }
+
+        public void OnGameOver()
+        {
+            CurrentState.OnGameOver();
         }
     }
 }

@@ -7,6 +7,7 @@ using Pathfinding;
 using GGJ20.Target;
 using GGJ20.World;
 using UnityEngine.UI;
+using GGJ20.Game;
 
 namespace GGJ20.Enemy
 {
@@ -26,7 +27,10 @@ namespace GGJ20.Enemy
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         private int currentLife = 0;
         private HitChecker hitChecker = new HitChecker();
-        public bool isAlive {get{ return currentLife <= 0; }}
+        [Inject]
+        private BattleSceneController sceneController;
+
+        public bool isAlive { get { return currentLife <= 0; } }
 
         public class Factory : PlaceholderFactory<UnityEngine.Object, EnemyController>
         {
@@ -45,6 +49,12 @@ namespace GGJ20.Enemy
             aILerp = GetComponent<AILerp>();
             aILerp.speed = settings.speed;
             currentLife = settings.life;
+            sceneController.BattleOver += BattleOver;
+        }
+
+        private void BattleOver(GameResult gameResult)
+        {
+            stateMachine.OnGameOver();
         }
 
         void OnDestroy()
@@ -88,7 +98,7 @@ namespace GGJ20.Enemy
 
         public void TryHit(Spell.Hit hit)
         {
-            if(hitChecker.CheckHit(hit, out int dmg))
+            if (hitChecker.CheckHit(hit, out int dmg))
             {
                 Damage(dmg);
             }

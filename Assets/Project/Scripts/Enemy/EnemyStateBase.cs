@@ -19,5 +19,9 @@ namespace GGJ20.Enemy
         {
             
         }
+        public virtual void OnGameOver()
+        {
+            ExitTo(new EnemyGameOverState());
+        }
     }
 }

@@ -1,12 +1,17 @@
 
+using GGJ20.Game;
 using System;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 namespace GGJ20.Target {
     public class GameTargets
     {
         List<Targetable> targets = new List<Targetable>();
+
+        [Inject]
+        private BattleSceneController sceneController;
 
         public Targetable[] Targets { get; private set; }
         public void RegisterBattery(Targetable target)
@@ -19,8 +24,7 @@ namespace GGJ20.Target {
             Targets = targets.ToArray();
 
             if(targets.Count == 0) {
-                GameResult.Result = true;
-                SceneManager.LoadScene("Endgame");
+                sceneController.OnWin();
             }
         }
     }
