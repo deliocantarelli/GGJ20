@@ -8,20 +8,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3839794187926328898}
-  - component: {fileID: 5394525551691339213}
+  - component: {fileID: 971386062505056442}
+  - component: {fileID: 5917727714039197593}
+  - component: {fileID: 1715593546456809006}
   - component: {fileID: 9197039077691610665}
   - component: {fileID: 8272308203597640024}
-  - component: {fileID: 74219724351184179}
-  - component: {fileID: 3367009067615413247}
-  m_Layer: 5
-  m_Name: SpellElement
+  - component: {fileID: 1252534399723254055}
+  - component: {fileID: 3629315520150140226}
+  m_Layer: 8
+  m_Name: SpellElement-Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3839794187926328898
+--- !u!4 &971386062505056442
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5394525551691339213
+--- !u!114 &5917727714039197593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2103183291677207549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de645da3e2be0b43aa6093f3b3932b8, type: 3}
+  m_Script: {fileID: 11500000, guid: ae90cce777c9f874296ddfdbc3f30f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 9197039077691610665}
@@ -55,10 +56,23 @@ MonoBehaviour:
   BeforeHide:
     m_PersistentCalls:
       m_Calls: []
-  autoTogglesCollider: 1
+  autoTogglesCollider: 0
   toggleTime: 0.2
-  usePlaceholderAnimation: 1
+  usePlaceholderAnimation: 0
   duration: 0.5
+  obstacle: {fileID: 1715593546456809006}
+--- !u!114 &1715593546456809006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2641ddc175e540209e748b69e218493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &9197039077691610665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -120,7 +134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -134,9 +148,28 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &74219724351184179
+--- !u!95 &1252534399723254055
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88734f7554580fe429f648ab4464762b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3629315520150140226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,22 +178,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2103183291677207549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c3192e24f3cf0429fa5726daca259a, type: 3}
+  m_Script: {fileID: 11500000, guid: 809a1389d18e9164181ecdb388f9d269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allowMultipleTriggers: 1
-  el: {fileID: 5394525551691339213}
---- !u!114 &3367009067615413247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103183291677207549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec891d680861b54eb03185fc8c4b32b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allowMultipleTriggers: 1
-  el: {fileID: 5394525551691339213}

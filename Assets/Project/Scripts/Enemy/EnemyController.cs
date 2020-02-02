@@ -11,6 +11,7 @@ using UnityEngine.UI;
 namespace GGJ20.Enemy
 {
     [RequireComponent(typeof(AIDestinationSetter))]
+    [RequireComponent(typeof(AILerp))]
     public class EnemyController : MonoBehaviour {
         [Inject]
         private TargetsManager targetsManager;
@@ -34,9 +35,9 @@ namespace GGJ20.Enemy
         void Start() {
             aiMovement = GetComponent<AIDestinationSetter>();
 
-            stateMachine.Begin(this);
 
             Setup(settings);
+            stateMachine.Begin(this);
         }
 
         public void Setup(EnemySettings enemySettings) {

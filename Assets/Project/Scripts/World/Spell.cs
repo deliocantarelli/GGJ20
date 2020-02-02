@@ -19,10 +19,14 @@ namespace GGJ20.World
         [Serializable]
         public class Hit
         {
+            public enum Type { Damage, Wall }
+
+            public Type type = Type.Damage;
             public float time;
             public int damage = 1;
             public int repeats;
-            public float repeatInterval = 1;    
+            public float repeatInterval = 1;
+            public float wallDuration = 1;
             public List<Vector2Int> Locations { get { return tileData.GetLocations(new Vector2Int(3,3)); } }
 
             public TileData tileData;
@@ -47,7 +51,9 @@ namespace GGJ20.World
         }
 
         [Inject]
-        private SpellElement.Pool spellElsPool;
+        private HitSpellElement.Pool spellElsPool;
+        [Inject]
+        private WallSpellElement.Pool spellWallElsPool;
 
         private Vector2Int epicenter;
         public Card Card { get; private set; }
@@ -97,7 +103,17 @@ namespace GGJ20.World
             {
                 foreach (var pos in hit.Locations)
                 {
-                    spellElsPool.Spawn(this, hit, pos + epicenter);
+                    switch (hit.type)
+                    {
+                        case Hit.Type.Damage:
+                            spellElsPool.Spawn(this, hit, pos + epicenter);
+                            break;
+                        case Hit.Type.Wall:
+                            spellWallElsPool.Spawn(this, hit, pos + epicenter);
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                    }
                 }
                 nextHits.Remove(hit);
             }

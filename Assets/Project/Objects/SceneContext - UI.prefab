@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usePercentage: 0
-  spawnersStart: []
   enemies: []
   waitTime: {x: 0, y: 0}
   enemiesQuantity: {x: 0, y: 0}
@@ -63,6 +62,8 @@ GameObject:
   - component: {fileID: 870823598}
   - component: {fileID: 2177888049204262752}
   - component: {fileID: 6584990906629998436}
+  - component: {fileID: 6751553295813333828}
+  - component: {fileID: 2664441791205995883}
   m_Layer: 0
   m_Name: SceneContext - UI
   m_TagString: Untagged
@@ -172,6 +173,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7cda8f7d355c0a24bbf1ff542bba50f9, type: 2}
   - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
   - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
+  - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+  - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+  - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+  - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
 --- !u!114 &2177888049204262752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +206,34 @@ MonoBehaviour:
     type: 3}
   spellHitPrefab: {fileID: 5394525551691339213, guid: ba9cef2776a10704f99b4289b1293f15,
     type: 3}
+  spellWallElementPrefab: {fileID: 5917727714039197593, guid: 929417b476c6f254cbc1a017c6548553,
+    type: 3}
+--- !u!114 &6751553295813333828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160280440632677832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3107421c5538941f48a50e10f418869e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2664441791205995883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160280440632677832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
 --- !u!1001 &9220597304893628607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,6 +241,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8160280440632677835}
     m_Modifications:
+    - target: {fileID: 2142035329575973657, guid: 4fa2177abd9f1408eb76dfcca99c82da,
+        type: 3}
+      propertyPath: nodeSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5028051383373193881, guid: 4fa2177abd9f1408eb76dfcca99c82da,
         type: 3}
       propertyPath: m_Name

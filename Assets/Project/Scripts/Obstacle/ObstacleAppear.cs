@@ -8,8 +8,10 @@ namespace GGJ20.Obstacle {
     {
         [Inject]
         GGJ20.PathFinding.PathFindingManager pathFindingManager;
+        
         void OnEnable()
         {
+            Debug.Assert(gameObject.layer == LayerMask.NameToLayer("Obstacle"));
             UpdatePathFinding();
         }
         void OnDisable()
@@ -17,7 +19,7 @@ namespace GGJ20.Obstacle {
             UpdatePathFinding();
         }
         void UpdatePathFinding() {
-            pathFindingManager.Refresh();
+            pathFindingManager.TriggerRefresh();
         }
     }
 }

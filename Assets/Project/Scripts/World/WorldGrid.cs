@@ -22,6 +22,7 @@ namespace GGJ20.World
         {
             Axis, TileCenter
         }
+        public enum Pattern { Light, Dark }
         public Vector2 WorldToGrid(Vector3 pos, SnapMode snapMode = SnapMode.None)
         {
             pos = transform.InverseTransformPoint(pos);
@@ -64,7 +65,10 @@ namespace GGJ20.World
             pos = transform.TransformPoint(pos);
             return pos * scale;
         }
-
+        public Pattern GridPattern(Vector2 pos)
+        {
+            return (Pattern)Mathf.Abs((((int)pos.x + (int)pos.y) % 2));
+        }
         public bool IsInGrid(Vector2 gridPos)
         {
             return gridPos.x > topLeft.x && gridPos.x < bottomRight.x

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
+  m_Name: Wall
+  m_EditorClassIdentifier: 
+  Art: {fileID: -3822707036027964660, guid: 95c98c8637ad1004891d5f022edcadb7, type: 3}
+  ManaCost: 1
+  Spell:
+    hits:
+    - type: 1
+      time: 0
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 5
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 1
+      time: 0.25
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 4.75
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000100010000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 1
+      time: 0.5
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 4.5
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00010000000100
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000

@@ -6,10 +6,8 @@ using Pathfinding;
 namespace GGJ20.PathFinding
 {
     public class PathFindingManager : MonoBehaviour {
-        [SerializeField]
-        private Vector2Int bgSize = Vector2Int.zero;
-        [SerializeField]
-        private float nodeSize = 0.2f;
+        private bool dirty;
+
         void Start() {
             // CreatePath();
 
@@ -19,12 +17,8 @@ namespace GGJ20.PathFinding
 
             // Setup a grid graph with some values
 
-            Vector2Int size = GetGridSize();
-
             gg.center = new Vector3(0, 0, 0);
 
-            // Updates internal size from the above values
-            gg.SetDimensions(size.x, size.y, nodeSize);
 
             // Scans all graphs
             AstarPath.active.Scan();
@@ -33,20 +27,16 @@ namespace GGJ20.PathFinding
             gg.collision.diameter = 0.2f;
         }
 
-        public void Refresh() {
-            AstarPath.active.Scan();
+        public void TriggerRefresh() {
+            dirty = true;
         }
-
-        private Vector2Int GetGridSize()
+        private void LateUpdate()
         {
-            Vector2Int size = new Vector2Int(200, 100);
-            if(bgSize.x > 0.01f) {
-                size.x = bgSize.x;
+            if(dirty)
+            {
+                AstarPath.active.Scan();
+                dirty = false;
             }
-            if(bgSize.y > 0.01f) {
-                size.y = bgSize.y;
-            }
-            return size;
         }
 
         private void CreatePath()
