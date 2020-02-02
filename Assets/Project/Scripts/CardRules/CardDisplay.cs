@@ -35,10 +35,11 @@ namespace GGJ20.CardRules
         private bool listenForMana;
         private bool dragging;
 
+        [Inject]
         private void Init()
         {
-            if (Card != null)
-                SetCard(Card);
+            //if (Card != null)
+            //    SetCard(Card);
 
             button.onClick.AddListener(OnSelected);
         }

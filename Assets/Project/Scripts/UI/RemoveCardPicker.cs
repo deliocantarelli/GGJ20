@@ -23,11 +23,13 @@ namespace GGJ20.UI
 
         protected override void OnInit()
         {
-            this.scene.CardPicked += CardToRemovePicked;
+            gameObject.SetActive(false);
+            this.scene.CardPicked += CardToAddPicked;
         }
 
-        private void CardToRemovePicked(Card obj)
+        private void CardToAddPicked(Card obj)
         {
+            gameObject.SetActive(true);
             Show();
         }
     }

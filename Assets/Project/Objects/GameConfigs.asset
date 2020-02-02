@@ -33,5 +33,5 @@ MonoBehaviour:
   gameConfigs:
     Floors:
     - Game
-    - Game 1
+    - Game 2
     MainMenu: Menu

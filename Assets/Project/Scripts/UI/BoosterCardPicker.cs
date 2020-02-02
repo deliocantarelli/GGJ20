@@ -22,10 +22,12 @@ namespace GGJ20.UI
         }
         protected override void OnInit()
         {
+            gameObject.SetActive(false);
             this.scene.BattleOver += OnBattleOver;
         }
         private void OnBattleOver(GameResult obj)
         {
+            gameObject.SetActive(true);
             Show();
         }
     }

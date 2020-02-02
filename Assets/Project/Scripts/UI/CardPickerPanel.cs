@@ -61,7 +61,13 @@ namespace GGJ20.UI
 
         public void OnSelected(CardDisplay cardDisplay)
         {
-            CardPicked(cardDisplay);
+            cg.interactable = false;
+            transform.DOMoveY(-500, .5f).SetRelative()
+                .OnComplete(() =>
+            {
+                gameObject.SetActive(false);
+                CardPicked(cardDisplay);
+            });
         }
 
         protected abstract void CardPicked(CardDisplay cardDisplay);

@@ -16,10 +16,12 @@ MonoBehaviour:
   ManaCost: 3
   Spell:
     hits:
-    - time: 0
+    - type: 0
+      time: 0
       damage: 1
       repeats: 2
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -29,4 +31,3 @@ MonoBehaviour:
         - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
-  HitElSprite: {fileID: 0}
