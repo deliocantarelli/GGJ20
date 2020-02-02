@@ -14,11 +14,15 @@ namespace GGJ20.Battery {
     public class BatteryController : MonoBehaviour {
         [Inject]
         private GameTargets targets;
-        private Targetable targetable;
+        [Inject]
+        private BatteryManager batteryManager;
+        public delegate void HealthChanged(BatteryController battery);
+        public event HealthChanged onHealthChanged;
+        public Targetable targetable;
         private HitChecker hitChecker = new HitChecker();
         public event Action BatteryFilled;
         [SerializeField]
-        private int maxHealth = 10;
+        public int maxHealth = 10;
         [SerializeField]
         private Slider slider;
         private bool filled;
@@ -31,13 +35,19 @@ namespace GGJ20.Battery {
             OnHealthChanged();
         }
 
+        public void RegisterOnHealthChanged(HealthChanged healthChangedEvent) {
+            onHealthChanged += healthChangedEvent;
+        }
+
         private void OnHealthChanged()
         {
             slider.value = targetable.Life / (float)maxHealth;
+            onHealthChanged?.Invoke(this);
         }
 
         private void RegisterBattery() {
             targets.RegisterBattery(targetable);
+            batteryManager.AddBattery(this);
         }
 
         private void OnTargetDestroyed() {
