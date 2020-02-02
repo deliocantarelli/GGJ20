@@ -26583,7 +26583,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[1].enemy
       value: 
-      objectReference: {fileID: 11400000, guid: 82bb0f920d5844bd4bb2058d074ecd1f,
+      objectReference: {fileID: 11400000, guid: 439dd8a6391b7f74c8cdf9b466233c8b,
         type: 2}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
@@ -26646,6 +26646,21 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[1].quantity.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[0].startToSpawnTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[0].spawnInterval
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[1].spawnInterval
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8160280439684174686, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
