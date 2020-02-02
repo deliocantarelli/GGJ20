@@ -7,7 +7,7 @@ namespace GGJ20.Enemy {
     public class EnemySettings : ScriptableObject {
         public GameObject prefab;
         public float attackTimeDelay = 1;
-        public float damage = 1;
+        public int damage = 1;
         public float speed = 1;
         public int life = 1;
     }

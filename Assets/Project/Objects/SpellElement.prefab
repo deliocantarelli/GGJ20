@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 8700369111871415521}
   - component: {fileID: 5394525551691339213}
   - component: {fileID: 9197039077691610665}
+  - component: {fileID: 8272308203597640024}
+  - component: {fileID: 74219724351184179}
+  - component: {fileID: 3367009067615413247}
   m_Layer: 5
   m_Name: SpellElement
   m_TagString: Untagged
@@ -52,6 +55,7 @@ MonoBehaviour:
   sprite: {fileID: 9197039077691610665}
   defaultSprite: {fileID: 8334651344603559088, guid: 1ce1cd4f5b2a4cc4c9e50d0fabbd3dcc,
     type: 3}
+  col: {fileID: 8272308203597640024}
 --- !u!212 &9197039077691610665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +94,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 8334651344603559088, guid: 1ce1cd4f5b2a4cc4c9e50d0fabbd3dcc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,3 +107,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8272308203597640024
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.75}
+    newSize: {x: 0.5, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
+--- !u!114 &74219724351184179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3192e24f3cf0429fa5726daca259a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowMultipleTriggers: 1
+  el: {fileID: 5394525551691339213}
+--- !u!114 &3367009067615413247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec891d680861b54eb03185fc8c4b32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowMultipleTriggers: 1
+  el: {fileID: 5394525551691339213}
