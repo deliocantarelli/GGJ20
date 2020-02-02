@@ -6,6 +6,7 @@ using UnityEngine;
 using Pathfinding;
 using GGJ20.Target;
 using GGJ20.World;
+using UnityEngine.UI;
 
 namespace GGJ20.Enemy
 {
@@ -16,12 +17,14 @@ namespace GGJ20.Enemy
         public EnemySettings settings;
         [SerializeField]
         public float changeTargetDelay = 1;
+        [SerializeField]
+        private Slider slider;
         private Transform target;
         private AIDestinationSetter aiMovement;
         private AILerp aILerp;
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         private int currentLife = 0;
-        private HitChecker hitChecker;
+        private HitChecker hitChecker = new HitChecker();
         public bool isAlive {get{ return currentLife <= 0; }}
 
         void Start() {
@@ -29,11 +32,14 @@ namespace GGJ20.Enemy
             aILerp = GetComponent<AILerp>();
 
             stateMachine.Begin(this);
+
+            Setup(settings);
         }
 
         void Setup(EnemySettings enemySettings) {
             settings = enemySettings;
             aILerp.speed = settings.speed;
+            currentLife = settings.life;
         }
 
         void OnDestroy()
@@ -65,7 +71,8 @@ namespace GGJ20.Enemy
 
         public void Damage(int damage) {
             currentLife -= damage;
-            if(currentLife <= 0) {
+            slider.value = currentLife / (float)settings.life;
+            if (currentLife <= 0) {
                 Die();
             }
         }

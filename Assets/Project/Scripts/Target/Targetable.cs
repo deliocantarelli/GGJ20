@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 namespace GGJ20.Target {
@@ -10,10 +11,13 @@ namespace GGJ20.Target {
 
         [SerializeField]
         private int life = 5;
+        private bool invulnerable;
+
+        public int Life { get { return life; } }
         public bool isAlive {get { return life > 0; }}
 
         public void DealDamage(int damage) {
-            if(!isAlive) {
+            if(!isAlive || invulnerable) {
                 return;
             }
             life -= damage;
@@ -24,6 +28,8 @@ namespace GGJ20.Target {
         }
         public void Heal(int value)
         {
+            if (invulnerable)
+                return;
             life += value;
             TriggerHealthChanged();
         }
@@ -34,7 +40,7 @@ namespace GGJ20.Target {
         public void RemoveOnTargetDestroyed(TargetDestroyed callback) {
             targetDestroyed -= callback;
         }
-        public void RegisterOnTargetDamaged(TargetHealthChanged callback) {
+        public void RegisterOnHealthChanged(TargetHealthChanged callback) {
             targetHealthChanged += callback;
         }
         public void RemoveOnTargetDamaged(TargetHealthChanged callback) {
@@ -44,6 +50,12 @@ namespace GGJ20.Target {
             Debug.Log("target destroyed");
             targetDestroyed?.Invoke();
         }
+
+        internal void SetInvulnerable()
+        {
+            invulnerable = true;
+        }
+
         private void TriggerHealthChanged() {
             targetHealthChanged?.Invoke();
         }

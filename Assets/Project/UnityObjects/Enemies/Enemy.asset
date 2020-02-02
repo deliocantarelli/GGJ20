@@ -16,4 +16,4 @@ MonoBehaviour:
   attackTimeDelay: 1
   damage: 1
   speed: 0.5
-  life: 1
+  life: 5
