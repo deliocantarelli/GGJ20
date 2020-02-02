@@ -60,6 +60,10 @@ namespace GGJ20.Spawner {
             if(config == null) {
                 return;
             }
+            if(currentTimeToWait > 0) {
+                currentTimeToWait -= Time.deltaTime;
+                return;
+            }
             ellapsedTime += Time.deltaTime;
 
             Dictionary<EnemySettings, int> spawns = SpawnEnemies(enemiesConfig);
