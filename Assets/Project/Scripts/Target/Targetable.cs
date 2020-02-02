@@ -35,7 +35,6 @@ namespace GGJ20.Target {
             onTargetDamaged -= callback;
         }
         private void TriggerTargetDestroyed() {
-            Debug.Log("target destroyed");
             onTargetDestroyed?.Invoke();
         }
         private void TriggerTargetDamaged() {

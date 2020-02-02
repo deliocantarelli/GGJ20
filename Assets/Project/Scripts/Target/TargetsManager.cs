@@ -29,6 +29,9 @@ namespace GGJ20.Target
                     target = currentTarget;
                 }
             }
+            if (target == null) {
+                return null;
+            }
             return target.transform;
         }
     }

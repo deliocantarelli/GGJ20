@@ -22,14 +22,22 @@ namespace GGJ20.Enemy
         private int currentLife = 0;
         public bool isAlive {get{ return currentLife <= 0; }}
 
+        public class Factory : PlaceholderFactory<UnityEngine.Object, EnemyController>
+        {
+        }
+
         void Start() {
             aiMovement = GetComponent<AIDestinationSetter>();
             aILerp = GetComponent<AILerp>();
 
-            aILerp.speed = settings.speed;
-
             stateMachine.Begin(this);
         }
+
+        void Setup(EnemySettings enemySettings) {
+            settings = enemySettings;
+            aILerp.speed = settings.speed;
+        }
+
         void OnDestroy()
         {
             stateMachine.OnDestroy();

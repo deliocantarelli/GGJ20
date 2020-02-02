@@ -2,10 +2,13 @@ using UnityEngine;
 using Zenject;
 using GGJ20.Battery;
 using GGJ20.Target;
+using GGJ20.Spawner;
 
 namespace GGJ20.Installers {
     public class BoardFlowInstaller : MonoInstaller
     {
+        [SerializeField]
+        private LevelSettings levelSettings;
         public override void InstallBindings()
         {
             Container.Bind<TargetsManager>().FromNewComponentOnNewGameObject()
@@ -15,6 +18,8 @@ namespace GGJ20.Installers {
             Container.Bind<BatteryManager>().FromNewComponentOnNewGameObject()
                 .UnderTransformGroup("Logic")
                 .AsSingle().NonLazy();
+            Container.Bind<LevelSettings>().FromInstance(levelSettings)
+                .AsSingle();
         }
     }
 }
