@@ -25461,31 +25461,6 @@ Transform:
   m_Father: {fileID: 888726230}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &870823597 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8160280440632677832, guid: 96886e79280147f4aa5945b73a8cc104,
-    type: 3}
-  m_PrefabInstance: {fileID: 8160280439684174684}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &870823598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870823597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26efa4c9556a2274faa8083fdc62c3ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cards:
-  - {fileID: 11400000, guid: c6b858c8ce6ffda4f9ec61a4d4106f9a, type: 2}
-  - {fileID: 11400000, guid: c6b858c8ce6ffda4f9ec61a4d4106f9a, type: 2}
-  - {fileID: 11400000, guid: c6b858c8ce6ffda4f9ec61a4d4106f9a, type: 2}
-  - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
-  - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
-  - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
 --- !u!1 &888726229
 GameObject:
   m_ObjectHideFlags: 0
@@ -26052,16 +26027,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneContext - UI
       objectReference: {fileID: 0}
-    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
-        type: 3}
-      propertyPath: _monoInstallers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
-        type: 3}
-      propertyPath: _monoInstallers.Array.data[1]
-      value: 
-      objectReference: {fileID: 870823598}
     - target: {fileID: 8160280440632677835, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: m_LocalPosition.x
