@@ -10,16 +10,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
-  m_Name: Fireball-Big
+  m_Name: Explode
   m_EditorClassIdentifier: 
   Art: {fileID: -561693672059696128, guid: 7c80047081b2c594f99b201b332ed79f, type: 3}
-  ManaCost: 5
+  ManaCost: 2
   Spell:
     hits:
     - type: 0
-      time: 3
+      time: 0
       damage: 1
-      repeats: 3
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 0
+      time: 0.5
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000101010000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 0
+      time: 1
+      damage: 1
+      repeats: 0
       repeatInterval: 1
       wallDuration: 1
       tileData:

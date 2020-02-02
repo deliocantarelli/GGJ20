@@ -1,11 +1,16 @@
 
 
+using GGJ20.Game;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 public class GameResultUI : MonoBehaviour {
     public GameObject lostNode;
     public GameObject winNode;
+
+    [Inject]
+    private GameStateController controller;
     
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -20,6 +25,7 @@ public class GameResultUI : MonoBehaviour {
         }
     }
     public void OnStartButton() {
+
         SceneManager.LoadScene("UI Tests");
     }
 }
