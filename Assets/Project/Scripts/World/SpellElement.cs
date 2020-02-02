@@ -74,7 +74,7 @@ namespace GGJ20.World
 
         public void TryHit(EnemyController enemy)
         {
-            throw new NotImplementedException();
+            enemy.TryHit(hit);
         }
 
         public class Pool : MonoMemoryPool<Spell, Spell.Hit,  Vector2Int, SpellElement>
