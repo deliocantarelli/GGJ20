@@ -56,7 +56,7 @@ namespace GGJ20.Enemy
             stateMachine.OnCollisionEnter2D(other);
         }
 
-        void Damage(int damage) {
+        public void Damage(int damage) {
             currentLife -= damage;
             if(currentLife <= 0) {
                 Die();

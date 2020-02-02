@@ -1,4 +1,5 @@
 ﻿using GGJ20.CardRules;
+using GGJ20.Common;
 using GGJ20.Utils;
 using System;
 using System.Collections.Generic;
@@ -22,24 +23,26 @@ namespace GGJ20.World
             public int damage = 1;
             public int repeats;
             public float repeatInterval = 1;    
-            public List<Vector2Int> locations;
+            public List<Vector2Int> Locations { get { return tileData.GetLocations(new Vector2Int(3,3)); } }
+
+            public TileData tileData;
 
             public Hit()
             {
 
             }
-            public Hit(float time, int damage, int repeats, float repeatInterval, List<Vector2Int> locations)
+            public Hit(float time, int damage, int repeats, float repeatInterval, TileData tileData)
             {
                 this.time = time;
                 this.damage = damage;
                 this.repeats = repeats;
                 this.repeatInterval = repeatInterval;
-                this.locations = locations;
+                this.tileData = tileData;
             }
 
             public Hit WithTime(float t)
             {
-                return new Hit(t, damage, 0, 0, locations);
+                return new Hit(t, damage, 0, 0, tileData);
             }
         }
 
@@ -92,7 +95,7 @@ namespace GGJ20.World
 
             foreach (var hit in spawnNow)
             {
-                foreach (var pos in hit.locations)
+                foreach (var pos in hit.Locations)
                 {
                     spellElsPool.Spawn(card, pos + epicenter);
                 }

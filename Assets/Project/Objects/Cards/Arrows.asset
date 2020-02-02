@@ -18,11 +18,67 @@ MonoBehaviour:
     hits:
     - time: 0
       damage: 1
-      repeats: 3
+      repeats: 0
       repeatInterval: 1
-      locations:
-      - {x: 0, y: 0}
-      - {x: 1, y: 0}
-      - {x: -1, y: 0}
-      - {x: -2, y: 0}
-      - {x: 2, y: 0}
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000101010000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - time: 0.5
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000100000000
+        - row: 00000001000000
+        - row: 00000000010000
+        - row: 00000000000000
+        - row: 00000000000000
+    - time: 1
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000001000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - time: 1.5
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000010000
+        - row: 00000001000000
+        - row: 00000100000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - time: 2
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000101010000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+  HitElSprite: {fileID: 0}

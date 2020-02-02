@@ -40,7 +40,7 @@ namespace GGJ20.World
             c.a = alpha;
             sprite.color = c;
         }
-
+        
         public class Pool : MonoMemoryPool<Card, Vector2Int, SpellElement>
         {
             protected override void Reinitialize(Card card, Vector2Int vec, SpellElement item)
