@@ -2,6 +2,7 @@
 using UnityEngine;
 using Zenject;
 using GGJ20.Target;
+using UnityEngine.SceneManagement;
 
 namespace GGJ20.Battery {
     [RequireComponent(typeof(Targetable))]
@@ -20,6 +21,8 @@ namespace GGJ20.Battery {
         }
 
         private void OnTargetDestroyed() {
+            GameResult.Result = false;
+            SceneManager.LoadScene("Endgame");
             targets.RemoveBattery(targetable);
         }
     }
