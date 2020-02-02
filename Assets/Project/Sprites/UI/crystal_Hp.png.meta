@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 0448adf5a1234a64087670c589256e54
+guid: 896693dbaa4c94722baa0037482bbd51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3840728530999671940
-    second: crystals_0
+      213: -7974091519198464969
+    second: crystal_Hp_0
   - first:
-      213: -3617158717195926810
-    second: crystals_1
+      213: -2036277559207742115
+    second: crystal_Hp_1
   - first:
-      213: -999122272813794138
-    second: crystals_2
-  - first:
-      213: 2549434017906985729
-    second: crystals_3
+      213: -5389187835930412266
+    second: crystal_Hp_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crystals_0
+      name: crystal_Hp_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 51
-        height: 68
+        y: 3
+        width: 15
+        height: 3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c71f8ff320d4530800000000000000
-      internalID: 3840728530999671940
+      spriteID: d55b25b3950bdb3e0800000000000000
+      internalID: -2036277559207742115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crystals_1
+      name: crystal_Hp_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 0
-        width: 51
-        height: 68
+        x: 1
+        y: 1
+        width: 13
+        height: 1
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,50 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e2445daf454dcdc0800000000000000
-      internalID: -3617158717195926810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: crystals_2
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 51
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6acb0c126976222f0800000000000000
-      internalID: -999122272813794138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: crystals_3
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 0
-        width: 51
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10b84a75bb8616320800000000000000
-      internalID: 2549434017906985729
+      spriteID: 61bf2836732c535b0800000000000000
+      internalID: -5389187835930412266
       vertices: []
       indices: 
       edges: []

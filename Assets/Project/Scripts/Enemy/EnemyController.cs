@@ -19,7 +19,7 @@ namespace GGJ20.Enemy
         [SerializeField]
         public float changeTargetDelay = 1;
         [SerializeField]
-        private Slider slider;
+        private Image imageSlider;
         private Transform target;
         private AIDestinationSetter aiMovement;
         private AILerp aILerp;
@@ -76,7 +76,7 @@ namespace GGJ20.Enemy
 
         public void Damage(int damage) {
             currentLife -= damage;
-            slider.value = currentLife / (float)settings.life;
+            imageSlider.fillAmount = currentLife / (float)settings.life;
             if (currentLife <= 0) {
                 Die();
             }
