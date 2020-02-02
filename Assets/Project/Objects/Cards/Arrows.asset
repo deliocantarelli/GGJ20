@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
   m_Name: Arrows
   m_EditorClassIdentifier: 
-  Art: {fileID: 21300000, guid: 665b099e9d7130a4db0ebe4ac53bbd8f, type: 3}
+  Art: {fileID: 21300000, guid: 65637a29817aa4c6e87d8e425fc1969a, type: 3}
+  ShapeArt: {fileID: 21300000, guid: f708717d145014360b1912df74cdea3b, type: 3}
   ManaCost: 2
   Spell:
     hits:
-    - time: 0
+    - type: 0
+      time: 0
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -29,10 +32,12 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
-    - time: 0.5
+    - type: 0
+      time: 0.5
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -42,10 +47,12 @@ MonoBehaviour:
         - row: 00000000010000
         - row: 00000000000000
         - row: 00000000000000
-    - time: 1
+    - type: 0
+      time: 1
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -55,10 +62,12 @@ MonoBehaviour:
         - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
-    - time: 1.5
+    - type: 0
+      time: 1.5
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -68,10 +77,12 @@ MonoBehaviour:
         - row: 00000100000000
         - row: 00000000000000
         - row: 00000000000000
-    - time: 2
+    - type: 0
+      time: 2
       damage: 1
       repeats: 0
       repeatInterval: 1
+      wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
@@ -81,4 +92,4 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
-  HitElSprite: {fileID: 0}
+  type: 0

@@ -7,7 +7,9 @@ namespace GGJ20.CardRules
     public class Card : ScriptableObject
     {
         public Sprite Art;
+        public Sprite ShapeArt;
         public int ManaCost;
         public Spell.Description Spell;
+        public GGJ20.World.Spell.Hit.Type type;
     }
 }
