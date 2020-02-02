@@ -26,10 +26,14 @@ namespace GGJ20.Enemy
             aiMovement = GetComponent<AIDestinationSetter>();
             aILerp = GetComponent<AILerp>();
 
-            aILerp.speed = settings.speed;
-
             stateMachine.Begin(this);
         }
+
+        void Setup(EnemySettings enemySettings) {
+            settings = enemySettings;
+            aILerp.speed = settings.speed;
+        }
+
         void OnDestroy()
         {
             stateMachine.OnDestroy();
