@@ -25,6 +25,7 @@ namespace GGJ20.Spawner {
         private float currenDelay;
         private float currentTimeToWait;
         private bool started;
+        private float ellapsedTime = 0;
 
         [Inject]
         public void Init(LevelSettings settings) {
@@ -48,6 +49,9 @@ namespace GGJ20.Spawner {
             float random = UnityEngine.Random.Range(0, max);
             float amount = 0;
             foreach(WaveEnemy enemy in enemies) {
+                if(ellapsedTime < enemy.startToSpawnTime) {
+                    continue;
+                }
                 if(random <= amount + enemy.probability) {
                     if(!spawns.ContainsKey(enemy.enemy)) {
                         spawns.Add(enemy.enemy, 1);
@@ -66,6 +70,7 @@ namespace GGJ20.Spawner {
             if(config == null) {
                 return;
             }
+            ellapsedTime += Time.deltaTime;
             currenDelay += Time.deltaTime;
             if(currenDelay > currentTimeToWait) {
                 Spawn();

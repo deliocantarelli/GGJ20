@@ -9,5 +9,6 @@ namespace GGJ20.Spawner{
         public EnemySettings enemy;
         public Vector2Int quantity = new Vector2Int(1, 1);
         public float probability = -1;
+        public float startToSpawnTime = 0;
     }
 }
