@@ -13,6 +13,8 @@ namespace GGJ20.Spawner {
     public class SpawnerController : MonoBehaviour {
         [Inject]
         LevelSettings levelSettings;
+        [Inject]
+        EnemyController.Factory factory;
         private WaveEnemy[] enemiesConfig;
         private Vector2Int maxQuantity;
         private SpawnerSettings config;
@@ -102,7 +104,7 @@ namespace GGJ20.Spawner {
         }
 
         private void SpawnEnemy(EnemySettings enemy) {
-            GameObject enemyObject = Instantiate(enemy.prefab);
+            EnemyController enemyObject = factory.Create(enemy.prefab);
             enemyObject.transform.position = transform.position;
         }
     }
