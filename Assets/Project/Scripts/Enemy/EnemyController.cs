@@ -47,7 +47,7 @@ namespace GGJ20.Enemy
         public void Setup(EnemySettings enemySettings) {
             settings = enemySettings;
             aILerp = GetComponent<AILerp>();
-            aILerp.speed = settings.speed;
+            aILerp.speed = settings.speed + UnityEngine.Random.Range(0, settings.speed / 10);
             currentLife = settings.life;
             sceneController.BattleOver += BattleOver;
         }
