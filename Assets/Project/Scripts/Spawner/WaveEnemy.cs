@@ -12,5 +12,7 @@ namespace GGJ20.Spawner{
         public float spawnInterval = 10;
         [NonSerialized]
         public float currentWait = 0;
+        [NonSerialized]
+        public bool started = false;
     }
 }
