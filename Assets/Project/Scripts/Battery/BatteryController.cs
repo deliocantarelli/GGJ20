@@ -63,6 +63,7 @@ namespace GGJ20.Battery {
                 BatteryFilled?.Invoke();
 
                 targetable.SetInvulnerable();
+                targets.RemoveBattery(targetable);
             }
         }
         private void Update()

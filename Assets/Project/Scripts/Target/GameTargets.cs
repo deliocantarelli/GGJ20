@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace GGJ20.Target {
     public class GameTargets
@@ -16,6 +17,11 @@ namespace GGJ20.Target {
         public void RemoveBattery(Targetable target) {
             targets.Remove(target);
             Targets = targets.ToArray();
+
+            if(targets.Count == 0) {
+                GameResult.Result = true;
+                SceneManager.LoadScene("Endgame");
+            }
         }
     }
 }
