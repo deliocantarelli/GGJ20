@@ -15,6 +15,7 @@ namespace GGJ20.Battery {
         private GameTargets targets;
         private Targetable targetable;
         private HitChecker hitChecker = new HitChecker();
+        public event Action BatteryFilled;
         [SerializeField]
         private int maxHealth = 10;
         [SerializeField]
@@ -56,6 +57,8 @@ namespace GGJ20.Battery {
             if(targetable.Life >= maxHealth && !filled)
             {
                 filled = true;
+                BatteryFilled?.Invoke();
+
                 targetable.SetInvulnerable();
             }
         }
