@@ -39,6 +39,9 @@ namespace GGJ20.Spawner {
             foreach(WaveEnemy enemy in enemies) {
                 if(ellapsedTime < enemy.startToSpawnTime) {
                     continue;
+                } else if (!enemy.started) {
+                    enemy.currentWait = float.PositiveInfinity;
+                    enemy.started = true;
                 }
                 enemy.currentWait += Time.deltaTime;
                 if(enemy.currentWait > enemy.spawnInterval) {
