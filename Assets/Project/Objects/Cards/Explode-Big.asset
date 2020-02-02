@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Explode-Big
   m_EditorClassIdentifier: 
   Art: {fileID: -561693672059696128, guid: 7c80047081b2c594f99b201b332ed79f, type: 3}
+  ShapeArt: {fileID: 21300000, guid: 94b42c2b646f64d09ad8f156a9becc88, type: 3}
   ManaCost: 3
   Spell:
     hits:
@@ -76,3 +77,4 @@ MonoBehaviour:
         - row: 00010101010100
         - row: 00000101010000
         - row: 00000001000000
+  Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}

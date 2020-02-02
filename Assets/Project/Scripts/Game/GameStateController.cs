@@ -13,7 +13,11 @@ namespace GGJ20.Game
         [Serializable]
         public class Configs
         {
+            public enum LevelMode { Regex, List}
+
+            public LevelMode levelMode;
             public string[] Floors;
+            public string regex;
             public string MainMenu;
         }
         [Inject]
@@ -36,7 +40,20 @@ namespace GGJ20.Game
 
         public void GoToFloorScene()
         {
-            sceneLoader.LoadScene(configs.Floors[CurrentRun.Floor]);
+            string sceneName;
+
+            switch (configs.levelMode)
+            {
+                case Configs.LevelMode.Regex:
+                    sceneName = string.Format(configs.regex, CurrentRun.Floor + 1);
+                    break;
+                case Configs.LevelMode.List:
+                    sceneName = configs.Floors[CurrentRun.Floor];
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
+            sceneLoader.LoadScene(sceneName);
         }
         internal void AdvanceAndLoad()
         {

@@ -22,7 +22,12 @@ namespace GGJ20.CardRules
         {
             cg = GetComponent<CanvasGroup>();
             card = GetComponent<CardDisplay>();
+            this.player = player;
             player.UsableManaChanged += CheckPlayable;
+        }
+
+        private void Start()
+        {
             CheckPlayable(player);
         }
         private void OnDestroy()

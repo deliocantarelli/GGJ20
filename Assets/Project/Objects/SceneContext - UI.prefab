@@ -43,10 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d0d867b58f644b8be75e7bfef49937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usePercentage: 0
   enemies: []
   waitTime: {x: 0, y: 0}
-  enemiesQuantity: {x: 0, y: 0}
 --- !u!1 &8160280440632677832
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +104,7 @@ MonoBehaviour:
   - {fileID: 8160280439684174686}
   - {fileID: 2177888049204262752}
   - {fileID: 6584990906629998436}
+  - {fileID: 6751553295813333828}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:

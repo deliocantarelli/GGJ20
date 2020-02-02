@@ -53,8 +53,16 @@ namespace GGJ20.Battery {
             targetable = GetComponent<Targetable>();
             targetable.RegisterOnTargetDestroyed(OnTargetDestroyed);
             targetable.RegisterOnHealthChanged(OnHealthChanged);
+
+
+            foreach (var node in batteriesNodes)
+            {
+                node.gameObject.SetActive(false);
+            }
+
             RegisterBattery();
             OnHealthChanged();
+
         }
 
         public void RegisterOnHealthChanged(HealthChanged healthChangedEvent) {
