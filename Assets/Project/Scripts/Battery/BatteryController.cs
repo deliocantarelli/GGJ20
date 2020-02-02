@@ -7,7 +7,7 @@ namespace GGJ20.Battery {
     [RequireComponent(typeof(Targetable))]
     public class BatteryController : MonoBehaviour {
         [Inject]
-        private GameBatteries batteries;
+        private GameTargets targets;
         private Targetable targetable;
         private void Start() {
             targetable = GetComponent<Targetable>();
@@ -16,11 +16,11 @@ namespace GGJ20.Battery {
         }
 
         private void RegisterBattery() {
-            batteries.RegisterBattery(this);
+            targets.RegisterBattery(targetable);
         }
 
         private void OnTargetDestroyed() {
-            batteries.RemoveBattery(this);
+            targets.RemoveBattery(targetable);
         }
     }
 }

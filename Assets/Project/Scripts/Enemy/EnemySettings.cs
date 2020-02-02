@@ -8,6 +8,7 @@ namespace GGJ20.Enemy {
         public float attackTimeDelay = 1;
         public float damage = 1;
         public float speed = 1;
+        public int life = 1;
     }
 
 }

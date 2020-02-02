@@ -4,13 +4,14 @@ using Zenject;
 using GGJ20.Battery;
 using UnityEngine;
 using Pathfinding;
+using GGJ20.Target;
 
 namespace GGJ20.Enemy
 {
     [RequireComponent(typeof(AIDestinationSetter))]
     public class EnemyController : MonoBehaviour {
         [Inject]
-        private BatteryManager batteryManager;
+        private TargetsManager targetsManager;
         public EnemySettings settings;
         [SerializeField]
         public float changeTargetDelay = 1;
@@ -18,10 +19,14 @@ namespace GGJ20.Enemy
         private AIDestinationSetter aiMovement;
         private AILerp aILerp;
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
+        private int currentLife = 0;
+        public bool isAlive {get{ return currentLife <= 0; }}
 
         void Start() {
             aiMovement = GetComponent<AIDestinationSetter>();
             aILerp = GetComponent<AILerp>();
+
+            aILerp.speed = settings.speed;
 
             stateMachine.Begin(this);
         }
@@ -30,7 +35,7 @@ namespace GGJ20.Enemy
             stateMachine.OnDestroy();
         }
         public Transform GetClosestBattery() {
-            Transform targetPosition = batteryManager.GetClosestBattery(transform);
+            Transform targetPosition = targetsManager.GetClosestTarget(transform);
             return targetPosition;
         }
         public void SetTargetMovement(Transform targetPosition)
@@ -49,6 +54,17 @@ namespace GGJ20.Enemy
         void OnCollisionEnter2D(Collision2D other)
         {
             stateMachine.OnCollisionEnter2D(other);
+        }
+
+        void Damage(int damage) {
+            currentLife -= damage;
+            if(currentLife <= 0) {
+                Die();
+            }
+        }
+
+        void Die() {
+            Destroy(gameObject);
         }
     }
 }
