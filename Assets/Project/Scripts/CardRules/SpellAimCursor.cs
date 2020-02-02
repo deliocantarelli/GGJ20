@@ -7,7 +7,7 @@ namespace GGJ20.CardRules
     public class SpellAimCursor : MonoBehaviour
     {
         [SerializeField]
-        private SpriteRenderer[] sprites;
+        private GameObject[] sprites;
 
         private Vector2[] offsets;
 
@@ -22,7 +22,7 @@ namespace GGJ20.CardRules
             offsets = new Vector2[sprites.Length];
             for (int i = 0; i < sprites.Length; i++)
             {
-                SpriteRenderer sprite = sprites[i];
+                GameObject sprite = sprites[i];
                 offsets[i] = sprite.transform.position;
             }
         }
@@ -34,14 +34,14 @@ namespace GGJ20.CardRules
         }
         public void Show()
         {
-            foreach(SpriteRenderer sprite in sprites) {
-                sprite.enabled = true;
+            foreach(GameObject sprite in sprites) {
+                sprite.SetActive(true);
             }
         }
         public void Hide()
         {
-            foreach(SpriteRenderer sprite in sprites) {
-                sprite.enabled = false;
+            foreach(GameObject sprite in sprites) {
+                sprite.SetActive(false);
             }
         }
 
@@ -50,7 +50,7 @@ namespace GGJ20.CardRules
             Vector2 position = grid.GridToWorld(gridPos + new Vector2(.5f, .5f));
             for (int i = 0; i < sprites.Length; i++)
             {
-                SpriteRenderer sprite = sprites[i];
+                GameObject sprite = sprites[i];
                 Vector2 offset = offsets[i];
                 sprite.transform.position = position + offset;
             }
