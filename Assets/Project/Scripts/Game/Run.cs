@@ -26,6 +26,7 @@ namespace GGJ20.Game
 
 
         private List<Card> deck;
+        public int Floor { get; set; }
 
         public IEnumerable<Card> CardsInDeck { get { return deck.AsEnumerable(); } }
 

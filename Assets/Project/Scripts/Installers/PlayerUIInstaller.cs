@@ -1,5 +1,7 @@
 using GGJ20.CardRules;
 using GGJ20.Game;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -24,11 +26,15 @@ namespace GGJ20.Installers
                 .WithGameObjectName("Player")
                 .UnderTransformGroup("Logic").AsSingle().NonLazy();
 
-            Container.Bind<PlayerLogic>().FromNewComponentOnNewGameObject()
+            Container.BindInterfacesAndSelfTo<PlayerController>().FromNewComponentOnNewGameObject()
                 .WithGameObjectName("Player Hand")
                 .UnderTransformGroup("Logic").AsSingle().NonLazy();
 
             Container.Bind<Deck>().AsSingle();
+
+            Container.Bind<IEnumerable<Card>>()
+                .FromResolveGetter<GameStateController>(c => c.CurrentRun.CardsInDeck)
+                .WhenInjectedInto<Deck>();
 
             Container.Bind<Card>().FromResolveGetter<Deck>(d => d.Draw())
                 .AsTransient()

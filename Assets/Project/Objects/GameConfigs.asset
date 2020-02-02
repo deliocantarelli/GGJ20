@@ -30,3 +30,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5d44e085549e5164cbdb432e587596bd, type: 2}
     - {fileID: 11400000, guid: 8a96f922879562842a324823c746126e, type: 2}
     - {fileID: 11400000, guid: 7cda8f7d355c0a24bbf1ff542bba50f9, type: 2}
+  gameConfigs:
+    Floors:
+    - Game
+    - Game 1

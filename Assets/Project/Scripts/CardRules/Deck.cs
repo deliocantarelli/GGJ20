@@ -9,7 +9,7 @@ namespace GGJ20.CardRules
         private List<Card> cards;
 
         [Inject]
-        private void Init(List<Card> cards)
+        private void Init(IEnumerable<Card> cards)
         {
             this.cards = new List<Card>(cards);
             Shuffle();

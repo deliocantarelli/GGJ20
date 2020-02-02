@@ -10,7 +10,7 @@ using Zenject;
 
 namespace GGJ20.Game
 {
-    public class PlayerLogic : MonoBehaviour
+    public class PlayerController : MonoBehaviour, ICardDisplayListener
     {
         private Player player;
         private Deck deck;

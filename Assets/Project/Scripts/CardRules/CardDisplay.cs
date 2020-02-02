@@ -18,7 +18,8 @@ namespace GGJ20.CardRules
         public Card Card { get; private set; }
         private Player player;
         [Inject]
-        private PlayerLogic playerHand;
+        private ICardDisplayListener playerHand;
+
 
         [SerializeField]
         private Button button;
@@ -28,6 +29,8 @@ namespace GGJ20.CardRules
         private Text manaCost;
         [SerializeField]
         private CanvasGroup cg;
+        [SerializeField]
+        private bool draggable;
 
 
         private bool dragging;
@@ -76,6 +79,8 @@ namespace GGJ20.CardRules
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (!draggable)
+                return;
             if (eventData.pointerId == 0 || eventData.pointerId == -1)
             {
                 dragging = true;

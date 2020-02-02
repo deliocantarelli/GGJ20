@@ -26,6 +26,7 @@ public class GameResultUI : MonoBehaviour {
     }
     public void OnStartButton() {
 
-        SceneManager.LoadScene("UI Tests");
+        controller.StartRun();
+        controller.GoToFloorScene();
     }
 }

@@ -11,6 +11,7 @@ namespace GGJ20.Installers {
                 .FromNewComponentOnNewGameObject()
                 .UnderTransform(transform)
                 .AsSingle();
+            Container.BindFactory<Run, Run.Factory>().AsSingle();
         }
     }
 }

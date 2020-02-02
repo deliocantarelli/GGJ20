@@ -8,9 +8,12 @@ public class GameConfigsInstaller : ScriptableObjectInstaller<GameConfigsInstall
 
     [SerializeField]
     private Run.Configs runConfigs;
+    [SerializeField]
+    private GameStateController.Configs gameConfigs;
     public override void InstallBindings()
     {
         Container.Bind<Run.Configs>().FromInstance(runConfigs);
+        Container.Bind<GameStateController.Configs>().FromInstance(gameConfigs);
     }
 
 }
