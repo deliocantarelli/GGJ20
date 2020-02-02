@@ -38,7 +38,6 @@ namespace GGJ20.UI{
                 currentLife += battery.targetable.Life;
                 maxLife += battery.maxHealth;
             }
-            Debug.Log("" + (currentLife / maxLife));
             image.fillAmount = currentLife / maxLife;
         }
 
