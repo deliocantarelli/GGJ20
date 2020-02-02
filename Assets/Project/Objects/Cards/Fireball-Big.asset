@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
-  m_Name: Fireball
+  m_Name: Fireball-Big
   m_EditorClassIdentifier: 
-  Art: {fileID: 8334651344603559088, guid: 1ce1cd4f5b2a4cc4c9e50d0fabbd3dcc, type: 3}
-  ManaCost: 3
+  Art: {fileID: -561693672059696128, guid: 7c80047081b2c594f99b201b332ed79f, type: 3}
+  ManaCost: 5

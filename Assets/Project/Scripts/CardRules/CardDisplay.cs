@@ -6,12 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
 namespace GGJ20.CardRules
 {
-    public class CardDisplay : MonoBehaviour
+    public class CardDisplay : MonoBehaviour, IBeginDragHandler, IDragHandler
     {
         public Card Card { get; private set; }
         private Player player;
@@ -27,6 +28,9 @@ namespace GGJ20.CardRules
         [SerializeField]
         private CanvasGroup cg;
 
+
+        private bool dragging;
+
         [Inject]
         private void Init(Card card, Player player)
         {
@@ -40,6 +44,7 @@ namespace GGJ20.CardRules
         {
             player.UsableManaChanged -= CheckPlayable;
         }
+
 
         public void SetCard(Card card)
         {
@@ -63,9 +68,31 @@ namespace GGJ20.CardRules
         }
 
 
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            if (eventData.pointerId == 0 || eventData.pointerId == -1)
+            {
+                dragging = true;
+                playerHand.OnSelected(this);
+            }
+        }
+        public void OnDrag(PointerEventData eventData)
+        { }
+
+
+        private void Update()
+        {
+            if (dragging && Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                dragging = false;
+                playerHand.OnConfirmed(this);
+            }
+        }
+
 
         public IEnumerator UsageAnimationCoroutine()
         {
+            cg.alpha = 1;
             Tween t = cg.DOFade(0, .3f).SetLoops(5, LoopType.Yoyo);
 
             yield return new WaitUntil(() => !t.IsPlaying());
@@ -75,6 +102,10 @@ namespace GGJ20.CardRules
             Tween t = cg.DOFade(1, .5f);
 
             yield return new WaitUntil(() => !t.IsPlaying());
+        }
+        public void ShowHeld()
+        {
+            cg.alpha = .5f;
         }
     }
 }

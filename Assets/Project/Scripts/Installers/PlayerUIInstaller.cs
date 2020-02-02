@@ -7,21 +7,25 @@ namespace GGJ20.Installers
     public class PlayerUIInstaller : MonoInstaller
     {
         [SerializeField]
-        private Transform LogicObjectsParent;
-        [SerializeField]
         private Player.Settings playerSettings;
+        [SerializeField]
+        private SpellAimController spellAimPrefab;
 
         public override void InstallBindings()
         {
             Container.Bind<Player.Settings>().FromInstance(playerSettings).AsSingle();
 
+            Container.Bind<SpellAimController>().FromComponentInNewPrefab(spellAimPrefab)
+                .UnderTransformGroup("UI")
+                .AsSingle();
+
             Container.Bind<Player>().FromNewComponentOnNewGameObject()
                 .WithGameObjectName("Player")
-                .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+                .UnderTransformGroup("Logic").AsSingle().NonLazy();
 
             Container.Bind<PlayerHandController>().FromNewComponentOnNewGameObject()
                 .WithGameObjectName("Player Hand")
-                .UnderTransform(LogicObjectsParent).AsSingle().NonLazy();
+                .UnderTransformGroup("Logic").AsSingle().NonLazy();
 
             Container.Bind<Deck>().AsSingle();
 

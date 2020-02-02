@@ -13,17 +13,25 @@ namespace GGJ20.CardRules
     {
         private Player player;
         private Deck deck;
+        private SpellAimController spellAim;
+
 
 
         [Inject]
-        private void Init(Player player, Deck deck)
+        private void Init(Player player, Deck deck, SpellAimController spellAim)
         {
             this.player = player;
             this.deck = deck;
+            this.spellAim = spellAim;
         }
 
 
         public void OnSelected(CardDisplay cardDisplay)
+        {
+            cardDisplay.ShowHeld();
+            spellAim.StartAiming(cardDisplay);
+        }
+        public void OnConfirmed(CardDisplay cardDisplay)
         {
             if (player.TryPlayCard(cardDisplay.Card))
             {
@@ -32,6 +40,7 @@ namespace GGJ20.CardRules
         }
         public void OnCardUsed(CardDisplay cardDisplay)
         {
+            spellAim.StopAiming();
             StartCoroutine(CardUseAndRestock(cardDisplay));
         }
 
@@ -44,5 +53,6 @@ namespace GGJ20.CardRules
 
             yield return cardDisplay.NewCardCoroutine();
         }
+
     }
 }
