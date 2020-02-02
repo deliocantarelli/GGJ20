@@ -28,13 +28,13 @@ namespace GGJ20.Enemy
 
         void Start() {
             aiMovement = GetComponent<AIDestinationSetter>();
-            aILerp = GetComponent<AILerp>();
 
             stateMachine.Begin(this);
         }
 
-        void Setup(EnemySettings enemySettings) {
+        public void Setup(EnemySettings enemySettings) {
             settings = enemySettings;
+            aILerp = GetComponent<AILerp>();
             aILerp.speed = settings.speed;
         }
 

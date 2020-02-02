@@ -106,6 +106,7 @@ namespace GGJ20.Spawner {
         private void SpawnEnemy(EnemySettings enemy) {
             EnemyController enemyObject = factory.Create(enemy.prefab);
             enemyObject.transform.position = transform.position;
+            enemyObject.Setup(enemy);
         }
     }
 }
