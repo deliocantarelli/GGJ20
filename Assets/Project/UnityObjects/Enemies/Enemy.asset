@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e651bedf533540bbbbd043ab4a04ab1, type: 3}
   m_Name: Enemy
   m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
   attackTimeDelay: 1
   damage: 1
   speed: 0.5

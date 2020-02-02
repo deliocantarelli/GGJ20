@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using GGJ20.Enemy;
 using UnityEngine;
+using Zenject;
 
 namespace GGJ20.Spawner {
     public class SpawnConfig {
@@ -10,15 +11,21 @@ namespace GGJ20.Spawner {
         public int amount;
     }
     public class SpawnerController : MonoBehaviour {
+        [Inject]
+        LevelSettings levelSettings;
         private WaveEnemy[] enemiesConfig;
         private Vector2Int maxQuantity;
         private SpawnerSettings config;
-        private LevelSettings levelSettings;
 
 
         private float currenDelay;
         private float currentTimeToWait;
         private bool started;
+
+        void Start()
+        {
+            levelSettings.GetSpawnerConfig(this);
+        }
         public void Setup(SpawnerSettings spawnerSettings, LevelSettings settings) {
             enemiesConfig = settings.enemies;
             maxQuantity = settings.enemiesQuantity;
@@ -70,6 +77,9 @@ namespace GGJ20.Spawner {
 
         void Update()
         {
+            if(config == null) {
+                return;
+            }
             currenDelay += Time.deltaTime;
             if(currenDelay > currentTimeToWait) {
                 Spawn();
