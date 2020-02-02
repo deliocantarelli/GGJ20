@@ -13,5 +13,9 @@ namespace GGJ20.Battery {
             batteries.Add(batteryController);
             Batteries = batteries.ToArray();
         }
+        public void RemoveBattery(BatteryController batteryController) {
+            batteries.Remove(batteryController);
+            Batteries = batteries.ToArray();
+        }
     }
 }

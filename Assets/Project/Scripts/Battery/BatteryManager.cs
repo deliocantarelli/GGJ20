@@ -19,6 +19,9 @@ namespace GGJ20.Battery
             BatteryController batteryController = null;
 
             BatteryController[] batteries = gameBatteries.Batteries;
+            if(batteries == null) {
+                return null;
+            }
             foreach (BatteryController battery in batteries) {
                 float currentDis = Vector2.Distance(battery.transform.position, pos);
                 if(currentDis < distance) {

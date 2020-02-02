@@ -10,11 +10,11 @@ namespace GGJ20.Obstacle {
         GGJ20.PathFinding.PathFindingManager pathFindingManager;
         void OnEnable()
         {
-            Invoke("UpdatePathFinding", 0.1f);
+            UpdatePathFinding();
         }
         void OnDisable()
         {
-            pathFindingManager.Refresh();
+            UpdatePathFinding();
         }
         void UpdatePathFinding() {
             pathFindingManager.Refresh();
