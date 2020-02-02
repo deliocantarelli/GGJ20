@@ -9,7 +9,7 @@ using Zenject;
 
 namespace GGJ20.CardRules
 {
-    public class PlayerHandController : MonoBehaviour
+    public class PlayerLogic : MonoBehaviour
     {
         private Player player;
         private Deck deck;
@@ -33,9 +33,17 @@ namespace GGJ20.CardRules
         }
         public void OnConfirmed(CardDisplay cardDisplay)
         {
-            if (player.TryPlayCard(cardDisplay.Card))
+            if (spellAim.IsGridPosValid)
             {
-                OnCardUsed(cardDisplay);
+                if (player.TryPlayCard(cardDisplay.Card))
+                {
+                    OnCardUsed(cardDisplay);
+                    spellAim.SpawnSpell();
+                }
+            } else
+            {
+                cardDisplay.Deselect();
+                spellAim.StopAiming();
             }
         }
         public void OnCardUsed(CardDisplay cardDisplay)

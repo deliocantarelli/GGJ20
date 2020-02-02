@@ -23,7 +23,7 @@ namespace GGJ20.Installers
                 .WithGameObjectName("Player")
                 .UnderTransformGroup("Logic").AsSingle().NonLazy();
 
-            Container.Bind<PlayerHandController>().FromNewComponentOnNewGameObject()
+            Container.Bind<PlayerLogic>().FromNewComponentOnNewGameObject()
                 .WithGameObjectName("Player Hand")
                 .UnderTransformGroup("Logic").AsSingle().NonLazy();
 

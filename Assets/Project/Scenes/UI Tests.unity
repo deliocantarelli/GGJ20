@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -25078,7 +25078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scale: {x: 0.5, y: 0.5}
   topLeft: {x: -8, y: 15}
-  bottomRight: {x: 8, y: -10}
+  bottomRight: {x: 8, y: -9}
 --- !u!1 &388430768
 GameObject:
   m_ObjectHideFlags: 0
@@ -25544,6 +25544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e726443479a6a334295d414825fae279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellPrefab: {fileID: 6578296145172496370, guid: e513b24cf0dc3df4da4bf2e4107cc7d3,
+    type: 3}
+  spellHitPrefab: {fileID: 5394525551691339213, guid: ba9cef2776a10704f99b4289b1293f15,
+    type: 3}
 --- !u!1 &888726229
 GameObject:
   m_ObjectHideFlags: 0

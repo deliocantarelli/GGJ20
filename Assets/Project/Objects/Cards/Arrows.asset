@@ -14,3 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 665b099e9d7130a4db0ebe4ac53bbd8f, type: 3}
   ManaCost: 2
+  Spell:
+    hits:
+    - time: 0
+      damage: 1
+      repeats: 3
+      repeatInterval: 1
+      locations:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: -1, y: 0}
+      - {x: -2, y: 0}
+      - {x: 2, y: 0}

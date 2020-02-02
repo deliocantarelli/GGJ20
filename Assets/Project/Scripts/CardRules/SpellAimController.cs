@@ -9,23 +9,28 @@ namespace GGJ20.CardRules
     {
         [SerializeField]
         private SpellAimCursor cursor;
+        
 
         private bool aiming = false;
-
+        private CardDisplay aimedCard;
         private WorldGrid grid;
-        public Vector2 gridPos { get; private set; }
+        private Spell.Factory spellFactory;
+
+        public Vector2Int gridPos { get; private set; }
         public bool IsGridPosValid { get { return grid.IsInGrid(gridPos); } }
 
         [Inject]
-        private void Init(WorldGrid grid)
+        private void Init(WorldGrid grid, Spell.Factory spellFactory)
         {
             this.grid = grid;
+            this.spellFactory = spellFactory;
             cursor.Hide();
         }
 
         public void StartAiming(CardDisplay cardDisplay)
         {
             aiming = true;
+            aimedCard = cardDisplay;
             cursor.ChangeToAndShow(cardDisplay);
         }
 
@@ -43,7 +48,8 @@ namespace GGJ20.CardRules
             {
                 Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
-                gridPos = grid.WorldToGrid(pos, WorldGrid.SnapMode.Tile);
+                var p = grid.WorldToGrid(pos, WorldGrid.SnapMode.Tile);
+                gridPos = new Vector2Int((int)p.x, (int)p.y);
 
                 if (grid.IsInGrid(gridPos))
                 {
@@ -55,6 +61,11 @@ namespace GGJ20.CardRules
                     cursor.Hide();
                 }
             }
+        }
+
+        public Spell SpawnSpell()
+        {
+            return spellFactory.Create(aimedCard.Card, gridPos);
         }
     }
 }

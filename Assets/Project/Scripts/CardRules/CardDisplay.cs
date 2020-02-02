@@ -17,7 +17,7 @@ namespace GGJ20.CardRules
         public Card Card { get; private set; }
         private Player player;
         [Inject]
-        private PlayerHandController playerHand;
+        private PlayerLogic playerHand;
 
         [SerializeField]
         private Button button;
@@ -39,6 +39,7 @@ namespace GGJ20.CardRules
 
             player.UsableManaChanged += CheckPlayable;
             button.onClick.AddListener(OnSelected);
+            CheckPlayable(player);
         }
         private void OnDestroy()
         {
@@ -67,6 +68,10 @@ namespace GGJ20.CardRules
             playerHand.OnSelected(this);
         }
 
+        public void Deselect()
+        {
+            ShowRelease();
+        }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
@@ -106,6 +111,10 @@ namespace GGJ20.CardRules
         public void ShowHeld()
         {
             cg.alpha = .5f;
+        }
+        public void ShowRelease()
+        {
+            cg.alpha = 1;
         }
     }
 }
