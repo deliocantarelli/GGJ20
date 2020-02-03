@@ -18,7 +18,7 @@ MonoBehaviour:
   Spell:
     hits:
     - type: 0
-      time: 0
+      time: 0.5
       damage: 1
       repeats: 0
       repeatInterval: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
     - type: 0
-      time: 3
+      time: 1
       damage: 1
       repeats: 2
       repeatInterval: 1
