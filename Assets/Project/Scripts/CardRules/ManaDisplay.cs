@@ -13,7 +13,7 @@ namespace GGJ20.CardRules
     public class ManaDisplay : MonoBehaviour
     {
         [SerializeField]
-        private Slider slider;
+        private Image slider;
         [SerializeField]
         private Text text;
 
@@ -25,6 +25,8 @@ namespace GGJ20.CardRules
         private void Init()
         {
             player.UsableManaChanged += UpdateIndicator;
+
+            UpdateIndicator(player);
         }
         private void OnDestroy()
         {
@@ -32,7 +34,7 @@ namespace GGJ20.CardRules
         }
         private void LateUpdate()
         {
-            slider.value = player.ManaPercent;
+            slider.fillAmount = player.ManaPercent;
         }
 
         private void UpdateIndicator(Player player)
