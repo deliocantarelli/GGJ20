@@ -10,6 +10,25 @@ using UnityEngine.UI;
 
 namespace GGJ20.Enemy
 {
+    public enum Direction
+    {
+        UP = 0,
+        DOWN = 1,
+        LEFT = 2,
+        RIGHT = 3
+    }
+    [Serializable]
+    public class EnemyAnimation
+    {
+        public AnimationClip walkDown;
+        public AnimationClip walkLateral;
+        public AnimationClip walkUp;
+        public AnimationClip attackUp;
+        public AnimationClip attackLateral;
+        public AnimationClip attackDown;
+        public AnimationClip death;
+    }
+    [RequireComponent(typeof(Animation))]
     [RequireComponent(typeof(AIDestinationSetter))]
     [RequireComponent(typeof(AILerp))]
     public class EnemyController : MonoBehaviour {
@@ -20,6 +39,12 @@ namespace GGJ20.Enemy
         public float changeTargetDelay = 1;
         [SerializeField]
         private Image imageSlider;
+        [SerializeField]
+        public EnemyAnimation enemyAnimation;
+        [NonSerialized]
+        public Animation playAnimation;
+        [NonSerialized]
+        public Animator animator;
         private Transform target;
         private AIDestinationSetter aiMovement;
         private AILerp aILerp;
@@ -28,13 +53,21 @@ namespace GGJ20.Enemy
         private HitChecker hitChecker = new HitChecker();
         public bool isAlive {get{ return currentLife <= 0; }}
 
+        private Vector3 lastPosition;
+        [NonSerialized]
+        public Vector3 directionVector;
+        [NonSerialized]
+        public Direction direction;
+
         public class Factory : PlaceholderFactory<UnityEngine.Object, EnemyController>
         {
         }
 
         void Start() {
+            lastPosition = transform.position;
             aiMovement = GetComponent<AIDestinationSetter>();
-
+            playAnimation = GetComponent<Animation>();
+            animator = GetComponent<Animator>();
 
             Setup(settings);
             stateMachine.Begin(this);
@@ -62,8 +95,10 @@ namespace GGJ20.Enemy
 
         void Update()
         {
+            ComputeDirection();
             stateMachine.Update();
             hitChecker.CheckReset();
+
         }
 
         public void SetMovement(bool movement) {
@@ -96,6 +131,33 @@ namespace GGJ20.Enemy
             {
                 Damage(dmg);
             }
+        }
+        private void ComputeDirection()
+        {
+            directionVector = transform.position - lastPosition;
+            lastPosition = transform.position;
+
+            if(Math.Abs(directionVector.x) > Math.Abs(directionVector.y))
+            {
+                if(directionVector.x > 0)
+                {
+                    direction = Direction.RIGHT;
+                }
+                else
+                {
+                    direction = Direction.LEFT;
+                }
+            }
+            else
+            {
+                if(directionVector.y > 0)
+                {
+                    direction = Direction.UP;
+                } else {
+                    direction = Direction.DOWN;
+                }
+            }
+
         }
     }
 }
