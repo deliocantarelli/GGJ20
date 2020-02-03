@@ -1,6 +1,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace GGJ20.Target {
     public class Targetable : MonoBehaviour {
@@ -8,6 +9,10 @@ namespace GGJ20.Target {
         private event TargetDestroyed targetDestroyed;
         public delegate void TargetHealthChanged(int damage);
         private event TargetHealthChanged targetHealthChanged;
+
+
+        public UnityEvent OnHeal;
+        public UnityEvent OnDamage;
 
         [SerializeField]
         private int life = 5;
@@ -58,6 +63,14 @@ namespace GGJ20.Target {
 
         private void TriggerHealthChanged(int change) {
             targetHealthChanged?.Invoke(change);
+            if (change > 0)
+            {
+                OnHeal.Invoke();
+            }
+            else if (change < 0)
+            {
+                OnDamage.Invoke();
+            }
         }
     }
 }
