@@ -74,7 +74,7 @@ namespace GGJ20.CardRules
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            if (!draggable)
+            if (!draggable || !cg.interactable)
                 return;
             if (eventData.pointerId == 0 || eventData.pointerId == -1)
             {
