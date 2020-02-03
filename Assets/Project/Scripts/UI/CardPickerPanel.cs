@@ -51,7 +51,12 @@ namespace GGJ20.UI
         {
             cg.interactable = true;
             cg.alpha = 1;
-            transform.DOMoveY(-300, .5f).From().SetRelative();
+            GetPanelTransform().DOMoveY(-300, .5f).From().SetRelative();
+        }
+
+        private Transform GetPanelTransform()
+        {
+            return transform.GetChild(0);
         }
 
         public void OnConfirmed(CardDisplay cardDisplay)
@@ -62,7 +67,7 @@ namespace GGJ20.UI
         public void OnSelected(CardDisplay cardDisplay)
         {
             cg.interactable = false;
-            transform.DOMoveY(-500, .5f).SetRelative()
+            GetPanelTransform().DOMoveY(-500, .5f).SetRelative()
                 .OnComplete(() =>
             {
                 gameObject.SetActive(false);
