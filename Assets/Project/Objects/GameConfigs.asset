@@ -26,7 +26,7 @@ MonoBehaviour:
     cardPool:
     - {fileID: 11400000, guid: 4e7a7a6a02de83a4f911cf3b3e3e5253, type: 2}
     - {fileID: 11400000, guid: c6b858c8ce6ffda4f9ec61a4d4106f9a, type: 2}
-    - {fileID: 11400000, guid: 910d5ecc74f694e40ac1c0e177cfd3f7, type: 2}
+    - {fileID: 11400000, guid: 88eedfd0caf888f43a1df8ae168eca55, type: 2}
     - {fileID: 11400000, guid: b9347e0ec0eadca4b9c75c0b784722b0, type: 2}
     - {fileID: 11400000, guid: f8efdbb943bf59841a3e9ff8ca24f530, type: 2}
     - {fileID: 11400000, guid: 7cda8f7d355c0a24bbf1ff542bba50f9, type: 2}
