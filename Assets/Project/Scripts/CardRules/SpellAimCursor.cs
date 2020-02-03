@@ -1,6 +1,7 @@
 ﻿using System;
 using GGJ20.World;
 using UnityEngine;
+using Zenject;
 
 namespace GGJ20.CardRules
 {
@@ -8,6 +9,8 @@ namespace GGJ20.CardRules
     {
         [SerializeField]
         private GameObject[] sprites;
+        [Inject]
+        private WorldGrid grid;
 
         private Vector2[] offsets;
 
@@ -15,6 +18,9 @@ namespace GGJ20.CardRules
         {
             GetOffsets();
             Hide();
+        }
+        public class Factory : PlaceholderFactory<UnityEngine.Object, SpellAimCursor>
+        {
         }
 
         private void GetOffsets()
@@ -30,6 +36,8 @@ namespace GGJ20.CardRules
         public void ChangeToAndShow(CardDisplay cardDisplay)
         {
             // sprite.sprite = cardDisplay.Card.Art;
+            Spell.Description spell = cardDisplay.Card.Spell;
+            SetAllCells(spell);
             Show();
         }
         public void Show()
@@ -54,6 +62,17 @@ namespace GGJ20.CardRules
                 Vector2 offset = offsets[i];
                 sprite.transform.position = position + offset;
             }
+        }
+
+        public void SetAllCells(Spell.Description spell) {
+            Spell.Hit hit = spell.hits[0];
+
+            Debug.Log(grid != null);
+            // spellElsPool.Spawn(this, hit, pos);
+
+            // GridPos = pos;
+            // pat = grid.GridPattern(pos);
+            // transform.position = grid.GridToWorld(pos, WorldGrid.PlaceMode.TileCenter);
         }
 
     }
