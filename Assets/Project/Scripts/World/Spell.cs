@@ -20,7 +20,7 @@ namespace GGJ20.World
         [Serializable]
         public class Hit
         {
-            public enum Type { Damage, Wall }
+            public enum Type { Damage, Wall, Indicator }
 
             public Type type = Type.Damage;
             public float time;
@@ -110,6 +110,8 @@ namespace GGJ20.World
             {
                 switch (hit.type)
                 {
+                    case Hit.Type.Indicator:
+                        break;
                     case Hit.Type.Damage:
                         SpawnedHit.Invoke();
                         foreach (var pos in hit.Locations)
