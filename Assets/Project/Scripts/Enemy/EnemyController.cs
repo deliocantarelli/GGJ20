@@ -8,6 +8,7 @@ using GGJ20.Target;
 using GGJ20.World;
 using UnityEngine.UI;
 using GGJ20.Game;
+using UnityEngine.Events;
 
 namespace GGJ20.Enemy
 {
@@ -29,6 +30,7 @@ namespace GGJ20.Enemy
         private HitChecker hitChecker = new HitChecker();
         [Inject]
         private BattleSceneController sceneController;
+        public UnityEvent OnDamage;
 
         public bool isAlive { get { return currentLife <= 0; } }
 
@@ -85,6 +87,7 @@ namespace GGJ20.Enemy
         }
 
         public void Damage(int damage) {
+            OnDamage.Invoke();
             currentLife -= damage;
             imageSlider.fillAmount = currentLife / (float)settings.life;
             if (currentLife <= 0) {
