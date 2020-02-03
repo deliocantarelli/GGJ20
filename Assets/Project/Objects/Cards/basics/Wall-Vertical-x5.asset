@@ -10,14 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
-  m_Name: Wall
+  m_Name: Wall-Vertical-x5
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 43cbb2012eab446c4a130c498d17e186, type: 3}
-  ShapeArt: {fileID: 21300000, guid: e11f602508773457398a80ac0d233f3a, type: 3}
+  ShapeArt: {fileID: 21300000, guid: 68abda15a8f90431db8e5a3b1f8bfe13, type: 3}
   ManaCost: 1
   Spell:
     hits:
     - type: 1
+      time: 0
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 5
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 0
       time: 0
       damage: 1
       repeats: 0
@@ -42,9 +57,9 @@ MonoBehaviour:
         rows:
         - row: 00000000000000
         - row: 00000000000000
+        - row: 00000001000000
         - row: 00000000000000
-        - row: 00000100010000
-        - row: 00000000000000
+        - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
     - type: 1
@@ -56,10 +71,10 @@ MonoBehaviour:
       tileData:
         rows:
         - row: 00000000000000
+        - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00010000000100
         - row: 00000000000000
-        - row: 00000000000000
+        - row: 00000001000000
         - row: 00000000000000
   Background: {fileID: 21300000, guid: df4ff74c0310144bfa6d0ffa883f68b7, type: 3}

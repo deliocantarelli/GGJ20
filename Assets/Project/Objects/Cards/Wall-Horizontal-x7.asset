@@ -10,86 +10,86 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
-  m_Name: Arrows-Big
+  m_Name: Wall-Horizontal-x7
   m_EditorClassIdentifier: 
-  Art: {fileID: 21300000, guid: 665b099e9d7130a4db0ebe4ac53bbd8f, type: 3}
-  ShapeArt: {fileID: 21300000, guid: f708717d145014360b1912df74cdea3b, type: 3}
-  ManaCost: 3
+  Art: {fileID: 21300000, guid: 43cbb2012eab446c4a130c498d17e186, type: 3}
+  ShapeArt: {fileID: 21300000, guid: b33e3a8bf31eb4a13b49c034ffd4f1bf, type: 3}
+  ManaCost: 2
   Spell:
     hits:
+    - type: 1
+      time: 0
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 5
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
     - type: 0
       time: 0
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallDuration: 5
       tileData:
         rows:
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00000001000000
-        - row: 00000101010000
+        - row: 00000000000000
         - row: 00000001000000
         - row: 00000000000000
         - row: 00000000000000
-    - type: 0
+        - row: 00000000000000
+    - type: 1
+      time: 0.25
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 4.75
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000100010000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 1
       time: 0.5
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallDuration: 4.5
       tileData:
         rows:
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00000100010000
-        - row: 00000001000000
-        - row: 00000100010000
+        - row: 00000000000000
+        - row: 00010000000100
         - row: 00000000000000
         - row: 00000000000000
-    - type: 0
-      time: 1
+        - row: 00000000000000
+    - type: 1
+      time: 0.5
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
-      tileData:
-        rows:
-        - row: 00000000000000
-        - row: 00000000000000
-        - row: 00000001000000
-        - row: 00000101010000
-        - row: 00000001000000
-        - row: 00000000000000
-        - row: 00000000000000
-    - type: 0
-      time: 1.5
-      damage: 1
-      repeats: 0
-      repeatInterval: 1
-      wallDuration: 1
-      tileData:
-        rows:
-        - row: 00000000000000
-        - row: 00000000000000
-        - row: 00000100010000
-        - row: 00000001000000
-        - row: 00000100010000
-        - row: 00000000000000
-        - row: 00000000000000
-    - type: 0
-      time: 2
-      damage: 1
-      repeats: 0
-      repeatInterval: 1
-      wallDuration: 1
+      wallDuration: 4.25
       tileData:
         rows:
         - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00000101010000
+        - row: 01000000000001
         - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
-  Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}
+  Background: {fileID: 21300000, guid: df4ff74c0310144bfa6d0ffa883f68b7, type: 3}
