@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GGJ20.Audio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,8 @@ namespace GGJ20.Game
         Run.Factory runFactory;
         [Inject]
         private ZenjectSceneLoader sceneLoader;
+        [Inject]
+        AudioManager audioManger;
         public Run CurrentRun { get; private set; }
 
         [Inject]
@@ -54,6 +57,7 @@ namespace GGJ20.Game
                     throw new NotImplementedException();
             }
             sceneLoader.LoadScene(sceneName);
+            audioManger.OnGame();
         }
         internal void AdvanceAndLoad()
         {
@@ -63,6 +67,7 @@ namespace GGJ20.Game
         public void GoToMenu()
         {
             sceneLoader.LoadScene(configs.MainMenu);
+            audioManger.OnMenu();
         }
 
     }

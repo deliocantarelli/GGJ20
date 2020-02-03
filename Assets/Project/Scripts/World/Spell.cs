@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 namespace GGJ20.World
@@ -55,6 +56,10 @@ namespace GGJ20.World
         [Inject]
         private WallSpellElement.Pool spellWallElsPool;
 
+
+        public UnityEvent SpawnedHit;
+        public UnityEvent SpawnedWall;
+        public UnityEvent WallDown;
         private Vector2Int epicenter;
         public Card Card { get; private set; }
         private List<Hit> nextHits;
@@ -71,9 +76,11 @@ namespace GGJ20.World
 
             stopwatch = Stopwatch.CreateAndStart();
             InitHits();
+        }
+        private void Start()
+        {
             CheckSpawns();
         }
-
         private void InitHits()
         {
             nextHits = Card.Spell.hits.ToList();
@@ -101,19 +108,28 @@ namespace GGJ20.World
 
             foreach (var hit in spawnNow)
             {
-                foreach (var pos in hit.Locations)
+                switch (hit.type)
                 {
-                    switch (hit.type)
-                    {
-                        case Hit.Type.Damage:
+                    case Hit.Type.Damage:
+                        SpawnedHit.Invoke();
+                        foreach (var pos in hit.Locations)
+                        {
                             spellElsPool.Spawn(this, hit, pos + epicenter);
-                            break;
-                        case Hit.Type.Wall:
+                        }
+                        break;
+                    case Hit.Type.Wall:
+                        SpawnedWall.Invoke();
+
+                        StartCoroutine(CoroutineUtils.WaitThenDo(hit.wallDuration, OnWallDown));
+
+                        foreach (var pos in hit.Locations)
+                        {
                             spellWallElsPool.Spawn(this, hit, pos + epicenter);
-                            break;
-                        default:
-                            throw new NotImplementedException();
-                    }
+                        }
+                        break;
+                    default:
+                        throw new NotImplementedException();
+                
                 }
                 nextHits.Remove(hit);
             }
@@ -123,11 +139,16 @@ namespace GGJ20.World
             }
         }
 
-        private void OnFinshed()
+        private void OnWallDown()
         {
-            Destroy(gameObject);
+            WallDown.Invoke();
         }
 
+        private void OnFinshed()
+        {
+            StartCoroutine(CoroutineUtils.WaitThenDo(10, () => Destroy(gameObject)));
+        }
+        
         public class Factory : PlaceholderFactory<Card, Vector2Int, Spell>
         {
 

@@ -1,4 +1,5 @@
-﻿using GGJ20.CardRules;
+﻿using GGJ20.Audio;
+using GGJ20.CardRules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,12 +15,18 @@ namespace GGJ20.Game
         private Card pickedCard;
         [Inject]
         private GameStateController game;
+        [Inject]
+        private AudioManager audio;
 
         public GameResult Result { get; private set; }
 
 
         public event Action<GameResult> BattleOver;
         public event Action<Card> CardPicked;
+        private void Start()
+        {
+            audio.OnGame();
+        }
         public void OnWin()
         {
             Result = GameResult.GetNewVictory();

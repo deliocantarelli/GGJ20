@@ -11,6 +11,7 @@ using UnityEngine.UI;
 using UnityEngine.Assertions;
 using DG.Tweening;
 using GGJ20.Game;
+using UnityEngine.Events;
 
 namespace GGJ20.Battery {
     [Serializable]
@@ -47,6 +48,7 @@ namespace GGJ20.Battery {
         private BatteryConfig currentConfig;
         [SerializeField]
         private Animator animator;
+
 
         [Inject]
         private BattleSceneController controller;
