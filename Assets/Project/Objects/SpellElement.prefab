@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8272308203597640024}
   - component: {fileID: 74219724351184179}
   - component: {fileID: 3367009067615413247}
+  - component: {fileID: 5201410301670486485}
   m_Layer: 5
   m_Name: SpellElement
   m_TagString: Untagged
@@ -51,7 +52,18 @@ MonoBehaviour:
   col: {fileID: 8272308203597640024}
   OnSetup:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5201410301670486485}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hit
+          m_BoolArgument: 0
+        m_CallState: 2
   BeforeHide:
     m_PersistentCalls:
       m_Calls: []
@@ -164,3 +176,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowMultipleTriggers: 1
   el: {fileID: 5394525551691339213}
+--- !u!95 &5201410301670486485
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103183291677207549}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32e63c840bffbf149a24105c673e8d91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
