@@ -17,6 +17,21 @@ MonoBehaviour:
   ManaCost: 5
   Spell:
     hits:
+    - type: 2
+      time: 0
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 1
+      tileData:
+        rows:
+        - row: 00000001000000
+        - row: 00000101010000
+        - row: 00010101010100
+        - row: 01010101010101
+        - row: 00010101010100
+        - row: 00000101010000
+        - row: 00000001000000
     - type: 0
       time: 0
       damage: 1
