@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8054d78cbd271b84e8ecc5f435a821be
+=======
+guid: b4fdc5bd26f63485b89dd3b19d68491e
+>>>>>>> origin/feature/spellIndicator
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -100,6 +104,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -124,6 +129,8 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feature/spellIndicator
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -135,8 +142,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,8 +168,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,8 +194,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,8 +220,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,8 +246,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,8 +272,13 @@ TextureImporter:
         y: 0
         width: 51
         height: 68
+<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
+=======
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> origin/feature/spellIndicator
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -22,6 +22,7 @@ namespace GGJ20.Game
             public string regex;
             public string MainMenu;
             public string WinScene;
+            public int levelCount = 10;
         }
         [Inject]
         private Configs configs;
@@ -58,8 +59,8 @@ namespace GGJ20.Game
                 default:
                     throw new NotImplementedException();
             }
-            bool cheat = Application.isEditor && !Input.GetKey(KeyCode.W);
-            if (!SceneManager.GetSceneByName(sceneName).IsValid() || cheat)
+
+            if (CurrentRun.Floor + 1 > configs.levelCount)
             {
                 OnWin();
             } else
