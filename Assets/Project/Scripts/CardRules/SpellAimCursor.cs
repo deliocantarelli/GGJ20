@@ -66,6 +66,10 @@ namespace GGJ20.CardRules
             for (int i = 0; i < sprites.Length; i++)
             {
                 GameObject sprite = sprites[i];
+                if(offsets == null)
+                {
+                    continue;
+                }
                 Vector2 offset = offsets[i];
                 sprite.transform.position = position + offset;
             }
@@ -81,6 +85,7 @@ namespace GGJ20.CardRules
                     Destroy(go);
                 }
             }
+            aimFLoors = null;
         }
         public void SetAllCells(Spell.Description spell, Vector3 offset) {
             Spell.Hit hit = spell.hits[0];
@@ -108,9 +113,13 @@ namespace GGJ20.CardRules
             {
                 Vector2Int pos = hit.Locations[i];
                 GameObject floor = aimFLoors[i];
+                if(floor == null) {
+                    continue;
+                }
+                
                 //pat = grid.GridPattern(pos);
                 Vector3 floorPos = grid.GridToWorld(pos, WorldGrid.PlaceMode.TileCenter) + offset;
-                    floor.transform.position = floorPos + FLOOR_OFFSET;
+                floor.transform.position = floorPos + FLOOR_OFFSET;
             }
         }
 
