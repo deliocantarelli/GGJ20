@@ -45,6 +45,8 @@ namespace GGJ20.Battery {
         [SerializeField]
         private BatteryConfig[] batteriesNodes;
         private BatteryConfig currentConfig;
+        [SerializeField]
+        private Animator animator;
 
         [Inject]
         private BattleSceneController controller;
@@ -61,7 +63,7 @@ namespace GGJ20.Battery {
             }
 
             RegisterBattery();
-            OnHealthChanged();
+            OnHealthChanged(0);
 
         }
 
@@ -69,8 +71,17 @@ namespace GGJ20.Battery {
             onHealthChanged += healthChangedEvent;
         }
 
-        private void OnHealthChanged()
+        private void OnHealthChanged(int change)
         {
+            if (change > 0)
+            {
+                animator.SetTrigger("Heal");
+            }
+            else if (change < 0)
+            {
+                animator.SetTrigger("Damage");
+            }
+
             UpdateBatteryNode();
             imageFill.fillAmount = targetable.Life / (float)maxHealth;
             onHealthChanged?.Invoke(this);

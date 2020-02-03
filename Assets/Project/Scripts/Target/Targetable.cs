@@ -6,7 +6,7 @@ namespace GGJ20.Target {
     public class Targetable : MonoBehaviour {
         public delegate void TargetDestroyed();
         private event TargetDestroyed targetDestroyed;
-        public delegate void TargetHealthChanged();
+        public delegate void TargetHealthChanged(int damage);
         private event TargetHealthChanged targetHealthChanged;
 
         [SerializeField]
@@ -24,14 +24,14 @@ namespace GGJ20.Target {
             if(life <= 0) {
                 TriggerTargetDestroyed();
             } 
-            TriggerHealthChanged();
+            TriggerHealthChanged(-damage);
         }
         public void Heal(int value)
         {
             if (invulnerable)
                 return;
             life += value;
-            TriggerHealthChanged();
+            TriggerHealthChanged(value);
         }
 
         public void RegisterOnTargetDestroyed(TargetDestroyed callback) {
@@ -56,8 +56,8 @@ namespace GGJ20.Target {
             invulnerable = true;
         }
 
-        private void TriggerHealthChanged() {
-            targetHealthChanged?.Invoke();
+        private void TriggerHealthChanged(int change) {
+            targetHealthChanged?.Invoke(change);
         }
     }
 }
