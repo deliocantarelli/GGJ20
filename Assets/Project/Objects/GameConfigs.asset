@@ -43,3 +43,4 @@ MonoBehaviour:
     - Game 2
     regex: Level {0}
     MainMenu: Menu
+    WinScene: Victory
