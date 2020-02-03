@@ -25,10 +25,13 @@ namespace GGJ20.UI
             gameObject.SetActive(false);
             this.scene.BattleOver += OnBattleOver;
         }
-        private void OnBattleOver(GameResult obj)
+        private void OnBattleOver(GameResult result)
         {
-            gameObject.SetActive(true);
-            Show();
+            if (result.Won)
+            {
+                gameObject.SetActive(true);
+                Show();
+            }
         }
     }
 }

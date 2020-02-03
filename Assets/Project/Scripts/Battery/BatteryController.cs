@@ -83,7 +83,7 @@ namespace GGJ20.Battery {
 
         private void OnTargetDestroyed() {
             controller.OnLose();
-            targets.RemoveBattery(targetable);
+            targets.OnBatteryDestroyed(targetable);
         }
 
         public void TryHeal(Spell.Hit hit)
@@ -103,7 +103,7 @@ namespace GGJ20.Battery {
                 BatteryFilled?.Invoke();
 
                 targetable.SetInvulnerable();
-                targets.RemoveBattery(targetable);
+                targets.OnBatterySaved(targetable);
             }
         }
         private void Update()

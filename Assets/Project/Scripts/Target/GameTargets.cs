@@ -19,13 +19,19 @@ namespace GGJ20.Target {
             targets.Add(target);
             Targets = targets.ToArray();
         }
-        public void RemoveBattery(Targetable target) {
+        public void OnBatterySaved(Targetable target) {
             targets.Remove(target);
             Targets = targets.ToArray();
 
             if(targets.Count == 0) {
                 sceneController.OnWin();
             }
+        }
+
+        public void OnBatteryDestroyed(Targetable target)
+        {
+            targets.Remove(target);
+            Targets = targets.ToArray();
         }
     }
 }

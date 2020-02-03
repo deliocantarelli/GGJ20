@@ -24,6 +24,7 @@ namespace GGJ20.Game
             this.player = player;
             this.deck = deck;
             this.spellAim = spellAim;
+
         }
 
 

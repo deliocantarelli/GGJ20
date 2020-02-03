@@ -43,10 +43,30 @@ namespace GGJ20.Game
         }
 
         [Inject]
+        private BattleSceneController battle;
+
+
+        private void OnBattleOver(GameResult obj)
+        {
+            gameObject.SetActive(false);
+            battle.BattleOver += OnBattleOver;
+        }
+
+
+        private void OnDestroy()
+        {
+            if (battle != null)
+            {
+                battle.BattleOver -= OnBattleOver;
+            }
+        }
+
+        [Inject]
         private void Init()
         {
             RealMana = settings.StartingMana;
         }
+
         public bool CanPlayCard(Card card)
         {
             return card.ManaCost <= UsableMana;
