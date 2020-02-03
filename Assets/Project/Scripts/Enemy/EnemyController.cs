@@ -73,6 +73,10 @@ namespace GGJ20.Enemy
         {
             stateMachine.OnCollisionEnter2D(other);
         }
+        private void OnCollisionExit2D(Collision2D collision)
+        {
+            stateMachine.OnCollisionExit2D(collision);
+        }
 
         public void Damage(int damage) {
             currentLife -= damage;

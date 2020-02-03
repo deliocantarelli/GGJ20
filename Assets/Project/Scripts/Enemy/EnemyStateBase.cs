@@ -14,6 +14,10 @@ namespace GGJ20.Enemy
         public virtual void OnCollisionEnter2D(UnityEngine.Collision2D other) {
             
         }
+        public virtual void OnCollisionExit2D(UnityEngine.Collision2D other) {
+
+        }
+
 
         public virtual void OnDestroy()
         {

@@ -55,5 +55,17 @@ namespace GGJ20.Enemy {
         private void Attack() {
             target.DealDamage(Enemy.settings.damage);
         }
+
+        public override void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.gameObject.tag == "target")
+            {
+                Targetable _target = other.gameObject.GetComponent<Targetable>();
+                if (_target != null && target == _target)
+                {
+                    ExitTo(new EnemyPursueState());
+                }
+            }
+        }
     }
 }
