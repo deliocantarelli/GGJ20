@@ -1,5 +1,132 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &379661410727708054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4564899839721031339}
+  - component: {fileID: 5046347827061891646}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4564899839721031339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379661410727708054}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.30799997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 535769140160763195}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5046347827061891646
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379661410727708054}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad42889e5c0b50f40b66f06587a06d2c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &535769140160763188
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,7 +143,6 @@ GameObject:
   - component: {fileID: 535769140160763193}
   - component: {fileID: 535769140160763197}
   - component: {fileID: 535769140160763196}
-  - component: {fileID: 2215095284070322781}
   - component: {fileID: 1690250496}
   m_Layer: 0
   m_Name: Enemy_Big
@@ -37,6 +163,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 793551756236067497}
+  - {fileID: 4564899839721031339}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -170,10 +297,18 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 82bb0f920d5844bd4bb2058d074ecd1f, type: 2}
   changeTargetDelay: 1
   imageSlider: {fileID: 8120989312030273057}
+  enemyAnimation:
+    walkDown: {fileID: 7400000, guid: 9b25bf891b0b64b1ab6d673ca7ebea91, type: 2}
+    walkLateral: {fileID: 7400000, guid: f491b19c768af4ed6a3b77a2b493eca2, type: 2}
+    walkUp: {fileID: 7400000, guid: fda9c988a3ec54c3cae16aec0c654a66, type: 2}
+    attackUp: {fileID: 7400000, guid: 94cba871b657f45d5ac81c8e5c243d80, type: 2}
+    attackLateral: {fileID: 7400000, guid: c6ce24a496fce4cfbaf0a65d2936d7a9, type: 2}
+    attackDown: {fileID: 7400000, guid: 560f9c1da40514c7bb950824f69e09f2, type: 2}
+    death: {fileID: 7400000, guid: 8a364d98c2570419f947ca12443a4636, type: 2}
   OnDamage:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2215095284070322781}
+      - m_Target: {fileID: 5046347827061891646}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -184,14 +319,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  enemyAnimation:
-    walkDown: {fileID: 7400000, guid: 9b25bf891b0b64b1ab6d673ca7ebea91, type: 2}
-    walkLateral: {fileID: 7400000, guid: f491b19c768af4ed6a3b77a2b493eca2, type: 2}
-    walkUp: {fileID: 7400000, guid: fda9c988a3ec54c3cae16aec0c654a66, type: 2}
-    attackUp: {fileID: 7400000, guid: 94cba871b657f45d5ac81c8e5c243d80, type: 2}
-    attackLateral: {fileID: 7400000, guid: c6ce24a496fce4cfbaf0a65d2936d7a9, type: 2}
-    attackDown: {fileID: 7400000, guid: 560f9c1da40514c7bb950824f69e09f2, type: 2}
-    death: {fileID: 7400000, guid: 8a364d98c2570419f947ca12443a4636, type: 2}
 --- !u!61 &535769140160763197
 BoxCollider2D:
   m_ObjectHideFlags: 0
