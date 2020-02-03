@@ -26535,7 +26535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config:
-    startSeconds: 0
+    startSeconds: 15
 --- !u!4 &1794395465
 Transform:
   m_ObjectHideFlags: 0
@@ -26913,12 +26913,12 @@ PrefabInstance:
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[0].quantity.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[0].quantity.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
@@ -26929,6 +26929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[1].quantity.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[0].spawnInterval
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1699088927525104543, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}

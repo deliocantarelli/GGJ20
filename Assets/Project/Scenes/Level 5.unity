@@ -25566,7 +25566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config:
-    startSeconds: 20
+    startSeconds: 15
 --- !u!4 &537445087
 Transform:
   m_ObjectHideFlags: 0
@@ -26819,7 +26819,7 @@ PrefabInstance:
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: waitTime.x
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
@@ -26913,22 +26913,37 @@ PrefabInstance:
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[0].quantity.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[0].quantity.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[1].quantity.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[1].quantity.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[1].startToSpawnTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[1].spawnInterval
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: enemies.Array.data[0].spawnInterval
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1699088927525104543, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
