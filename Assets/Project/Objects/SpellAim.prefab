@@ -47,6 +47,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 3447923651932358885}
   - {fileID: 6231307489226921879}
+  floorPrefab: {fileID: 2646686298327396109, guid: 8850076198a7b4b0b930520343d16c80,
+    type: 3}
 --- !u!1 &3447923652403036741
 GameObject:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -266,12 +266,12 @@ PrefabInstance:
     - target: {fileID: 80707274306134325, guid: be0edc0fc26e04032bdc7ebe0b24266e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.9700012
+      value: 0.9699707
       objectReference: {fileID: 0}
     - target: {fileID: 80707274306134325, guid: be0edc0fc26e04032bdc7ebe0b24266e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.899994
+      value: -6.9000244
       objectReference: {fileID: 0}
     - target: {fileID: 80707274306134325, guid: be0edc0fc26e04032bdc7ebe0b24266e,
         type: 3}
@@ -426,6 +426,18 @@ Transform:
   m_Father: {fileID: 888726230}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239758618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1848615125, guid: 96886e79280147f4aa5945b73a8cc104,
+    type: 3}
+  m_PrefabInstance: {fileID: 8160280439684174684}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526eecffc7d5044069812c8d90d187e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &283148689
 GameObject:
   m_ObjectHideFlags: 0
@@ -26679,9 +26691,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
+      propertyPath: _installerPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
       propertyPath: _monoInstallers.Array.data[5]
       value: 
       objectReference: {fileID: 8160280439684174686}
+    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: _installerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 239758618}
+    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
+        type: 3}
+      propertyPath: _monoInstallers.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8160280440632677835, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: m_LocalPosition.x

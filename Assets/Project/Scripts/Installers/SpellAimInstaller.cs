@@ -8,7 +8,7 @@ namespace GGJ20.Installers
     {
         public override void InstallBindings()
         {
-            Container.BindFactory<UnityEngine.Object, SpellAimCursor, SpellAimCursor.Factory>().FromFactory<PrefabFactory<SpellAimCursor>>();
+            //Container.BindFactory<UnityEngine.Object, SpellAimCursor, SpellAimCursor.Factory>().FromFactory<PrefabFactory<SpellAimCursor>>();
         }
     }
 }
