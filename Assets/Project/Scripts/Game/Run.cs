@@ -26,8 +26,13 @@ namespace GGJ20.Game
 
 
         private List<Card> deck;
-        public int Floor { get; set; }
+        private DateTime start;
+        private DateTime end;
 
+        public int Floor { get; set; }
+        public TimeSpan Elapsed { get { return end == null ? DateTime.Now - start : end - start; } }
+
+        public string DurationString { get { return Elapsed.ToString(@"hh\:mm\:ss"); } }
         public IEnumerable<Card> CardsInDeck { get { return deck.AsEnumerable(); } }
 
         public IEnumerable<Card> GenerateBooster(int size)
@@ -45,6 +50,11 @@ namespace GGJ20.Game
         private void Init()
         {
             this.deck = new List<Card>(configs.starterDeck);
+            start = System.DateTime.Now;
+        }
+        public void OnWin()
+        {
+            end = System.DateTime.Now;
         }
 
         public class Factory : PlaceholderFactory<Run>

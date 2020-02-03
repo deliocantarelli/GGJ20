@@ -17,7 +17,7 @@ MonoBehaviour:
   ManaCost: 1
   Spell:
     hits:
-    - type: 1
+    - type: 2
       time: 0
       damage: 1
       repeats: 0
@@ -26,11 +26,11 @@ MonoBehaviour:
       tileData:
         rows:
         - row: 00000000000000
-        - row: 00000000000000
-        - row: 00000000000000
         - row: 00000001000000
-        - row: 00000000000000
-        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000001000000
+        - row: 00000001000000
+        - row: 00000001000000
         - row: 00000000000000
     - type: 1
       time: 0.25
@@ -42,9 +42,9 @@ MonoBehaviour:
         rows:
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00000001000000
         - row: 00000000000000
         - row: 00000001000000
+        - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
     - type: 1
@@ -53,6 +53,21 @@ MonoBehaviour:
       repeats: 0
       repeatInterval: 1
       wallDuration: 4.5
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 1
+      time: 0.75
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 4.25
       tileData:
         rows:
         - row: 00000000000000

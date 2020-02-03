@@ -1,0 +1,994 @@
+fileFormatVersion: 2
+guid: a1d1be4d88cc84937b34d4968620d3a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4163228157343849515
+    second: SmallEnemy_tank_0
+  - first:
+      213: 2950555979354954253
+    second: SmallEnemy_tank_1
+  - first:
+      213: 879594629999400404
+    second: SmallEnemy_tank_2
+  - first:
+      213: -3367851320269267274
+    second: SmallEnemy_tank_3
+  - first:
+      213: -3442077469931719144
+    second: SmallEnemy_tank_4
+  - first:
+      213: 2603743291956196242
+    second: SmallEnemy_tank_5
+  - first:
+      213: 2807980667333313949
+    second: SmallEnemy_tank_6
+  - first:
+      213: 5920462631214384370
+    second: SmallEnemy_tank_7
+  - first:
+      213: -5636037302897603015
+    second: SmallEnemy_tank_8
+  - first:
+      213: -1707062417707694132
+    second: SmallEnemy_tank_9
+  - first:
+      213: -2906729038034747860
+    second: SmallEnemy_tank_10
+  - first:
+      213: 37001768686047339
+    second: SmallEnemy_tank_11
+  - first:
+      213: 7581833065143955116
+    second: SmallEnemy_tank_12
+  - first:
+      213: 6201981145194714595
+    second: SmallEnemy_tank_13
+  - first:
+      213: -6613053029094662014
+    second: SmallEnemy_tank_14
+  - first:
+      213: 4863531027405068645
+    second: SmallEnemy_tank_15
+  - first:
+      213: 965733671813004753
+    second: SmallEnemy_tank_16
+  - first:
+      213: -6881584366575658548
+    second: SmallEnemy_tank_17
+  - first:
+      213: 3196527773025098422
+    second: SmallEnemy_tank_18
+  - first:
+      213: 8275577441234701545
+    second: SmallEnemy_tank_19
+  - first:
+      213: 8363134405869764417
+    second: SmallEnemy_tank_20
+  - first:
+      213: 4371101644465117933
+    second: SmallEnemy_tank_21
+  - first:
+      213: 7459221742495442890
+    second: SmallEnemy_tank_22
+  - first:
+      213: -4045129633304551423
+    second: SmallEnemy_tank_23
+  - first:
+      213: -3572618069157758915
+    second: SmallEnemy_tank_24
+  - first:
+      213: 3712940200787417587
+    second: SmallEnemy_tank_25
+  - first:
+      213: 4492287320139279893
+    second: SmallEnemy_tank_26
+  - first:
+      213: 5417902880469439628
+    second: SmallEnemy_tank_27
+  - first:
+      213: -355015535908358683
+    second: SmallEnemy_tank_28
+  - first:
+      213: -7915526236385566564
+    second: SmallEnemy_tank_29
+  - first:
+      213: -1994922743843085844
+    second: SmallEnemy_tank_0
+  - first:
+      213: -7113182109967935350
+    second: SmallEnemy_tank_1
+  - first:
+      213: 1558253017248436293
+    second: SmallEnemy_tank_2
+  - first:
+      213: -772260631651450970
+    second: SmallEnemy_tank_3
+  - first:
+      213: 4705957558400116595
+    second: SmallEnemy_tank_4
+  - first:
+      213: -6510968288691724376
+    second: SmallEnemy_tank_5
+  - first:
+      213: -3309621855125575414
+    second: SmallEnemy_tank_6
+  - first:
+      213: 8121722535452799280
+    second: SmallEnemy_tank_7
+  - first:
+      213: 1016965211338713501
+    second: SmallEnemy_tank_8
+  - first:
+      213: 5778423052570848070
+    second: SmallEnemy_tank_9
+  - first:
+      213: -4735857601735014083
+    second: SmallEnemy_tank_10
+  - first:
+      213: -8344652381488825512
+    second: SmallEnemy_tank_11
+  - first:
+      213: 8183411387712933574
+    second: SmallEnemy_tank_12
+  - first:
+      213: 7923556353526196029
+    second: SmallEnemy_tank_13
+  - first:
+      213: -3275539214074751264
+    second: SmallEnemy_tank_14
+  - first:
+      213: -7569308668671123471
+    second: SmallEnemy_tank_15
+  - first:
+      213: 7697491369179435210
+    second: SmallEnemy_tank_16
+  - first:
+      213: 4885973238909041299
+    second: SmallEnemy_tank_17
+  - first:
+      213: 1556637593908705186
+    second: SmallEnemy_tank_18
+  - first:
+      213: -7719873482013961617
+    second: SmallEnemy_tank_19
+  - first:
+      213: 9120795584570435554
+    second: SmallEnemy_tank_20
+  - first:
+      213: 5521985550190678799
+    second: SmallEnemy_tank_21
+  - first:
+      213: -6485877447664352336
+    second: SmallEnemy_tank_22
+  - first:
+      213: 6006229120311968090
+    second: SmallEnemy_tank_23
+  - first:
+      213: -3642706845487115336
+    second: SmallEnemy_tank_24
+  - first:
+      213: 6914464673286052073
+    second: SmallEnemy_tank_25
+  - first:
+      213: 8141646110966861873
+    second: SmallEnemy_tank_26
+  - first:
+      213: 7092280037527164860
+    second: SmallEnemy_tank_27
+  - first:
+      213: -5289589355396527050
+    second: SmallEnemy_tank_28
+  - first:
+      213: 729918775889514038
+    second: SmallEnemy_tank_29
+  - first:
+      213: 108990786900941749
+    second: SmallEnemy_tank_30
+  - first:
+      213: -5575696421139110513
+    second: SmallEnemy_tank_31
+  - first:
+      213: 2241331522547265624
+    second: SmallEnemy_tank_32
+  - first:
+      213: -5094751800279806052
+    second: SmallEnemy_tank_30
+  - first:
+      213: 3652265950516897532
+    second: SmallEnemy_tank_31
+  - first:
+      213: 3487891154229804605
+    second: SmallEnemy_tank_32
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallEnemy_tank_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 240
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1a2e2855c9054e0800000000000000
+      internalID: -1994922743843085844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 240
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8892b8ee86e84d90800000000000000
+      internalID: -7113182109967935350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 240
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540164bfcd600a510800000000000000
+      internalID: 1558253017248436293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 240
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af75601c016845f0800000000000000
+      internalID: -772260631651450970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 202
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377e084577bee4140800000000000000
+      internalID: 4705957558400116595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 202
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af52b886d464a5a0800000000000000
+      internalID: -6510968288691724376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 202
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09ee58357cd112d0800000000000000
+      internalID: -3309621855125575414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_7
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 202
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031f2f18d9726b070800000000000000
+      internalID: 8121722535452799280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 164
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9926cab87cfc1e00800000000000000
+      internalID: 1016965211338713501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 164
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64be962a625113050800000000000000
+      internalID: 5778423052570848070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 164
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3940c55a9ad64eb0800000000000000
+      internalID: -4735857601735014083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 164
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bbd33fed6d13c80800000000000000
+      internalID: -8344652381488825512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 120
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce048fac41519170800000000000000
+      internalID: 8183411387712933574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 120
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37e7b1d58026fd60800000000000000
+      internalID: 7923556353526196029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 120
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e656397072fa82d0800000000000000
+      internalID: -3275539214074751264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_15
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 120
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff9298aed964f690800000000000000
+      internalID: -7569308668671123471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 82
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac053910e9bf2da60800000000000000
+      internalID: 7697491369179435210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 82
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39afc3716c67ec340800000000000000
+      internalID: 4885973238909041299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_18
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 82
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a772fce4a94a9510800000000000000
+      internalID: 1556637593908705186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_19
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 82
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62999148ff7dd490800000000000000
+      internalID: -7719873482013961617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 44
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7a5479243939e70800000000000000
+      internalID: 9120795584570435554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 44
+        width: 12
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0394f5e99802ac40800000000000000
+      internalID: 5521985550190678799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_22
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 44
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3cf3333d88df5a0800000000000000
+      internalID: -6485877447664352336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_23
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 44
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a514dc300996a5350800000000000000
+      internalID: 6006229120311968090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b35bd58c61827dc0800000000000000
+      internalID: -3642706845487115336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_25
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8d3376cfc15ff50800000000000000
+      internalID: 6914464673286052073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_26
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 11
+        width: 13
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130de1b6000fcf070800000000000000
+      internalID: 8141646110966861873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_27
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 3
+        width: 10
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7966c1e17dc6260800000000000000
+      internalID: 7092280037527164860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_28
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 16
+        width: 5
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c07e7b18a9796b0800000000000000
+      internalID: -5289589355396527050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_29
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 13
+        width: 13
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e48c76241312a00800000000000000
+      internalID: 729918775889514038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f4a851b3ecb49b0800000000000000
+      internalID: -5094751800279806052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 7
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf660dd08847fa230800000000000000
+      internalID: 3652265950516897532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallEnemy_tank_32
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 2
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e381f668a776030800000000000000
+      internalID: 3487891154229804605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

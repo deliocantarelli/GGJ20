@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace GGJ20.Game
@@ -20,6 +21,8 @@ namespace GGJ20.Game
             public string[] Floors;
             public string regex;
             public string MainMenu;
+            public string WinScene;
+            public int levelCount = 10;
         }
         [Inject]
         private Configs configs;
@@ -56,9 +59,25 @@ namespace GGJ20.Game
                 default:
                     throw new NotImplementedException();
             }
-            sceneLoader.LoadScene(sceneName);
-            audioManger.OnGame();
+
+            if (CurrentRun.Floor + 1 > configs.levelCount)
+            {
+                OnWin();
+            } else
+            {
+                //Advance
+                sceneLoader.LoadScene(sceneName);
+                audioManger.OnGame();
+            }
         }
+
+        private void OnWin()
+        {
+            CurrentRun.OnWin();
+            sceneLoader.LoadScene(configs.WinScene);
+            audioManger.OnMenu();
+        }
+
         internal void AdvanceAndLoad()
         {
             CurrentRun.Floor++;

@@ -18,9 +18,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ed5d89c383978834db824601db853ab1, type: 2}
     - {fileID: 11400000, guid: ed5d89c383978834db824601db853ab1, type: 2}
     - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
+    - {fileID: 11400000, guid: 18dddbceedb538144856b528cdbfe535, type: 2}
     - {fileID: 11400000, guid: 9d17a8801b47bd54eb131f9322bdfd28, type: 2}
-    - {fileID: 11400000, guid: 18dddbceedb538144856b528cdbfe535, type: 2}
-    - {fileID: 11400000, guid: 18dddbceedb538144856b528cdbfe535, type: 2}
+    - {fileID: 11400000, guid: 822a24ef698400e4fa5bfe574ed5eb34, type: 2}
     - {fileID: 11400000, guid: ed1752255f8384a44a8bc56490d22b1d, type: 2}
     - {fileID: 11400000, guid: 822a24ef698400e4fa5bfe574ed5eb34, type: 2}
     cardPool:
@@ -36,6 +36,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 8a96f922879562842a324823c746126e, type: 2}
     - {fileID: 11400000, guid: e6a6a7468850c1243a51da8f3399114a, type: 2}
     - {fileID: 11400000, guid: db9485bf8d21bf14a9187399ced96bf0, type: 2}
+    - {fileID: 11400000, guid: 0a3f08de339bae8468bc01dca1e33f0a, type: 2}
   gameConfigs:
     levelMode: 0
     Floors:
@@ -43,3 +44,4 @@ MonoBehaviour:
     - Game 2
     regex: Level {0}
     MainMenu: Menu
+    WinScene: Victory

@@ -22,6 +22,7 @@ namespace GGJ20.Game
 
 
         public event Action<GameResult> BattleOver;
+        public event Action<GameResult> BattleResultShown;
         public event Action<Card> CardPicked;
         private void Start()
         {
@@ -31,6 +32,7 @@ namespace GGJ20.Game
         {
             Result = GameResult.GetNewVictory();
             BattleOver?.Invoke(Result);
+            BattleResultShown?.Invoke(Result);
         }
         public void OnLose()
         {

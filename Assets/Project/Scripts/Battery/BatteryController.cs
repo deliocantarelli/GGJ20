@@ -126,16 +126,10 @@ namespace GGJ20.Battery {
         }
 
         private void UpdateBatteryNode() {
-            BatteryConfig minConfig = batteriesNodes[0];
-            int minLife = int.MaxValue;
+            float p = targetable.Life / (float)maxHealth;
 
-            foreach(BatteryConfig config in batteriesNodes) {
-                if(minLife > config.minLife && config.minLife > targetable.Life) {
-                    minConfig = config;
-                    minLife = config.minLife;
-                }
-            }
-            ChangeNode(minConfig);
+            int index = (int)Math.Floor(p * 3);
+            ChangeNode(batteriesNodes[index]);
         }
         private void ChangeNode(BatteryConfig config) {
             if(currentConfig != null) {

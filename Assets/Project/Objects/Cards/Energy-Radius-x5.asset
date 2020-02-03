@@ -18,7 +18,7 @@ MonoBehaviour:
   Spell:
     hits:
     - type: 0
-      time: 0.5
+      time: 0
       damage: 1
       repeats: 0
       repeatInterval: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     - type: 0
       time: 1
       damage: 1
-      repeats: 2
+      repeats: 1
       repeatInterval: 1
       wallDuration: 1
       tileData:

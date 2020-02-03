@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 7f068ef67fba84348bedb2d64d27742b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4662810634411147189
+    second: BigEnemy_tank_0
+  - first:
+      213: 1080015002740422097
+    second: BigEnemy_tank_1
+  - first:
+      213: -460252104142564992
+    second: BigEnemy_tank_2
+  - first:
+      213: -4406177726471872864
+    second: BigEnemy_tank_3
+  - first:
+      213: -8835549444372150532
+    second: BigEnemy_tank_4
+  - first:
+      213: 7071872324818549697
+    second: BigEnemy_tank_5
+  - first:
+      213: -2736583703733438635
+    second: BigEnemy_tank_6
+  - first:
+      213: -1632521161366914893
+    second: BigEnemy_tank_7
+  - first:
+      213: 723599641291273028
+    second: BigEnemy_tank_8
+  - first:
+      213: 3756981545367334839
+    second: BigEnemy_tank_9
+  - first:
+      213: -7291420948889282413
+    second: BigEnemy_tank_10
+  - first:
+      213: 7993779554640858995
+    second: BigEnemy_tank_11
+  - first:
+      213: 5675291104121191509
+    second: BigEnemy_tank_12
+  - first:
+      213: -7209865516066198693
+    second: BigEnemy_tank_13
+  - first:
+      213: -1841827963697165037
+    second: BigEnemy_tank_14
+  - first:
+      213: 4278055040393842831
+    second: BigEnemy_tank_15
+  - first:
+      213: -9010527247931168749
+    second: BigEnemy_tank_16
+  - first:
+      213: -5409837961254227730
+    second: BigEnemy_tank_17
+  - first:
+      213: 6778301989877300263
+    second: BigEnemy_tank_18
+  - first:
+      213: -7137749544300412264
+    second: BigEnemy_tank_19
+  - first:
+      213: 8486617428926435171
+    second: BigEnemy_tank_20
+  - first:
+      213: -5735650347280660443
+    second: BigEnemy_tank_21
+  - first:
+      213: -3443768132825238919
+    second: BigEnemy_tank_22
+  - first:
+      213: 5710875060144377351
+    second: BigEnemy_tank_23
+  - first:
+      213: -104231039009774229
+    second: BigEnemy_tank_24
+  - first:
+      213: -8971270486505253357
+    second: BigEnemy_tank_25
+  - first:
+      213: 7908174192981058329
+    second: BigEnemy_tank_26
+  - first:
+      213: -6693695691745197224
+    second: BigEnemy_tank_27
+  - first:
+      213: 3399894675621985131
+    second: BigEnemy_tank_28
+  - first:
+      213: 7984235124291903609
+    second: BigEnemy_tank_29
+  - first:
+      213: 5124638382796934848
+    second: BigEnemy_tank_30
+  - first:
+      213: 2717766002085744448
+    second: BigEnemy_tank_31
+  - first:
+      213: -9092885876388901102
+    second: BigEnemy_tank_32
+  - first:
+      213: 1853534299482007718
+    second: BigEnemy_tank_33
+  - first:
+      213: -5272323254325139987
+    second: BigEnemy_tank_34
+  - first:
+      213: -1417583168017821856
+    second: BigEnemy_tank_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigEnemy_tank_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 240
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b408201ce6e5a4fb0800000000000000
+      internalID: -4662810634411147189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 240
+        width: 14
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d57f6e3cebfcfe00800000000000000
+      internalID: 1080015002740422097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 240
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081d479562bdc99f0800000000000000
+      internalID: -460252104142564992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 240
+        width: 14
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aed764e3bc1ad2c0800000000000000
+      internalID: -4406177726471872864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 202
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf64cc4d792d16580800000000000000
+      internalID: -8835549444372150532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 202
+        width: 15
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbb9b93966542260800000000000000
+      internalID: 7071872324818549697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_6
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 202
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55778d8de93b50ad0800000000000000
+      internalID: -2736583703733438635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_7
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 202
+        width: 15
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8ba6837ae1859e0800000000000000
+      internalID: -1632521161366914893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 164
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44334ca3a0eba0a00800000000000000
+      internalID: 723599641291273028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 164
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf61576fca732430800000000000000
+      internalID: 3756981545367334839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 164
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398dc91574bafca90800000000000000
+      internalID: -7291420948889282413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 164
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f062fe62c9fee60800000000000000
+      internalID: 7993779554640858995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 120
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cf312b03fa2ce40800000000000000
+      internalID: 5675291104121191509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 120
+        width: 14
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b298c338961fb90800000000000000
+      internalID: -7209865516066198693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_14
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 120
+        width: 14
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d0376b9338076e0800000000000000
+      internalID: -1841827963697165037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 120
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f809e34a464be5b30800000000000000
+      internalID: 4278055040393842831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 82
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318a514353d24f280800000000000000
+      internalID: -9010527247931168749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 82
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0b40b69056ce4b0800000000000000
+      internalID: -5409837961254227730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 82
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cb5fe2fbd511e50800000000000000
+      internalID: 6778301989877300263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 82
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892844c5b9e91fc90800000000000000
+      internalID: -7137749544300412264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 44
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f8ccb669586c570800000000000000
+      internalID: 8486617428926435171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 44
+        width: 14
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5288d7ed560e660b0800000000000000
+      internalID: -5735650347280660443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_22
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 44
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972342a01274530d0800000000000000
+      internalID: -3443768132825238919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 44
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e0b841c9a114f40800000000000000
+      internalID: 5710875060144377351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65a0491c62bd8ef0800000000000000
+      internalID: -104231039009774229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_25
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 26
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31698eb3605af7380800000000000000
+      internalID: -8971270486505253357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_26
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9132c8a778a7fbd60800000000000000
+      internalID: 7908174192981058329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_27
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 21
+        width: 21
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85307faab373b13a0800000000000000
+      internalID: -6693695691745197224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_28
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 20
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bb03ea13ade2f20800000000000000
+      internalID: 3399894675621985131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 33
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970ad921b83bdce60800000000000000
+      internalID: 7984235124291903609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 17
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce81f8257f5e1740800000000000000
+      internalID: 5124638382796934848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 9
+        width: 7
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f44f097c177b520800000000000000
+      internalID: 2717766002085744448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_32
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 15
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f4caab8749fc180800000000000000
+      internalID: -9092885876388901102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 10
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a0abff9319b910800000000000000
+      internalID: 1853534299482007718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_34
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 9
+        width: 6
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de52be42fe1f4d6b0800000000000000
+      internalID: -5272323254325139987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEnemy_tank_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 3
+        width: 9
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f89be8e9bb35ce0800000000000000
+      internalID: -1417583168017821856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
