@@ -51,7 +51,7 @@ namespace GGJ20.UI
         {
             cg.interactable = true;
             cg.alpha = 1;
-            GetPanelTransform().DOMoveY(-300, .5f).From().SetRelative();
+            GetPanelTransform().DOMoveY(-1000, .5f).From();
         }
 
         private Transform GetPanelTransform()
@@ -59,15 +59,15 @@ namespace GGJ20.UI
             return transform.GetChild(0);
         }
 
-        public void OnConfirmed(CardDisplay cardDisplay)
+        public bool OnConfirmed(CardDisplay cardDisplay)
         {
-            //Not used
+            return true;
         }
 
         public void OnSelected(CardDisplay cardDisplay)
         {
             cg.interactable = false;
-            GetPanelTransform().DOMoveY(-500, .5f).SetRelative()
+            GetPanelTransform().DOMoveY(-1000, .5f)
                 .OnComplete(() =>
             {
                 gameObject.SetActive(false);

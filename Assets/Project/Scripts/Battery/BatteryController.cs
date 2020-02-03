@@ -53,7 +53,8 @@ namespace GGJ20.Battery {
         [Inject]
         private BattleSceneController controller;
 
-        private void Start() {
+        [Inject]
+        private void Init() {
             targetable = GetComponent<Targetable>();
             targetable.RegisterOnTargetDestroyed(OnTargetDestroyed);
             targetable.RegisterOnHealthChanged(OnHealthChanged);

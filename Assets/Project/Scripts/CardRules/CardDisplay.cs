@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
@@ -35,6 +36,10 @@ namespace GGJ20.CardRules
         private CanvasGroup cg;
         [SerializeField]
         private bool draggable;
+
+        public UnityEvent DragBegin;
+        public UnityEvent DragCancel;
+        public UnityEvent DragSubmit;
 
         private bool listenForMana;
         private bool dragging;
@@ -78,6 +83,7 @@ namespace GGJ20.CardRules
                 return;
             if (eventData.pointerId == 0 || eventData.pointerId == -1)
             {
+                DragBegin.Invoke();
                 dragging = true;
                 playerHand.OnSelected(this);
             }
@@ -91,7 +97,13 @@ namespace GGJ20.CardRules
             if (dragging && Input.GetKeyUp(KeyCode.Mouse0))
             {
                 dragging = false;
-                playerHand.OnConfirmed(this);
+                if(playerHand.OnConfirmed(this))
+                {
+                    DragSubmit.Invoke();
+                } else
+                {
+                    DragCancel.Invoke();
+                }
             }
         }
 

@@ -33,7 +33,7 @@ namespace GGJ20.Game
             cardDisplay.ShowHeld();
             spellAim.StartAiming(cardDisplay);
         }
-        public void OnConfirmed(CardDisplay cardDisplay)
+        public bool OnConfirmed(CardDisplay cardDisplay)
         {
             if (spellAim.IsGridPosValid)
             {
@@ -41,12 +41,14 @@ namespace GGJ20.Game
                 {
                     OnCardUsed(cardDisplay);
                     spellAim.SpawnSpell();
+                    return true;
                 }
             } else
             {
                 cardDisplay.Deselect();
                 spellAim.StopAiming();
             }
+            return false;
         }
         public void OnCardUsed(CardDisplay cardDisplay)
         {

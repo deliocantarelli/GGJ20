@@ -9,6 +9,6 @@ namespace GGJ20.CardRules
     interface ICardDisplayListener
     {
         void OnSelected(CardDisplay cardDisplay);
-        void OnConfirmed(CardDisplay cardDisplay);
+        bool OnConfirmed(CardDisplay cardDisplay);
     }
 }
