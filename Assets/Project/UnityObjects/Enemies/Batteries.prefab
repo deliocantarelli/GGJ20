@@ -662,7 +662,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &8079807735046924234
 MonoBehaviour:
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetable: {fileID: 0}
-  maxHealth: 10
+  maxHealth: 24
   imageFill: {fileID: 4478813831749661954}
   batteriesNodes:
   - minLife: 3
@@ -1326,7 +1326,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  life: 5
+  life: 7
 --- !u!95 &9151381443896796189
 Animator:
   serializedVersion: 3
