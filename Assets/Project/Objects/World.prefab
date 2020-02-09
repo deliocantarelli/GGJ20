@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3830871691906515661}
   m_Layer: 11
   m_Name: FrontChanger
-  m_TagString: Untagged
+  m_TagString: end_game_line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,6 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc6ceaff02ec4aafb43c48ea46d5d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayToStart: 1
   timeToFinish: 1.5
 --- !u!1001 &303581224082366554
 PrefabInstance:

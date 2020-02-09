@@ -1,5 +1,6 @@
 using System;
 using Common.StateMachines;
+using UnityEngine;
 
 namespace GGJ20.Enemy
 {
@@ -26,6 +27,11 @@ namespace GGJ20.Enemy
         public virtual void OnGameOver()
         {
             ExitTo(new EnemyGameOverState());
+        }
+
+        public virtual void OnTriggerEnter2D(Collider2D other)
+        {
+
         }
     }
 }

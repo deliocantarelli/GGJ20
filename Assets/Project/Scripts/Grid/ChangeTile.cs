@@ -2,25 +2,32 @@ using UnityEngine;
 using Zenject;
 using GGJ20.Game;
 using DG.Tweening;
+using System.Threading.Tasks;
 
 namespace GGJ20.Grid {
     public class ChangeTile : MonoBehaviour {
-        public float timeToFinish;
+        [SerializeField]
+        private float delayToStart;
+        [SerializeField]
+        private float timeToFinish;
         [Inject]
         private BattleSceneController battle;
         void Start()
         {
-            battle.BattleOver += OnBattleOver;
-            ChangeTilesToGreen();
+            battle.RegisterOnWinAnimations(OnGameWin);
         }
-        private void OnBattleOver(GameResult obj) {
-            if(obj.Won) {
-                ChangeTilesToGreen();
-            }
+        private Task OnGameWin() {
+            return ChangeTilesToGreen();
         }
 
-        private void ChangeTilesToGreen() {
-            transform.DOLocalMoveY(22, timeToFinish);
+        private Task ChangeTilesToGreen() {
+            TaskCompletionSource<object> taskSource = new TaskCompletionSource<object>();
+            transform.DOLocalMoveY(22, timeToFinish)
+            .SetDelay(delayToStart)
+            .onComplete = () => {
+                taskSource.TrySetResult(null);
+            };
+            return taskSource.Task;
         }
     }
 }

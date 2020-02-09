@@ -124,6 +124,10 @@ namespace GGJ20.Enemy
         {
             stateMachine.OnCollisionExit2D(collision);
         }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            stateMachine.OnTriggerEnter2D(other);
+        }
 
         public void Damage(int damage) {
             OnDamage.Invoke();
@@ -133,7 +137,9 @@ namespace GGJ20.Enemy
                 Die();
             }
         }
-
+        public void OnGameWon() {
+            Die();
+        }
         void Die() {
             Destroy(gameObject);
         }

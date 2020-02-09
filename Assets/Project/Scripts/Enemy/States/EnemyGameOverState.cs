@@ -15,5 +15,11 @@ namespace GGJ20.Enemy {
         public override void OnGameOver()
         {
         }
+        public override void OnTriggerEnter2D(Collider2D other)
+        {
+            if(other.gameObject.tag == "end_game_line") {
+                Enemy.OnGameWon();         
+            }
+        }
     }
 }
