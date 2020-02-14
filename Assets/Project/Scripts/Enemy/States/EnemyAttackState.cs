@@ -27,11 +27,6 @@ namespace GGJ20.Enemy
             Enemy.SetMovement(false);
         }
 
-        public override void OnDestroy()
-        {
-            RemoveListener();
-        }
-
         private void OnTargetDestroyed()
         {
             ExitTo(new EnemyPursueState());

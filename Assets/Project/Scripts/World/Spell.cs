@@ -27,7 +27,8 @@ namespace GGJ20.World
             public int damage = 1;
             public int repeats;
             public float repeatInterval = 1;
-            public float wallDuration = 1;
+            public float wallDuration { get { return wallEnd - time; } }
+            public float wallEnd = 5;
             public List<Vector2Int> Locations { get { return tileData.GetLocations(new Vector2Int(3,3)); } }
 
             public TileData tileData;
@@ -36,18 +37,19 @@ namespace GGJ20.World
             {
 
             }
-            public Hit(float time, int damage, int repeats, float repeatInterval, TileData tileData)
+            public Hit(Type type, float time, int damage, int repeats, float repeatInterval, float wallEnd, TileData tileData)
             {
                 this.time = time;
                 this.damage = damage;
                 this.repeats = repeats;
                 this.repeatInterval = repeatInterval;
                 this.tileData = tileData;
+                this.type = type;
             }
 
             public Hit WithTime(float t)
             {
-                return new Hit(t, damage, 0, 0, tileData);
+                return new Hit(type, t, damage, 0, 0, wallEnd, tileData);
             }
         }
 
