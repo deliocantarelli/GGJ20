@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 43cbb2012eab446c4a130c498d17e186, type: 3}
   ShapeArt: {fileID: 21300000, guid: d670feea01b3d634abcd50f803f9c5b6, type: 3}
-  ManaCost: 4
+  ManaCost: 3
   Spell:
     hits:
     - type: 2
@@ -22,7 +22,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 5
+      wallEnd: 5
       tileData:
         rows:
         - row: 01010101010101
@@ -37,7 +37,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 5
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000101010000
@@ -52,7 +52,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 4.75
+      wallEnd: 5
       tileData:
         rows:
         - row: 00010000000100
@@ -67,7 +67,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 4.5
+      wallEnd: 5
       tileData:
         rows:
         - row: 01000000000001
@@ -82,7 +82,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -97,7 +97,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -112,7 +112,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -123,3 +123,4 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
   Background: {fileID: 21300000, guid: df4ff74c0310144bfa6d0ffa883f68b7, type: 3}
+  description: 3x1 - 5s

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 794828863e6334d6fa71f0dc575d0ad0, type: 3}
   ShapeArt: {fileID: 21300000, guid: 914ea9b54d7e3410dac3b7254a0a5a7c, type: 3}
-  ManaCost: 4
+  ManaCost: 3
   Spell:
     hits:
     - type: 2
@@ -22,7 +22,7 @@ MonoBehaviour:
       damage: 2
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -37,7 +37,7 @@ MonoBehaviour:
       damage: 2
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -52,7 +52,7 @@ MonoBehaviour:
       damage: 2
       repeats: 1
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -63,3 +63,4 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
   Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}
+  description: 3x2
