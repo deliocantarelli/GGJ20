@@ -27,7 +27,7 @@ namespace GGJ20.CardRules
         }
         public void PutCardOnBottom(Card card)
         {
-            cards.Insert(cards.Count - 1, card);
+            cards.Insert(cards.Count, card);
         }
         public void Shuffle()
         {
