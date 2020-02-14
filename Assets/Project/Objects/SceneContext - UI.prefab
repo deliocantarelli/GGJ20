@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSettings:
-    ManaIncome: 0.7
+    ManaIncome: 0.5
     StartingMana: 4
     MaxMana: 10
   spellAimPrefab: {fileID: 3447923652403036743, guid: 9cf4c24c0821c8a4bae1a3c52521fd55,

@@ -10,31 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
-  m_Name: Energy-Vertical-x5
+  m_Name: Energy-Horizontal-x7
   m_EditorClassIdentifier: 
-  Art: {fileID: 21300000, guid: 794828863e6334d6fa71f0dc575d0ad0, type: 3}
-  ShapeArt: {fileID: 21300000, guid: d50038a0609464af282c12576993038f, type: 3}
+  Art: {fileID: 21300000, guid: 34f3029cfa3d14214b22ac6add9c6148, type: 3}
+  ShapeArt: {fileID: 21300000, guid: bccb03024d8254097a82f367950010fb, type: 3}
   ManaCost: 2
   Spell:
     hits:
     - type: 2
       time: 0
-      damage: 2
-      repeats: 0
-      repeatInterval: 1
-      wallDuration: 1
-      tileData:
-        rows:
-        - row: 00000000000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000000000000
-    - type: 0
-      time: 0
-      damage: 2
+      damage: 1
       repeats: 0
       repeatInterval: 1
       wallDuration: 1
@@ -42,24 +27,54 @@ MonoBehaviour:
         rows:
         - row: 00000000000000
         - row: 00000000000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
+        - row: 00000000000000
+        - row: 01010101010101
+        - row: 00000000000000
         - row: 00000000000000
         - row: 00000000000000
     - type: 0
       time: 0
-      damage: 2
-      repeats: 2
+      damage: 1
+      repeats: 0
       repeatInterval: 1
       wallDuration: 1
       tileData:
         rows:
         - row: 00000000000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
-        - row: 00000001000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000101010000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 0
+      time: 1
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00010101010100
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+    - type: 0
+      time: 2
+      damage: 1
+      repeats: 0
+      repeatInterval: 1
+      wallDuration: 1
+      tileData:
+        rows:
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 00000000000000
+        - row: 01010101010101
+        - row: 00000000000000
+        - row: 00000000000000
         - row: 00000000000000
   Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}

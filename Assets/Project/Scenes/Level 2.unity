@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -210,7 +210,7 @@ PrefabInstance:
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.49
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.49
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
@@ -400,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4899756
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
@@ -480,7 +480,7 @@ PrefabInstance:
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4900244
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
@@ -550,7 +550,7 @@ PrefabInstance:
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4899756
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 9096210142341152007, guid: e555c3808dda440afb3236b98d4c0978,
         type: 3}
       propertyPath: life
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9096210142341152009, guid: e555c3808dda440afb3236b98d4c0978,
         type: 3}
@@ -698,12 +698,12 @@ PrefabInstance:
     - target: {fileID: 9096210142341152010, guid: e555c3808dda440afb3236b98d4c0978,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18
+      value: 0.175
       objectReference: {fileID: 0}
     - target: {fileID: 9096210142341152010, guid: e555c3808dda440afb3236b98d4c0978,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -2.65
       objectReference: {fileID: 0}
     - target: {fileID: 9096210142341152010, guid: e555c3808dda440afb3236b98d4c0978,
         type: 3}
@@ -1268,7 +1268,7 @@ PrefabInstance:
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.49
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
@@ -1348,7 +1348,7 @@ PrefabInstance:
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.49
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8453068380085981086, guid: 59d6edcb7613d77478851c835c601096,
         type: 3}
@@ -1418,7 +1418,7 @@ PrefabInstance:
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.49
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5601539833281083193, guid: 6aab80edef9b57d4ba08349380b6c432,
         type: 3}
@@ -1612,7 +1612,7 @@ PrefabInstance:
     - target: {fileID: 711060000805540735, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: enemies.Array.data[0].spawnInterval
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1699088927525104543, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 34f3029cfa3d14214b22ac6add9c6148, type: 3}
   ShapeArt: {fileID: 21300000, guid: 256c727a83bb644ecbc0d864edc44439, type: 3}
-  ManaCost: 5
+  ManaCost: 3
   Spell:
     hits:
     - type: 2

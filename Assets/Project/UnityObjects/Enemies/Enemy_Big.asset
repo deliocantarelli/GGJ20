@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 535769140160763188, guid: 2f8fd384fd7abce47994663b9d993b5c, type: 3}
   attackTimeDelay: 3
   damage: 4
-  speed: 0.1
-  life: 4
+  speed: 0.2
+  life: 6
