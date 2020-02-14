@@ -12,6 +12,7 @@ using UnityEngine.Assertions;
 using DG.Tweening;
 using GGJ20.Game;
 using UnityEngine.Events;
+using GGJ20.Common;
 
 namespace GGJ20.Battery {
     [Serializable]
@@ -28,13 +29,12 @@ namespace GGJ20.Battery {
         }}
     }
     [RequireComponent(typeof(Targetable))]
-    public class BatteryController : MonoBehaviour {
+    public class BatteryController : MonoBehaviour, IHealth {
         [Inject]
         private GameTargets targets;
         [Inject]
         private BatteryManager batteryManager;
-        public delegate void HealthChanged(BatteryController battery);
-        public event HealthChanged onHealthChanged;
+        public event HealthChange HealthChanged;
         public Targetable targetable;
         private HitChecker hitChecker = new HitChecker();
         public event Action BatteryFilled;
@@ -53,6 +53,9 @@ namespace GGJ20.Battery {
         [Inject]
         private BattleSceneController controller;
 
+        public int CurrentHealth => targetable.Life;
+        public int MaxHealth => maxHealth;
+
         [Inject]
         private void Init() {
             targetable = GetComponent<Targetable>();
@@ -70,10 +73,6 @@ namespace GGJ20.Battery {
 
         }
 
-        public void RegisterOnHealthChanged(HealthChanged healthChangedEvent) {
-            onHealthChanged += healthChangedEvent;
-        }
-
         private void OnHealthChanged(int change)
         {
             if (change > 0)
@@ -87,7 +86,7 @@ namespace GGJ20.Battery {
 
             UpdateBatteryNode();
             imageFill.fillAmount = targetable.Life / (float)maxHealth;
-            onHealthChanged?.Invoke(this);
+            HealthChanged?.Invoke(this, change);
         }
 
         private void RegisterBattery() {
@@ -114,10 +113,10 @@ namespace GGJ20.Battery {
             if(targetable.Life >= maxHealth && !filled)
             {
                 filled = true;
-                BatteryFilled?.Invoke();
 
                 targetable.SetInvulnerable();
                 targets.OnBatterySaved(targetable);
+                BatteryFilled?.Invoke();
             }
         }
         private void Update()

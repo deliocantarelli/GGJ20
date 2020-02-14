@@ -32,7 +32,7 @@ namespace GGJ20.Enemy {
         {
             if(other.gameObject.tag == "target") {
                 Targetable target = other.gameObject.GetComponent<Targetable>();
-                if(target != null && target.isAlive) {
+                if(target != null && target.isAlive && !target.IsInvulnerable) {
                     ExitTo(new EnemyAttackState(target));
                 }
             }

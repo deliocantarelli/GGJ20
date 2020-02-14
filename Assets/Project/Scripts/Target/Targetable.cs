@@ -10,6 +10,8 @@ namespace GGJ20.Target {
         public delegate void TargetHealthChanged(int damage);
         private event TargetHealthChanged targetHealthChanged;
 
+        public event Action<Targetable> BecameInvulnerable;
+
 
         public UnityEvent OnHeal;
         public UnityEvent OnDamage;
@@ -19,7 +21,10 @@ namespace GGJ20.Target {
         private bool invulnerable;
 
         public int Life { get { return life; } }
+
         public bool isAlive {get { return life > 0; }}
+
+        public bool IsInvulnerable { get => invulnerable; }
 
         public void DealDamage(int damage) {
             if(!isAlive || invulnerable) {
@@ -56,9 +61,10 @@ namespace GGJ20.Target {
             targetDestroyed?.Invoke();
         }
 
-        internal void SetInvulnerable()
+        public void SetInvulnerable()
         {
             invulnerable = true;
+            BecameInvulnerable?.Invoke(this);
         }
 
         private void TriggerHealthChanged(int change) {

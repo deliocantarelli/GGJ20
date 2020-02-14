@@ -33,6 +33,8 @@ namespace GGJ20.CardRules
         [SerializeField]
         private Text manaCost;
         [SerializeField]
+        private Text powerDisplay;
+        [SerializeField]
         private CanvasGroup cg;
         [SerializeField]
         private bool draggable;
@@ -66,6 +68,7 @@ namespace GGJ20.CardRules
             this.shapeArt.sprite = Card.ShapeArt;
             this.bgArt.sprite = Card.Background;
             this.manaCost.text = Card.ManaCost.ToString();
+            this.powerDisplay.text = Card.GetPowerText();
         }
         private void OnSelected()
         {

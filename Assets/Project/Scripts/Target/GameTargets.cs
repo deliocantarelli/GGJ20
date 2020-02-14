@@ -13,15 +13,13 @@ namespace GGJ20.Target {
         [Inject]
         private BattleSceneController sceneController;
 
-        public Targetable[] Targets { get; private set; }
+        public IEnumerable<Targetable> Targets { get => targets.AsReadOnly(); }
         public void RegisterBattery(Targetable target)
         {
             targets.Add(target);
-            Targets = targets.ToArray();
         }
         public void OnBatterySaved(Targetable target) {
             targets.Remove(target);
-            Targets = targets.ToArray();
 
             if(targets.Count == 0) {
                 sceneController.OnWin();
@@ -31,7 +29,6 @@ namespace GGJ20.Target {
         public void OnBatteryDestroyed(Targetable target)
         {
             targets.Remove(target);
-            Targets = targets.ToArray();
         }
     }
 }

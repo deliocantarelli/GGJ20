@@ -14,7 +14,9 @@ namespace GGJ20.Enemy
         {
             target = targetable;
             target.RegisterOnTargetDestroyed(OnTargetDestroyed);
+            target.BecameInvulnerable += OnTargetInvulnerable;
         }
+
         protected override void Begin()
         {
             StopMovement();
@@ -30,15 +32,19 @@ namespace GGJ20.Enemy
             RemoveListener();
         }
 
-        public void OnTargetDestroyed()
+        private void OnTargetDestroyed()
         {
-            Exit(new EnemyPursueState());
+            ExitTo(new EnemyPursueState());
         }
 
-        private void Exit(EnemyStateBase state)
+        private void OnTargetInvulnerable(Targetable target)
+        {
+            ExitTo(new EnemyPursueState());
+        }
+
+        protected override void End()
         {
             RemoveListener();
-            ExitTo(state);
         }
 
         private void RemoveListener()
@@ -46,6 +52,8 @@ namespace GGJ20.Enemy
             if (target != null)
             {
                 target.RemoveOnTargetDestroyed(OnTargetDestroyed);
+
+                target.BecameInvulnerable += OnTargetInvulnerable;
             }
         }
 
@@ -67,6 +75,7 @@ namespace GGJ20.Enemy
         private void Attack()
         {
             target.DealDamage(Enemy.settings.damage);
+            Enemy.Damage(1);
         }
 
         public override void OnCollisionExit2D(Collision2D other)

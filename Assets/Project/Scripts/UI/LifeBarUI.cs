@@ -5,6 +5,7 @@ using GGJ20.Battery;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using GGJ20.Common;
 
 namespace GGJ20.UI{
     public class LifeBarUI : MonoBehaviour {
@@ -25,8 +26,13 @@ namespace GGJ20.UI{
         }
 
         private void OnBatterySpawned(BatteryController battery) {
-            battery.RegisterOnHealthChanged(OnHealthChanged);
+            battery.HealthChanged += OnBatteryHealthChanged;
             batteries.Add(battery);
+            UpdateBatteriesGoal();
+        }
+
+        private void OnBatteryHealthChanged(IHealth health, int change)
+        {
             UpdateBatteriesGoal();
         }
 
@@ -41,8 +47,5 @@ namespace GGJ20.UI{
             image.fillAmount = currentLife / maxLife;
         }
 
-        private void OnHealthChanged(BatteryController battery) {
-            UpdateBatteriesGoal();
-        }
     }
 }

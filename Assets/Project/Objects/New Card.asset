@@ -41,4 +41,4 @@ MonoBehaviour:
       wallDuration: 0
       tileData:
         rows: []
-  type: 0
+  Background: {fileID: 0}

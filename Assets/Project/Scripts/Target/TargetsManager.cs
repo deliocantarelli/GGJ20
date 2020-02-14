@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using Zenject;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GGJ20.Target
 {
@@ -13,15 +14,13 @@ namespace GGJ20.Target
 
         public Transform GetClosestTarget(Transform otherTransform)
         {
-            Vector2 pos = otherTransform.position;
-
-            float distance = float.PositiveInfinity;
             Targetable target = null;
 
-            Targetable[] targets = gameTargets.Targets;
-            if(targets == null) {
-                return null;
-            }
+            var targets = gameTargets.Targets.Where(t => !t.IsInvulnerable).ToArray();
+
+
+            Vector2 pos = otherTransform.position;
+            float distance = float.PositiveInfinity;
             foreach (Targetable currentTarget in targets) {
                 float currentDis = Vector2.Distance(currentTarget.transform.position, pos);
                 if(currentDis < distance) {

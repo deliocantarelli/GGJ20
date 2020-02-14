@@ -21,7 +21,7 @@ namespace GGJ20.Enemy
 
         public virtual void OnDestroy()
         {
-            
+            ExitTo(new DestroyedState());
         }
         public virtual void OnGameOver()
         {
