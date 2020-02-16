@@ -808,7 +808,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4260632771591445802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d12142bbc87fdf438e0e365233625e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 987ff81528806834395280691d436d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4901389041008689590
@@ -6186,7 +6186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649adef9018784692b5d4ef2fb75fd95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetable: {fileID: 0}
+  targetable: {fileID: 9096210142341152007}
   maxHealth: 24
   imageFill: {fileID: 4478813831749661954}
   batteriesNodes:
