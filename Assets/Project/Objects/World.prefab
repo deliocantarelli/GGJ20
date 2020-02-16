@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayToStart: 1
-  timeToFinish: 1.5
+  timeToFinish: 2.5
 --- !u!1001 &303581224082366554
 PrefabInstance:
   m_ObjectHideFlags: 0
