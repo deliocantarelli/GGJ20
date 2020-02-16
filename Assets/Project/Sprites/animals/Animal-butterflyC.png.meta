@@ -8,6 +8,18 @@ TextureImporter:
   - first:
       213: -770573729127073746
     second: Animal-butterflyC_1
+  - first:
+      213: 260709391626588021
+    second: Animal-butterflyC_0
+  - first:
+      213: -5561921477733364973
+    second: Animal-butterflyC_1
+  - first:
+      213: -7433931279174029425
+    second: Animal-butterflyC_2
+  - first:
+      213: 6675193837986003094
+    second: Animal-butterflyC_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -97,7 +109,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 60
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -106,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee04aaeac051ad820800000000000000
-      internalID: 2943688450654224622
+      spriteID: 57fc2857fc93e9300800000000000000
+      internalID: 260709391626588021
       vertices: []
       indices: 
       edges: []
@@ -116,9 +128,9 @@ TextureImporter:
       name: Animal-butterflyC_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 30
         y: 0
-        width: 60
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,8 +139,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28f12aa64f5e45f0800000000000000
-      internalID: -770573729127073746
+      spriteID: 31b461362e510d2b0800000000000000
+      internalID: -5561921477733364973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal-butterflyC_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8faa2463ee55d890800000000000000
+      internalID: -7433931279174029425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal-butterflyC_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6983800dd6d03ac50800000000000000
+      internalID: 6675193837986003094
       vertices: []
       indices: 
       edges: []
