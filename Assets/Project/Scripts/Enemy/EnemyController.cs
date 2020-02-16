@@ -43,6 +43,7 @@ namespace GGJ20.Enemy
         private Image imageSlider;
         [SerializeField]
         public EnemyAnimation enemyAnimation;
+        public GameObject endGameObject;
         [NonSerialized]
         public Animation playAnimation;
         [NonSerialized]
@@ -138,7 +139,7 @@ namespace GGJ20.Enemy
             }
         }
         public void OnGameWon() {
-            Die();
+            //All Logic is now on component EnemyGameWonAnimation
         }
         void Die() {
             Destroy(gameObject);
