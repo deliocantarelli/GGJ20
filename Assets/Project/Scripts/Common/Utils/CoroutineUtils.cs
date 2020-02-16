@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace GGJ20.Common
+namespace PointNSheep.Common.Time
 {
     public static class CoroutineUtils
     {

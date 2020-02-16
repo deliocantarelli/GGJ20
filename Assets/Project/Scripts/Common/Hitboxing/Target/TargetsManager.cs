@@ -6,7 +6,7 @@ using Zenject;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GGJ20.Target
+namespace PointNSheep.Common.Hitboxing
 {
     public class TargetsManager : MonoBehaviour {
         [Inject]

@@ -1,5 +1,4 @@
-﻿using GGJ20.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace GG20.Common
+namespace PointNSheep.Common.Health
 {
     [RequireComponent(typeof(Text))]
     public class HealthText : MonoBehaviour

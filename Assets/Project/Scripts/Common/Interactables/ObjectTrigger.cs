@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace AntonioHR.Interactables
+namespace PointNSheep.Common.Interactables
 {
     [RequireComponent(typeof(Collider2D))]
     public abstract class ObjectTrigger<T> : MonoBehaviour

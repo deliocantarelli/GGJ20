@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace GGJ20.Audio
+namespace PointNSheep.Common.Audio
 { 
     public class AudioManager : MonoBehaviour
     {

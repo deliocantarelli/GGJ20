@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static GGJ20.World.Spell;
 
-namespace GGJ20.World
+namespace PointNSheep.Board
 {
-    public class HitChecker
+    public class SpellHitChecker
     {
         private float hitReset = .2f;
 

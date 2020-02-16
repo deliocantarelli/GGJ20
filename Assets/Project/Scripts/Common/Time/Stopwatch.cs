@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace GGJ20.Utils
+namespace PointNSheep.Common.Time
 {
     public class Stopwatch
     {

@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace GGJ20.Target {
+namespace PointNSheep.Common.Hitboxing
+{
     public class GameTargets
     {
         List<Targetable> targets = new List<Targetable>();

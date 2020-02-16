@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GGJ20.Common
+namespace PointNSheep.Common.Health
 {
     public delegate void HealthChange(IHealth health, int change);
     public interface IHealth

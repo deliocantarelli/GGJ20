@@ -3,7 +3,8 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace GGJ20.Target {
+namespace PointNSheep.Common.Hitboxing
+{
     public class Targetable : MonoBehaviour {
         public delegate void TargetDestroyed();
         private event TargetDestroyed targetDestroyed;

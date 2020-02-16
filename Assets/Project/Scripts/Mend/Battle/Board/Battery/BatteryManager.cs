@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GGJ20.Battery {
+namespace PointNSheep.Mend.Battle
+{
     public class BatteryManager : MonoBehaviour{
         public delegate void BatterySpawned(BatteryController battery);
         private BatterySpawned onBatterySpawned;

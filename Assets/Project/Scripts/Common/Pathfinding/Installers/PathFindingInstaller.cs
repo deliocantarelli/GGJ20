@@ -1,7 +1,8 @@
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.PathFinding {
+namespace PointNSheep.Pathfinding
+{
     public class PathFindingInstaller : MonoInstaller
     {
         [SerializeField]

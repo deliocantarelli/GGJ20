@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace GGJ20.Common
+namespace PointNSheep.Common.TileData
 {
     [System.Serializable]
     public class TileData

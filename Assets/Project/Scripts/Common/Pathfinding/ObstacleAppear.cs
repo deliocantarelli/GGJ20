@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Obstacle {
+namespace PointNSheep.Pathfinding {
     public class ObstacleAppear : MonoBehaviour
     {
         [Inject]
-        GGJ20.PathFinding.PathFindingManager pathFindingManager;
+        PathFindingManager pathFindingManager;
         
         void OnEnable()
         {

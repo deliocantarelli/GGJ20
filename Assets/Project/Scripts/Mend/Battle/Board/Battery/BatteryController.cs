@@ -1,20 +1,17 @@
 
 using UnityEngine;
 using Zenject;
-using GGJ20.Target;
 using UnityEngine.SceneManagement;
 using GGJ20.World;
 using System;
 using System.Collections.Generic;
-using GGJ20.Utils;
 using UnityEngine.UI;
 using UnityEngine.Assertions;
 using DG.Tweening;
 using GGJ20.Game;
 using UnityEngine.Events;
-using GGJ20.Common;
 
-namespace GGJ20.Battery {
+namespace PointNSheep.Mend.Battle {
     [Serializable]
     class BatteryConfig {
         public int minLife = 0;

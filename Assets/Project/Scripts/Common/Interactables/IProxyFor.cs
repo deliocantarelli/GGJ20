@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AntonioHR.Interactables
+namespace PointNSheep.Common.Interactables
 {
     public interface IProxyFor<T>
     {

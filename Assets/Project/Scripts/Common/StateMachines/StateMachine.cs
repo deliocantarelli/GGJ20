@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace Common.StateMachines
+namespace PointNSheep.Common.StateMachines
 {
     public abstract class StateMachine<TContext, TState> :
     IStateMachine<TContext, TState>

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GGJ20.World
+namespace PointNSheep.Common.Grid
 {
     public class WorldGrid : MonoBehaviour
     {
