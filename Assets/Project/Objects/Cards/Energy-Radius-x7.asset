@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9120aea8dfebc148b70f227e03f9aff, type: 3}
+  m_Script: {fileID: 11500000, guid: ca803954f3718f94f9924f5aa8c1b085, type: 3}
   m_Name: Energy-Radius-x7
   m_EditorClassIdentifier: 
   Art: {fileID: 21300000, guid: 34f3029cfa3d14214b22ac6add9c6148, type: 3}
@@ -22,7 +22,7 @@ MonoBehaviour:
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000001000000
@@ -35,9 +35,9 @@ MonoBehaviour:
     - type: 0
       time: 0
       damage: 1
-      repeats: 0
+      repeats: 2
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -48,11 +48,11 @@ MonoBehaviour:
         - row: 00000000000000
         - row: 00000000000000
     - type: 0
-      time: 1
+      time: 0.15
       damage: 1
-      repeats: 0
+      repeats: 2
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000000000000
@@ -63,11 +63,11 @@ MonoBehaviour:
         - row: 00000001000000
         - row: 00000000000000
     - type: 0
-      time: 2
+      time: 0.3
       damage: 1
       repeats: 0
       repeatInterval: 1
-      wallDuration: 1
+      wallEnd: 5
       tileData:
         rows:
         - row: 00000001000000
@@ -78,3 +78,4 @@ MonoBehaviour:
         - row: 00000101010000
         - row: 00000001000000
   Background: {fileID: 21300000, guid: c98d8613686864ecb8c2122f6a2b09c8, type: 3}
+  description: 7x1

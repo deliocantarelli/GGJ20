@@ -3051,11 +3051,6 @@ PrefabInstance:
       propertyPath: _monoInstallers.Array.size
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 8160280440632677834, guid: 96886e79280147f4aa5945b73a8cc104,
-        type: 3}
-      propertyPath: _monoInstallers.Array.data[5]
-      value: 
-      objectReference: {fileID: 8160280439684174686}
     - target: {fileID: 8160280440632677835, guid: 96886e79280147f4aa5945b73a8cc104,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3113,15 +3108,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96886e79280147f4aa5945b73a8cc104, type: 3}
---- !u!114 &8160280439684174686 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6751553295813333828, guid: 96886e79280147f4aa5945b73a8cc104,
-    type: 3}
-  m_PrefabInstance: {fileID: 8160280439684174684}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3107421c5538941f48a50e10f418869e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
