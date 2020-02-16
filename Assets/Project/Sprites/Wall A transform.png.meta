@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 19c168bab27b246fcbcbea87fbcf2206
+guid: 3fc2060869479498491637679f11cd86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6171206875747676878
-    second: Animal-butterfly_0
+      213: -2744153789401653136
+    second: Wall A transform_0
   - first:
-      213: 5332217655815733605
-    second: Animal-butterfly_1
+      213: -3562506502701191827
+    second: Wall A transform_1
   - first:
-      213: -2080576782306147929
-    second: Animal-butterfly_0
+      213: -342130053546166301
+    second: Wall A transform_2
   - first:
-      213: 3686717566352834998
-    second: Animal-butterfly_1
+      213: 6862594951412685543
+    second: Wall A transform_3
   - first:
-      213: -7651912998639017555
-    second: Animal-butterfly_2
+      213: -1556610467966238078
+    second: Wall A transform_0
   - first:
-      213: 204135201642430858
-    second: Animal-butterfly_3
+      213: 3739515717969346024
+    second: Wall A transform_1
+  - first:
+      213: -8418071427097423597
+    second: Wall A transform_2
+  - first:
+      213: 4605660354490398779
+    second: Wall A transform_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -61,8 +67,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -104,85 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animal-butterfly_0
+      name: Wall A transform_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 30
+        x: 1
+        y: 1
+        width: 10
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a187ba907e4023e0800000000000000
-      internalID: -2080576782306147929
+      spriteID: 282c733d60fc56ae0800000000000000
+      internalID: -1556610467966238078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animal-butterfly_1
+      name: Wall A transform_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0
-        width: 30
-        height: 30
+        x: 13
+        y: 1
+        width: 10
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b147a1f71ad92330800000000000000
-      internalID: 3686717566352834998
+      spriteID: 8ed7d819bbd65e330800000000000000
+      internalID: 3739515717969346024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animal-butterfly_2
+      name: Wall A transform_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 30
-        height: 30
+        x: 25
+        y: 1
+        width: 10
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da16de75ba1fec590800000000000000
-      internalID: -7651912998639017555
+      spriteID: 3111efd43a00d2b80800000000000000
+      internalID: -8418071427097423597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animal-butterfly_3
+      name: Wall A transform_3
       rect:
         serializedVersion: 2
-        x: 90
-        y: 0
-        width: 30
-        height: 30
+        x: 37
+        y: 1
+        width: 10
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81cc0462eb35d200800000000000000
-      internalID: 204135201642430858
+      spriteID: b38ff79c0b79aef30800000000000000
+      internalID: 4605660354490398779
       vertices: []
       indices: 
       edges: []
