@@ -1,5 +1,7 @@
 using PointNSheep.Common.StateMachines;
 using System;
+using Common.StateMachines;
+using UnityEngine;
 
 namespace PointNSheep.Mend.Battle
 {
@@ -26,6 +28,11 @@ namespace PointNSheep.Mend.Battle
         public virtual void OnGameOver()
         {
             ExitTo(new EnemyGameOverState());
+        }
+
+        public virtual void OnTriggerEnter2D(Collider2D other)
+        {
+
         }
     }
 }

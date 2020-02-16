@@ -39,6 +39,7 @@ namespace PointNSheep.Mend.Battle
         private Image imageSlider;
         [SerializeField]
         public EnemyAnimation enemyAnimation;
+        public GameObject endGameObject;
         [NonSerialized]
         public Animation playAnimation;
         [NonSerialized]
@@ -120,6 +121,10 @@ namespace PointNSheep.Mend.Battle
         {
             stateMachine.OnCollisionExit2D(collision);
         }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            stateMachine.OnTriggerEnter2D(other);
+        }
 
         public void Damage(int damage) {
             OnDamage.Invoke();
@@ -129,7 +134,9 @@ namespace PointNSheep.Mend.Battle
                 Die();
             }
         }
-
+        public void OnGameWon() {
+            //All Logic is now on component EnemyGameWonAnimation
+        }
         void Die() {
             Destroy(gameObject);
         }

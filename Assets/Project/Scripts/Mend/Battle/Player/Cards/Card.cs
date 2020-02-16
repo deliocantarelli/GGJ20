@@ -12,16 +12,23 @@ namespace PointNSheep.Mend.Battle
         public int ManaCost;
         public Spell.Description Spell;
         public Sprite Background;
+        [SerializeField]
+        private bool customDescription = false;
 
         [SerializeField]
         private string description;
 
         private void OnValidate()
         {
-            description = GetPowerText();
+            if(!customDescription) {
+                description = GetPowerText();
+            }
         }
         public string GetPowerText()
         {
+            if(customDescription) {
+                return description;
+            }
             var wallHits = Spell.hits.Where(h => h.type == Battle.Spell.Hit.Type.Wall);
             var dmgHits = Spell.hits.Where(h => h.type == Battle.Spell.Hit.Type.Damage);
 
