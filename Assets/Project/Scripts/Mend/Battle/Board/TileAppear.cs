@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace GGJ20.Battery {
+namespace PointNSheep.Mend.Battle {
     [SerializeField]
     public class TileAppear : MonoBehaviour {
         [SerializeField]

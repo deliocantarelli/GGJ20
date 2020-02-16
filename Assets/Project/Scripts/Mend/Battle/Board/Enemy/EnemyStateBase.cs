@@ -1,6 +1,5 @@
 using PointNSheep.Common.StateMachines;
 using System;
-using Common.StateMachines;
 using UnityEngine;
 
 namespace PointNSheep.Mend.Battle

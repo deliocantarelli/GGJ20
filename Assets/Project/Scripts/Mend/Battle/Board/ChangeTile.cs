@@ -1,10 +1,11 @@
 using UnityEngine;
 using Zenject;
-using GGJ20.Game;
 using DG.Tweening;
 using System.Threading.Tasks;
+using PointNSheep.Mend.Battle;
 
-namespace GGJ20.Grid {
+namespace PointNSheep.Mend.Battle
+{
     public class ChangeTile : MonoBehaviour {
         [SerializeField]
         private float delayToStart;

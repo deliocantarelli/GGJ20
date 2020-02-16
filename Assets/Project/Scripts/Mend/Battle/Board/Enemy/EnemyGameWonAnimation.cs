@@ -2,14 +2,18 @@
 
 using UnityEngine;
 
-namespace GGJ20.Enemy {
+namespace PointNSheep.Mend.Battle
+{
     [RequireComponent(typeof(Animator))]
-    public class EnemyGameWonAnimation : MonoBehaviour {
-        void OnEnable() {
+    public class EnemyGameWonAnimation : MonoBehaviour
+    {
+        void OnEnable()
+        {
             Animator animator = GetComponent<Animator>();
 
             AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
-            if(clips.Length == 0) {
+            if (clips.Length == 0)
+            {
                 return;
             }
             int index = Random.Range(0, clips.Length);
