@@ -139,6 +139,7 @@ namespace GGJ20.Enemy
             }
         }
         public void OnGameWon() {
+            GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
             //All Logic is now on component EnemyGameWonAnimation
         }
         void Die() {
