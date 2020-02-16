@@ -1,5 +1,5 @@
-﻿using GGJ20.Audio;
-using GGJ20.CardRules;
+﻿using PointNSheep.Common.Audio;
+using PointNSheep.Mend.Meta;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Game
+namespace PointNSheep.Mend.Battle
 {
     public class BattleSceneController : MonoBehaviour
     {

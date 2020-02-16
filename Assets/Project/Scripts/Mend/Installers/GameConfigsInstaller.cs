@@ -1,19 +1,22 @@
-using GGJ20.Game;
+using PointNSheep.Mend.Meta;
 using UnityEngine;
 using Zenject;
 
-[CreateAssetMenu(fileName = "GameConfigsInstaller", menuName = "GGJ20/GameConfigsInstaller")]
-public class GameConfigsInstaller : ScriptableObjectInstaller<GameConfigsInstaller>
+namespace PointNSheep.Mend
 {
-
-    [SerializeField]
-    private Run.Configs runConfigs;
-    [SerializeField]
-    private GameStateController.Configs gameConfigs;
-    public override void InstallBindings()
+    [CreateAssetMenu(fileName = "GameConfigsInstaller", menuName = "GGJ20/GameConfigsInstaller")]
+    public class GameConfigsInstaller : ScriptableObjectInstaller<GameConfigsInstaller>
     {
-        Container.Bind<Run.Configs>().FromInstance(runConfigs);
-        Container.Bind<GameStateController.Configs>().FromInstance(gameConfigs);
-    }
 
+        [SerializeField]
+        private Run.Configs runConfigs;
+        [SerializeField]
+        private GameStateController.Configs gameConfigs;
+        public override void InstallBindings()
+        {
+            Container.Bind<Run.Configs>().FromInstance(runConfigs);
+            Container.Bind<GameStateController.Configs>().FromInstance(gameConfigs);
+        }
+
+    }
 }

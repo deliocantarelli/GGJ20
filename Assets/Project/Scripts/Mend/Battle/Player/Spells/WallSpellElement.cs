@@ -1,5 +1,4 @@
-﻿using GGJ20.Obstacle;
-using GGJ20.World;
+﻿using PointNSheep.Common.Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +8,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.World
+
+namespace PointNSheep.Mend.Battle
 {
     public class WallSpellElement : SpellElement
     {

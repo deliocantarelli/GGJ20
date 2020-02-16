@@ -1,12 +1,11 @@
-﻿using GGJ20.CardRules;
-using GGJ20.UI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GGJ20.UI
+
+namespace PointNSheep.Mend.Battle
 {
     public class RemoveCardPicker : CardPickerPanel
     {

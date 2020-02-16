@@ -1,10 +1,7 @@
 using UnityEngine;
 using Zenject;
-using GGJ20.Battery;
-using GGJ20.Target;
-using GGJ20.Spawner;
 
-namespace GGJ20.Installers {
+namespace PointNSheep.Mend.Battle {
     public class BoardFlowInstaller : MonoInstaller
     {
         [SerializeField]

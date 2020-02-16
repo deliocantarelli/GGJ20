@@ -1,8 +1,7 @@
 
 using UnityEngine;
-using GGJ20.Target;
 
-namespace GGJ20.Enemy {
+namespace PointNSheep.Mend.Battle {
     public class EnemyPursueState : EnemyStateBase
     {
         private float currentWait = 0;

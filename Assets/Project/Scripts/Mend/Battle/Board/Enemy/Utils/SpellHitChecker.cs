@@ -1,12 +1,12 @@
-﻿using GGJ20.Utils;
+﻿using PointNSheep.Common.Timers;
+using PointNSheep.Mend.Battle;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static GGJ20.World.Spell;
 
-namespace PointNSheep.Board
+namespace PointNSheep.Mend.Battle
 {
     public class SpellHitChecker
     {
@@ -15,7 +15,7 @@ namespace PointNSheep.Board
         private Stopwatch timer = new Stopwatch();
         private List<Spell.Hit> currentHits = new List<Spell.Hit>();
 
-        public bool CheckHit(Hit hit, out int damage)
+        public bool CheckHit(Spell.Hit hit, out int damage)
         {
             if (!currentHits.Contains(hit))
             {

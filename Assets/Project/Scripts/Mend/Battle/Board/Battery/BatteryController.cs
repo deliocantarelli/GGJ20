@@ -1,15 +1,13 @@
-
 using UnityEngine;
 using Zenject;
 using UnityEngine.SceneManagement;
-using GGJ20.World;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.Assertions;
 using DG.Tweening;
-using GGJ20.Game;
 using UnityEngine.Events;
+using PointNSheep.Common.Health;
 
 namespace PointNSheep.Mend.Battle {
     [Serializable]
@@ -33,7 +31,7 @@ namespace PointNSheep.Mend.Battle {
         private BatteryManager batteryManager;
         public event HealthChange HealthChanged;
         public Targetable targetable;
-        private HitChecker hitChecker = new HitChecker();
+        private SpellHitChecker hitChecker = new SpellHitChecker();
         public event Action BatteryFilled;
         [SerializeField]
         public int maxHealth = 10;

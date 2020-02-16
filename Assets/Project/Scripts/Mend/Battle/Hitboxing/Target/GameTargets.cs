@@ -1,11 +1,10 @@
 
-using GGJ20.Game;
 using System;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace PointNSheep.Common.Hitboxing
+namespace PointNSheep.Mend.Battle
 {
     public class GameTargets
     {

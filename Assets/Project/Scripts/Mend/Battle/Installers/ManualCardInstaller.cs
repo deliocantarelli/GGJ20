@@ -1,8 +1,7 @@
-﻿using GGJ20.CardRules;
-using UnityEngine;
+﻿using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Installers
+namespace PointNSheep.Mend.Battle
 {
     public class ManualCardInstaller : MonoInstaller
     {

@@ -1,4 +1,4 @@
-﻿namespace GGJ20.Enemy
+﻿namespace PointNSheep.Mend.Battle
 {
     public class DestroyedState : EnemyStateBase
     {

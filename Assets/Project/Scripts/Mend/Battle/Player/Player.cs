@@ -1,5 +1,4 @@
-﻿using GGJ20.CardRules;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Game
+namespace PointNSheep.Mend.Battle
 {
     public class Player : MonoBehaviour
     {

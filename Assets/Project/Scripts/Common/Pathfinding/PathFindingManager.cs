@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using Pathfinding;
 
-namespace PointNSheep.Pathfinding
+namespace PointNSheep.Common.Pathfinding
 {
     public class PathFindingManager : MonoBehaviour {
         private bool dirty;

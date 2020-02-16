@@ -1,13 +1,11 @@
-﻿using GGJ20.World;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
-
-namespace GGJ20.World
+namespace PointNSheep.Mend.Battle
 {
     public class HitSpellElement : SpellElement
     {

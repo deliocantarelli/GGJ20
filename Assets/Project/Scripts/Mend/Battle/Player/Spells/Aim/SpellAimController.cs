@@ -1,9 +1,9 @@
-﻿using GGJ20.World;
+﻿using PointNSheep.Common.Grid;
 using System;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
     public class SpellAimController : MonoBehaviour
     {

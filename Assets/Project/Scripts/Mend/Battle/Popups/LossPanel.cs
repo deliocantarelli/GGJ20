@@ -1,5 +1,5 @@
 ﻿using DG.Tweening;
-using GGJ20.Game;
+using PointNSheep.Mend.Meta;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Assets.Project.Scripts.UI
+
+namespace PointNSheep.Mend.Battle
 {
     public class LossPanel : MonoBehaviour
     {

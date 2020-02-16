@@ -1,5 +1,4 @@
-﻿using AntonioHR.Interactables;
-using GGJ20.Enemy;
+﻿using PointNSheep.Common.Interactables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace GGJ20.World
+
+namespace PointNSheep.Mend.Battle
 {
     public class SpellDamage : ObjectTrigger<EnemyController>
     {

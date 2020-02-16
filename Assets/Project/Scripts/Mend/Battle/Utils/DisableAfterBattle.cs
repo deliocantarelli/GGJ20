@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Game
+namespace PointNSheep.Mend.Battle
 {
     public class DisableAfterBattle : MonoBehaviour
     {

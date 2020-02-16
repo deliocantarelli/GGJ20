@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
-namespace PointNSheep.Common.TileData
+namespace PointNSheep.Common.TileInspector
 {
     [CustomPropertyDrawer(typeof(TileData))]
     public class CustomTileData : PropertyDrawer

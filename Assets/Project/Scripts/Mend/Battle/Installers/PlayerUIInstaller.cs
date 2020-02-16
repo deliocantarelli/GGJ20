@@ -1,11 +1,10 @@
-using GGJ20.CardRules;
-using GGJ20.Game;
+using PointNSheep.Mend.Meta;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Installers
+namespace PointNSheep.Mend.Battle
 {
     public class PlayerUIInstaller : MonoInstaller
     {

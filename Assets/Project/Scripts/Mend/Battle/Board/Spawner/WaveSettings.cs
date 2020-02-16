@@ -1,6 +1,6 @@
 
 
-namespace GGJ20.Spawner{
+namespace PointNSheep.Mend.Battle{
     public class WaveSettings {
         WaveEnemy[] enemies;
     }

@@ -1,8 +1,6 @@
-
-using GGJ20.Target;
 using UnityEngine;
 
-namespace GGJ20.Enemy
+namespace PointNSheep.Mend.Battle
 {
     public class EnemyAttackState : EnemyStateBase
     {

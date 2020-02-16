@@ -1,6 +1,5 @@
 ﻿using DG.Tweening;
-using GGJ20.CardRules;
-using GGJ20.Game;
+using PointNSheep.Mend.Meta;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.UI
+namespace PointNSheep.Mend.Battle
 {
     [RequireComponent(typeof(CanvasGroup))]
     public  abstract class CardPickerPanel : MonoBehaviour, ICardDisplayListener

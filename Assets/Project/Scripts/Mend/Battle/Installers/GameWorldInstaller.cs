@@ -1,32 +1,33 @@
-using GGJ20.CardRules;
-using GGJ20.World;
+using PointNSheep.Common.Grid;
 using UnityEngine;
 using Zenject;
-
-public class GameWorldInstaller : MonoInstaller
+namespace PointNSheep.Mend.Battle
 {
-    [SerializeField]
-    private Spell spellPrefab;
-    [SerializeField]
-    private HitSpellElement spellHitPrefab;
-    [SerializeField]
-    private WallSpellElement spellWallElementPrefab;
-
-    public override void InstallBindings()
+    public class GameWorldInstaller : MonoInstaller
     {
-        Container.Bind<WorldGrid>().FromComponentInHierarchy().AsSingle();
+        [SerializeField]
+        private Spell spellPrefab;
+        [SerializeField]
+        private HitSpellElement spellHitPrefab;
+        [SerializeField]
+        private WallSpellElement spellWallElementPrefab;
 
-        Container.BindFactory<Card, Vector2Int, Spell, Spell.Factory>()
-            .FromComponentInNewPrefab(spellPrefab)
-            .UnderTransformGroup("World/Spells");
-        Container.BindMemoryPool<HitSpellElement, HitSpellElement.Pool>()
-            .WithInitialSize(10)
-            .FromComponentInNewPrefab(spellHitPrefab)
-            .UnderTransformGroup("World/SpellElements/Hit");
+        public override void InstallBindings()
+        {
+            Container.Bind<WorldGrid>().FromComponentInHierarchy().AsSingle();
 
-        Container.BindMemoryPool<WallSpellElement, WallSpellElement.Pool>()
-            .WithInitialSize(10)
-            .FromComponentInNewPrefab(spellWallElementPrefab)
-            .UnderTransformGroup("World/SpellElements/Wall");
+            Container.BindFactory<Card, Vector2Int, Spell, Spell.Factory>()
+                .FromComponentInNewPrefab(spellPrefab)
+                .UnderTransformGroup("World/Spells");
+            Container.BindMemoryPool<HitSpellElement, HitSpellElement.Pool>()
+                .WithInitialSize(10)
+                .FromComponentInNewPrefab(spellHitPrefab)
+                .UnderTransformGroup("World/SpellElements/Hit");
+
+            Container.BindMemoryPool<WallSpellElement, WallSpellElement.Pool>()
+                .WithInitialSize(10)
+                .FromComponentInNewPrefab(spellWallElementPrefab)
+                .UnderTransformGroup("World/SpellElements/Wall");
+        }
     }
 }

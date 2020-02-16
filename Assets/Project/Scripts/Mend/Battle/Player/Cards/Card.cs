@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Linq;
-using GGJ20.World;
 using UnityEngine;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
-    [CreateAssetMenu(menuName = "GGJ20/Card")]
+    [CreateAssetMenu(menuName = "MEND/Card")]
     public class Card : ScriptableObject
     {
         public Sprite Art;
@@ -23,8 +22,8 @@ namespace GGJ20.CardRules
         }
         public string GetPowerText()
         {
-            var wallHits = Spell.hits.Where(h => h.type == World.Spell.Hit.Type.Wall);
-            var dmgHits = Spell.hits.Where(h => h.type == World.Spell.Hit.Type.Damage);
+            var wallHits = Spell.hits.Where(h => h.type == Battle.Spell.Hit.Type.Wall);
+            var dmgHits = Spell.hits.Where(h => h.type == Battle.Spell.Hit.Type.Damage);
 
             string result = "";
             if (dmgHits.Any())

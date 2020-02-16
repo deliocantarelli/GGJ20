@@ -1,7 +1,8 @@
+using PointNSheep.Common.Pathfinding;
 using UnityEngine;
 using Zenject;
 
-namespace PointNSheep.Pathfinding
+namespace PointNSheep.Common.Pathfinding
 {
     public class PathFindingInstaller : MonoInstaller
     {

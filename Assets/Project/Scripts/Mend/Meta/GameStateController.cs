@@ -1,4 +1,4 @@
-﻿using GGJ20.Audio;
+﻿using PointNSheep.Common.Audio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace GGJ20.Game
+namespace PointNSheep.Mend.Meta
 {
     public class GameStateController : MonoBehaviour
     {

@@ -1,4 +1,4 @@
-﻿using GGJ20.CardRules;
+﻿using PointNSheep.Mend.Battle;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Game
+namespace PointNSheep.Mend.Meta
 {
     public class Run
     {

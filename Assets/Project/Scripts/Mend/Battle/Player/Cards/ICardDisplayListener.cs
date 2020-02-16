@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
     interface ICardDisplayListener
     {

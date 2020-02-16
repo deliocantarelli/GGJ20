@@ -2,7 +2,7 @@
 using System.Linq;
 using Zenject;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
     public class Deck
     {

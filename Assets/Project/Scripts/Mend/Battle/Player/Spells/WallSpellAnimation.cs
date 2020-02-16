@@ -1,4 +1,5 @@
-﻿using GGJ20.Utils;
+﻿using PointNSheep.Common.Grid;
+using PointNSheep.Common.Timers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.World
+namespace PointNSheep.Mend.Battle
 {
     [RequireComponent(typeof(SpellElement))]
     public class WallSpellAnimation : MonoBehaviour

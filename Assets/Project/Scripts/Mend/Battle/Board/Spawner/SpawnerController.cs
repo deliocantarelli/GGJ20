@@ -1,12 +1,12 @@
 
+using PointNSheep.Mend.Battle;
 using System;
 using System.Collections.Generic;
-using GGJ20.Enemy;
-using GGJ20.Game;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Spawner {
+namespace PointNSheep.Mend.Battle
+{
     public class SpawnConfig {
         public EnemySettings enemy;
         public int amount;

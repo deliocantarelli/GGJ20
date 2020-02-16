@@ -1,6 +1,7 @@
-﻿using GGJ20.CardRules;
-using GGJ20.Common;
-using GGJ20.Utils;
+﻿using PointNSheep.Common.Grid;
+using PointNSheep.Common.TileInspector;
+using PointNSheep.Common.Timers;
+using PointNSheep.Common.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
 
-namespace GGJ20.World
+namespace PointNSheep.Mend.Battle
 {
     public class Spell : MonoBehaviour
     {

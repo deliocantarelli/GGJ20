@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PointNSheep.Common.Hitboxing
+namespace PointNSheep.Mend.Battle
 {
     public class Targetable : MonoBehaviour {
         public delegate void TargetDestroyed();

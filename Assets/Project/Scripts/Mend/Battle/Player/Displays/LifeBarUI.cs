@@ -1,13 +1,13 @@
 
 using UnityEngine;
 using Zenject;
-using GGJ20.Battery;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using GGJ20.Common;
+using PointNSheep.Common.Health;
 
-namespace GGJ20.UI{
+namespace PointNSheep.Mend.Battle
+{ 
     public class LifeBarUI : MonoBehaviour {
         [Inject] 
         private BatteryManager batteryManager;

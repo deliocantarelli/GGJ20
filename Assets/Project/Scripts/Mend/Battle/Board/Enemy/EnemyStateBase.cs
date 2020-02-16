@@ -1,7 +1,7 @@
+using PointNSheep.Common.StateMachines;
 using System;
-using Common.StateMachines;
 
-namespace GGJ20.Enemy
+namespace PointNSheep.Mend.Battle
 {
     public abstract class EnemyStateBase : State<EnemyController, EnemyStateBase>
     {

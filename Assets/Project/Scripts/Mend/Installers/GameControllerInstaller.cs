@@ -1,9 +1,9 @@
-using GGJ20.Audio;
-using GGJ20.Game;
+using PointNSheep.Common.Audio;
+using PointNSheep.Mend.Meta;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Installers {
+namespace PointNSheep.Mend {
     public class GameControllerInstaller : MonoInstaller
     {
         public AudioManager audioManagerPrefab;

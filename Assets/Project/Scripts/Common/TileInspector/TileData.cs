@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace PointNSheep.Common.TileData
+namespace PointNSheep.Common.TileInspector
 {
     [System.Serializable]
     public class TileData

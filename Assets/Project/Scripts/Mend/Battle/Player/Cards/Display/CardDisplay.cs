@@ -1,5 +1,4 @@
 ﻿using DG.Tweening;
-using GGJ20.Game;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +11,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
     public class CardDisplay : MonoBehaviour, IBeginDragHandler, IDragHandler
     {

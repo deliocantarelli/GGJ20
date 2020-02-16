@@ -1,14 +1,12 @@
 ﻿using System;
 using DG.Tweening;
-using GGJ20.Battery;
-using GGJ20.CardRules;
-using GGJ20.Enemy;
-using GGJ20.Utils;
+using PointNSheep.Common.Grid;
+using PointNSheep.Common.Timers;
 using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
 
-namespace GGJ20.World
+namespace PointNSheep.Mend.Battle
 {
     public abstract class SpellElement : MonoBehaviour
     {

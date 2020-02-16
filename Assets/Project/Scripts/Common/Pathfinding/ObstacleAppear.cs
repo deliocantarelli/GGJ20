@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-namespace PointNSheep.Pathfinding {
+namespace PointNSheep.Common.Pathfinding
+{
     public class ObstacleAppear : MonoBehaviour
     {
         [Inject]

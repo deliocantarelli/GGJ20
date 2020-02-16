@@ -1,9 +1,10 @@
 
+using PointNSheep.Mend.Battle;
 using System;
-using GGJ20.Enemy;
 using UnityEngine;
 
-namespace GGJ20.Spawner{
+namespace PointNSheep.Mend.Battle
+{
     [Serializable]
     public class WaveEnemy {
         public EnemySettings enemy;

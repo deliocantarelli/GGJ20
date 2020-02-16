@@ -1,19 +1,23 @@
 
 
-public class GameResult {
-    public GameResult(bool won)
+namespace PointNSheep.Mend.Battle
+{
+    public class GameResult
     {
-        Won = won;
-    }
+        public GameResult(bool won)
+        {
+            Won = won;
+        }
 
-    public bool Won { get; private set; }
+        public bool Won { get; private set; }
 
-    public static GameResult GetNewVictory()
-    {
-        return new GameResult(true);
-    }
-    public static GameResult GetNewLoss()
-    {
-        return new GameResult(false);
+        public static GameResult GetNewVictory()
+        {
+            return new GameResult(true);
+        }
+        public static GameResult GetNewLoss()
+        {
+            return new GameResult(false);
+        }
     }
 }

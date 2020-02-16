@@ -1,9 +1,9 @@
 
 using System;
-using Common.StateMachines;
+using PointNSheep.Common.StateMachines;
 using UnityEngine;
 
-namespace GGJ20.Enemy
+namespace PointNSheep.Mend.Battle
 {
     public class EnemyStateMachine : StateMachine<EnemyController, EnemyStateBase>
     {

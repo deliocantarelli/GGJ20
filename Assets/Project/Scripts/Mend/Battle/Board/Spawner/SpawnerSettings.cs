@@ -3,7 +3,8 @@
 using System;
 using UnityEngine;
 
-namespace GGJ20.Spawner {
+namespace PointNSheep.Mend.Battle
+{
     [Serializable]
     public class SpawnerSettings {
         public float startSeconds = 0;

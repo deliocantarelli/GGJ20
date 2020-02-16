@@ -1,16 +1,12 @@
 
 using System;
 using Zenject;
-using GGJ20.Battery;
 using UnityEngine;
 using Pathfinding;
-using GGJ20.Target;
-using GGJ20.World;
 using UnityEngine.UI;
-using GGJ20.Game;
 using UnityEngine.Events;
 
-namespace GGJ20.Enemy
+namespace PointNSheep.Mend.Battle
 {
     public enum Direction
     {
@@ -52,7 +48,7 @@ namespace GGJ20.Enemy
         private AILerp aILerp;
         private EnemyStateMachine stateMachine = new EnemyStateMachine();
         private int currentLife = 0;
-        private HitChecker hitChecker = new HitChecker();
+        private SpellHitChecker hitChecker = new SpellHitChecker();
         [Inject]
         private BattleSceneController sceneController;
         public UnityEvent OnDamage;

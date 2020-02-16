@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using GGJ20.World;
+using PointNSheep.Common.Grid;
+using PointNSheep.Mend.Battle;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.CardRules
+namespace PointNSheep.Mend.Battle
 {
     public class SpellAimCursor : MonoBehaviour
     {

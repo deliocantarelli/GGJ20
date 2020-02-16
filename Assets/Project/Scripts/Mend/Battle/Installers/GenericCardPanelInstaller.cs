@@ -1,6 +1,4 @@
-﻿using GGJ20.CardRules;
-using GGJ20.Game;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace GGJ20.Installers
+namespace PointNSheep.Mend.Battle
 {
     [RequireComponent(typeof(ICardDisplayListener))]
     public class GenericCardPanelInstaller : MonoInstaller
