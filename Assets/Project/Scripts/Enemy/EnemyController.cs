@@ -43,6 +43,7 @@ namespace GGJ20.Enemy
         private Image imageSlider;
         [SerializeField]
         public EnemyAnimation enemyAnimation;
+        public GameObject endGameObject;
         [NonSerialized]
         public Animation playAnimation;
         [NonSerialized]
@@ -124,6 +125,10 @@ namespace GGJ20.Enemy
         {
             stateMachine.OnCollisionExit2D(collision);
         }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            stateMachine.OnTriggerEnter2D(other);
+        }
 
         public void Damage(int damage) {
             OnDamage.Invoke();
@@ -133,7 +138,9 @@ namespace GGJ20.Enemy
                 Die();
             }
         }
-
+        public void OnGameWon() {
+            //All Logic is now on component EnemyGameWonAnimation
+        }
         void Die() {
             Destroy(gameObject);
         }

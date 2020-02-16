@@ -7,6 +7,7 @@ TagManager:
   - ship
   - asteroid
   - target
+  - end_game_line
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Obstacle
   - 
   - 
-  - 
+  - Tile
   - 
   - 
   - 

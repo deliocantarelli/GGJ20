@@ -29,5 +29,9 @@ namespace GGJ20.Enemy
             CurrentState.OnCollisionExit2D(other);
         }
 
+        public void OnTriggerEnter2D(Collider2D other)
+        {
+            CurrentState.OnTriggerEnter2D(other);
+        }
     }
 }
